@@ -1,0 +1,116 @@
+@import "vars";
+
+// === RESET STYLES ===
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+//::-webkit-scrollbar {
+//    width: 5px;
+//}
+//
+//::-webkit-scrollbar-track {
+//    background: transparent;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//    background-color: #cbbb9f;
+//}
+//
+//:root {
+//    scrollbar-color: #cbbb9f transparent;
+//    scrollbar-width: thin;
+//}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+//input::-webkit-outer-spin-button,
+//input::-webkit-inner-spin-button {
+//    -webkit-appearance: none;
+//}
+
+div {
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button,
+input {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+}
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+// === GLOBAL STYLE ===
+
+body {
+    //font-size: $fs-xs;
+    //line-height: $lh-s;
+    //background-color: $light-50;
+    //@include Montserrat($weight: $fw-regular);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    //max-width: rem(1230px);
+    padding: 0 rem(15px);
+    margin: 0 auto;
+}
