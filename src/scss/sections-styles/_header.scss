@@ -1,10 +1,17 @@
 // === HEADER ===
 
 .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
     background-color: $white;
 }
 
 .header-top {
+    z-index: 99999;
+    background-color: $white;
     border-bottom: 1px solid $gray;
 
     &__menu {
@@ -40,12 +47,14 @@
 }
 
 .header-center {
+    z-index: 9999;
     display: flex;
     align-items: center;
     max-width: rem(1708px);
     height: rem(113px);
     padding: 0 rem(15px);
     margin: 0 auto;
+    background-color: $white;
 
     &__lang {
         margin-right: rem(41px);
@@ -110,8 +119,10 @@
 
 // === MENU ===
 
-.header-bottom__menu {
-    background-color: #00c1b6;
+.header-bottom {
+    &__menu {
+        background-color: #00c1b6;
+    }
 }
 
 .menu {
@@ -160,12 +171,13 @@
 
 .catalog-dropdown {
     position: absolute;
-    top: -100%;
+    top: -1000%;
     right: 0;
     left: 0;
+    z-index: -1;
     background-color: $white;
     opacity: 0;
-    transition: all .6s ease-in-out;
+    transition: all 1s ease-in-out;
 
     &__items {
         column-count: 4;
