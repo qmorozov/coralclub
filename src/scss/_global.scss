@@ -96,13 +96,11 @@ h6 {
 // === GLOBAL STYLE ===
 
 body {
-    //font-size: $fs-xs;
-    //line-height: $lh-s;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: 19px;
     background-color: $white;
-    //@include Montserrat($weight: $fw-regular);
 }
 
 .wrapper {
@@ -160,16 +158,12 @@ body {
 
     &__main {
         font-size: 48px;
-        font-weight: 400;
         line-height: 48px;
         text-transform: uppercase;
     }
 
     &__text {
         margin-top: rem(30px);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
     }
 }
 
@@ -186,8 +180,8 @@ body {
 
     .btn__text {
         font-size: 25px;
-        font-weight: 400;
         line-height: 29px;
+        white-space: nowrap;
     }
 
     &--show-more {
@@ -226,7 +220,7 @@ body {
             width: 100%;
             height: 100%;
             content: '';
-            border-radius: 16px;
+            border-radius: rem(16px);
             transition: $transition;
             transform: translate(-50%, -50%);
         }
@@ -275,17 +269,16 @@ body {
     &__photo {
         width: rem(61px);
         height: rem(51px);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__content {
         margin-left: rem(23px);
-        font-size: 16px;
-        line-height: 19px;
         white-space: nowrap;
-
-        &-top {
-            font-weight: 400;
-        }
 
         &-bottom {
             font-weight: 700;
@@ -316,6 +309,11 @@ body {
 
         & + & {
             margin-left: rem(15px);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
 }

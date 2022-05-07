@@ -1,0 +1,59 @@
+// === FOOTER ===
+.footer {
+    color: $white;
+    background-color: $dark;
+}
+
+.footer__bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 0 61px 0;
+    font-size: 14px;
+    line-height: 16px;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background-color: $gray;
+    }
+
+    &-text {
+        opacity: 0.5;
+    }
+}
+
+.footer__menu {
+    padding: 66px 0 37px 0;
+
+    &-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-point {
+        & + & {
+            margin-top: 14px;
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 24px;
+        @include Bebas_Neue_Cyrillic($weight: 400);
+    }
+
+    &-link {
+        transition: $transition;
+
+        &:hover {
+            color: darken($white, 25%);
+        }
+    }
+}
+// === / FOOTER ===
