@@ -1,0 +1,70 @@
+// === ABOUT ===
+.about {
+    padding-top: 100px;
+
+    .title-wrapper__text {
+        width: 100%;
+        max-width: 255px;
+        margin: rem(30px) auto 0;
+    }
+}
+
+.about__content {
+    background: url('/images/content/about.webp');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.about__items {
+    padding: 110px 0 170px;
+    text-align: -webkit-center;
+    column-count: 3;
+}
+
+.about__item {
+    max-width: 350px;
+    min-height: 240px;
+    margin-bottom: 90px;
+    text-align: center;
+
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+
+    &-number {
+        font-size: 160px;
+        line-height: 160px;
+        @include Bebas_Neue_Cyrillic($weight: 400);
+
+        &--blue {
+            color: #4b6387;
+        }
+
+        &--dark-green {
+            color: #328c4f;
+        }
+
+        &--light-red {
+            color: #dc554c;
+        }
+
+        &--light-green {
+            color: #91c164;
+        }
+
+        &--dark-red {
+            color: #a5121e;
+        }
+
+        &--purple {
+            color: #6d4fbf;
+        }
+    }
+
+    &-text {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+// === / ABOUT ===
