@@ -2,11 +2,11 @@
 
 // === FONT ===
 
-//@mixin Montserrat($weight) {
-//    font-family: 'Montserrat', sans-serif;
-//    font-weight: $weight;
-//}
-//
+@mixin Bebas_Neue_Cyrillic($weight) {
+    font-family: 'Bebas_Neue_Cyrillic', sans-serif;
+    font-weight: $weight;
+}
+
 //@mixin img ($width, $height) {
 //    width: $width;
 //    max-width: 100%;
@@ -50,34 +50,25 @@
 
 $transition: all .4s ease-in-out;
 
-// === COLOR ===
+// === COLORS ===
+$dark: #36414d;
+$white: #fbfbfb;
+$gray: #c4c4c4;
 
-// === DARK COLORS ===
+$green-50: #328c4f;
+$green-100: #91c164;
+$green-150: #84ff70;
 
-//$dark-50: black;
-//$dark-100: #181818;
-//$dark-150: #373737;
-//$dark-200: #343434;
-//$dark-250: #675b56;
-//$dark-300: #606060;
-//$dark-350: #4f4f4f;
-//$dark-400: #7d6c65;
-//$dark-450: #887569;
-//$dark-500: #897668;
-//$dark-550: #787878;
-//$dark-600: #999;
-//$dark-650: #9c9c9c;
+$orange: #fa6926;
 
-// === LIGHT COLORS ===
+$red: #a5121e;
+$red-light: #f95f55;
 
-//$light-50: white;
-//$light-100: #f8f8f8;
-//$light-150: #f5f5f5;
-//$light-200: #faf8f6;
-//$light-250: #f4f0eb;
-//$light-300: #e9e5e0;
-//$light-350: #cdcdcd;
-//$light-400: #f3e4de;
+$blue-50: #4b6387;
+$blue-100: #5b91ad;
+$blue-150: #76a5af;
+
+$purple: #6d4fbf;
 
 // === FUNCTION ===
 // === PX to REM function ===

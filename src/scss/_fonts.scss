@@ -1,1 +1,39 @@
-//
+// === ROBOTO ===
+
+@font-face {
+    // === BOLD ===
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    // === LIGHT ===
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Light.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    // === REGULAR ===
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-display: swap;
+}
+
+// === BEBAS NEUE CYRILLIC ===
+
+@font-face {
+    // === REGULAR ===
+    font-family: 'Bebas_Neue_Cyrillic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Bebas_Neue_Cyrillic/Bebas_Neue_Cyrillic_Regular.woff2') format('woff2'), url('../fonts/Bebas_Neue_Cyrillic/Bebas_Neue_Cyrillic_Regular.woff') format('woff');
+    font-display: swap;
+}
