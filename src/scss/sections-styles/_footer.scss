@@ -8,9 +8,9 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 66px 0 61px 0;
-    font-size: 14px;
-    line-height: 16px;
+    padding: rem(66px) 0 rem(61px) 0;
+    font-size: rem(14px);
+    line-height: rem(16px);
 
     &::before {
         position: absolute;
@@ -18,7 +18,7 @@
         right: 0;
         left: 0;
         width: 100%;
-        height: 1px;
+        height: rem(1px);
         content: '';
         background-color: $gray;
     }
@@ -29,22 +29,20 @@
 }
 
 .footer__menu {
-    padding: 66px 0 37px 0;
+    padding: rem(66px) 0 rem(37px) 0;
 
     &-items {
         display: flex;
         justify-content: space-between;
     }
 
-    &-point {
-        & + & {
-            margin-top: 14px;
-        }
+    &-point + &-point {
+        margin-top: rem(14px);
     }
 
     &-title {
-        font-size: 24px;
-        line-height: 24px;
+        font-size: rem(24px);
+        line-height: rem(24px);
         @include Bebas_Neue_Cyrillic($weight: 400);
     }
 

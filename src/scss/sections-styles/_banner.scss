@@ -1,0 +1,62 @@
+// === BANNER ===
+.banner {
+    height: rem(412px);
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        width: 34%;
+        height: rem(412px);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            content: '';
+            background-color: rgba($gray, 0.3);
+            opacity: 0;
+            transition: $transition;
+            backdrop-filter: blur(1.5rem);
+        }
+
+        &:hover::before {
+            opacity: .5;
+        }
+
+        &-title {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            bottom: 50%;
+            left: 50%;
+            display: inline-table;
+            padding: rem(15px) rem(16px) rem(11px) rem(17px);
+            font-size: rem(32px);
+            line-height: rem(32px);
+            color: $white;
+            white-space: nowrap;
+            transform: translate(-50%, -50%);
+            @include Bebas_Neue_Cyrillic($weight: 400);
+
+            &--green {
+                background-color: $green-50;
+            }
+
+            &--purple {
+                background-color: $purple;
+            }
+
+            &--orange {
+                background-color: #ef4718;
+            }
+        }
+    }
+}
+// === / BANNER ===
