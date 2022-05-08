@@ -1,0 +1,29 @@
+// === JOIN ===
+.join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(590px);
+    background-image: url('/images/content/join.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.join__button {
+    min-width: rem(640px);
+    padding: rem(36px);
+    font-size: 44px;
+    line-height: 52px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border: rem(4px) solid white;
+    transition: $transition;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.62);
+        border-color: rgba(255, 255, 255, 0.62);
+    }
+}
+// === / JOIN ===
