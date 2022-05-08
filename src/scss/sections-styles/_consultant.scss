@@ -1,0 +1,59 @@
+// === CONSULTANT ===
+.consultant {
+    margin-bottom: rem(150px);
+
+    &__title {
+        margin-bottom: rem(74px);
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-photo {
+        flex-shrink: 0;
+        width: rem(556px);
+        height: rem(564px);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-info {
+        width: 100%;
+        max-width: rem(744px);
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark;
+
+        &__title {
+            text-transform: uppercase;
+        }
+
+        &__phone {
+            display: block;
+
+            &:first-child {
+                margin-top: rem(46px);
+            }
+        }
+
+        &__social {
+            margin-top: rem(40px);
+        }
+
+        &__description {
+            margin-top: rem(39px);
+            font-size: 28px;
+            line-height: 33px;
+        }
+
+        &__btn {
+            margin-top: rem(35px);
+        }
+    }
+}
+// === / CONSULTANT ===
