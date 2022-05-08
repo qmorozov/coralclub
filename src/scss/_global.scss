@@ -191,6 +191,7 @@ body {
     display: inline-block;
     min-width: rem(322px);
     padding: rem(12px);
+    text-align: center;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: rem(16px);
@@ -199,6 +200,7 @@ body {
     .btn__text {
         font-size: 25px;
         line-height: 29px;
+        text-align: center;
         white-space: nowrap;
     }
 
@@ -333,5 +335,140 @@ body {
             width: 100%;
             height: 100%;
         }
+    }
+}
+
+// === PRODUCT - CARD ===
+
+.product-card {
+    width: rem(344px);
+    height: rem(436px);
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -ms-transform: perspective(rem(1000px));
+    -moz-transform: perspective(rem(1000px));
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    &__img {
+        max-width: rem(262px);
+        max-height: rem(200px);
+        margin: auto auto 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+        margin-top: rem(72px);
+        font-size: 20px;
+        line-height: 23px;
+        color: $dark;
+
+        &-title {
+            margin-top: rem(15px);
+        }
+
+        &-price {
+            position: relative;
+            padding-right: rem(25px);
+            margin-top: rem(3px);
+
+            &::before {
+                position: absolute;
+                top: 35%;
+                right: 0;
+                bottom: 50%;
+                font-size: rem(10px);
+                line-height: rem(12px);
+                color: $dark;
+                content: 'UAH';
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__back {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: rem(344px);
+        height: rem(436px);
+        padding: rem(16px);
+        background-color: rgb(255, 255, 255);
+        transform: rotateY(-180deg);
+
+        &-button {
+            min-width: 100%;
+            background-color: $orange;
+
+            .btn__text {
+                color: $white;
+            }
+        }
+    }
+
+    &__front {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: rem(344px);
+        height: rem(436px);
+        padding: rem(16px);
+        background-color: rgb(255, 255, 255);
+        transform: rotateY(0deg);
+    }
+
+    &__back-description {
+        margin: rem(13px) 0 auto 0;
+        font-size: 20px;
+        line-height: 23px;
+        color: $dark;
+    }
+
+    &__back-button {
+        margin-top: 43px;
+    }
+}
+
+.product-card__type {
+    padding-bottom: rem(9px);
+    font-size: 20px;
+    line-height: 20px;
+    color: #adbfbf;
+    border-bottom: 1px solid #e6e6e6;
+    @include Bebas_Neue_Cyrillic($weight: 400);
+}
+
+.product-card__flip {
+    position: relative;
+    transition: 0.4s;
+    transform-style: preserve-3d;
+}
+
+.product-card__front,
+.product-card__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.product-card:hover {
+    & .product-card__back {
+        transform: rotateY(0deg);
+    }
+
+    & .product-card__front {
+        transform: rotateY(-180deg);
     }
 }

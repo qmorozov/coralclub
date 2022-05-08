@@ -1,0 +1,18 @@
+// === SALE ===
+.sale {
+    padding: rem(100px) 0;
+    background-color: $white;
+
+    &__top {
+        margin-bottom: rem(130px);
+    }
+
+    &__items {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: rem(35px);
+        grid-column-gap: rem(20px);
+    }
+}
+// === / SALE ===
