@@ -1,5 +1,6 @@
 // === ARTICLES ===
 .articles {
+    padding-bottom: rem(100px);
     background-color: $white;
 
     &-inner {
@@ -14,18 +15,23 @@
     &-items {
         display: flex;
     }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .articles-slider {
     position: relative;
-    max-width: 1596px;
-    padding-bottom: 55px;
-    margin-bottom: 59px;
+    max-width: rem(1596px);
+    padding-bottom: rem(55px);
+    margin-bottom: rem(59px);
     overflow: hidden;
 
     .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
+        width: rem(10px);
+        height: rem(10px);
         cursor: pointer;
         background-color: #d0d0d0;
     }
@@ -44,9 +50,9 @@
     transition: $transition;
 
     &__photo {
-        width: 370px;
-        height: 310px;
-        margin-bottom: 46px;
+        width: rem(370px);
+        height: rem(310px);
+        margin-bottom: rem(46px);
 
         img {
             width: 100%;
@@ -55,12 +61,12 @@
     }
 
     &__content {
-        padding: 0 16px 12px 15px;
+        padding: 0 rem(16px) rem(12px) rem(15px);
     }
 
     &__text {
         position: relative;
-        padding-top: 15px;
+        padding-top: rem(15px);
         font-size: 20px;
         line-height: 23px;
         color: $dark;
@@ -69,14 +75,14 @@
             position: absolute;
             top: 0;
             width: 100%;
-            height: 1px;
+            height: rem(1px);
             content: '';
             background-color: #e6e6e6;
         }
     }
 
     &:hover {
-        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+        box-shadow: rem(5px) rem(5px) rem(15px) rem(5px) rgba(0, 0, 0, 0.15);
     }
 }
 // === / ARTICLES ===
