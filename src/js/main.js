@@ -57,3 +57,20 @@ document.querySelectorAll('.about__item-number').forEach(number => {
         }
     });
 });
+
+// === ARTICLES - SLIDER ===
+
+let articlesSlider = new Swiper(".articles-slider", {
+    slidesPerView: 4,
+    spaceBetween: 38,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    loop: true,
+    clickable: true,
+    speed: 1000,
+    autoplay: {
+        delay: 7000,
+    },
+    grabCursor: true,
+});

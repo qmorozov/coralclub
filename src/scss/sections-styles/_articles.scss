@@ -1,0 +1,82 @@
+// === ARTICLES ===
+.articles {
+    background-color: $white;
+
+    &-inner {
+        max-width: 1596px;
+        margin: 0 auto;
+    }
+
+    &-top {
+        margin-bottom: rem(130px);
+    }
+
+    &-items {
+        display: flex;
+    }
+}
+
+.articles-slider {
+    position: relative;
+    max-width: 1596px;
+    padding-bottom: 55px;
+    margin-bottom: 59px;
+    overflow: hidden;
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        background-color: #d0d0d0;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #aaa;
+    }
+}
+
+.article-item {
+    display: block;
+    width: 100%;
+    max-width: rem(370px);
+    min-height: rem(437px);
+    background-color: white;
+    transition: $transition;
+
+    &__photo {
+        width: 370px;
+        height: 310px;
+        margin-bottom: 46px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        padding: 0 16px 12px 15px;
+    }
+
+    &__text {
+        position: relative;
+        padding-top: 15px;
+        font-size: 20px;
+        line-height: 23px;
+        color: $dark;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            content: '';
+            background-color: #e6e6e6;
+        }
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.15);
+    }
+}
+// === / ARTICLES ===

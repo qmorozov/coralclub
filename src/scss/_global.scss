@@ -177,7 +177,9 @@ body {
     &__main {
         font-size: 48px;
         line-height: 48px;
+        color: $dark;
         text-transform: uppercase;
+        @include Bebas_Neue_Cyrillic($weight: 400);
     }
 
     &__text {
