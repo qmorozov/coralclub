@@ -67,7 +67,7 @@ document.querySelectorAll('.about__item-number').forEach(number => {
                     if (start == end) {
                         clearInterval(interval);
                     }
-                }, 75);
+                }, 115);
             }
         });
     } else {
@@ -83,7 +83,7 @@ document.querySelectorAll('.about__item-number').forEach(number => {
                     if (start == end) {
                         clearInterval(interval);
                     }
-                }, 5);
+                }, 1);
             }
         });
     }
