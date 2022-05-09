@@ -67,7 +67,7 @@ document.querySelectorAll('.about__item-number').forEach(number => {
                     if (start == end) {
                         clearInterval(interval);
                     }
-                }, 115);
+                }, 60);
             }
         });
     } else {
