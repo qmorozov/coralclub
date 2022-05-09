@@ -50,7 +50,7 @@
     transition: $transition;
 
     &__photo {
-        width: rem(370px);
+        max-width: rem(370px);
         height: rem(310px);
         margin-bottom: rem(46px);
 

@@ -1,0 +1,49 @@
+// === PAPER ===
+.paper {
+    padding: 87px 0 94px 0;
+
+    &-inner {
+        font-size: 20px;
+        line-height: 35px;
+        color: #707070;
+    }
+
+    &__text + &__text {
+        margin-top: rem(40px);
+    }
+
+    &__photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: rem(96px) auto rem(27px);
+
+        &--more {
+            img {
+                width: rem(155px);
+                height: rem(155px);
+            }
+
+            img + img {
+                margin-left: rem(64px);
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(60px);
+    }
+
+    &-list {
+        &__item {
+            list-style: disc;
+        }
+    }
+
+    &__subtitle {
+        margin-top: rem(50px);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+// === / PAPER ===
