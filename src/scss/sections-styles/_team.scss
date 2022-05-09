@@ -1,11 +1,15 @@
 // === TEAM ===
 .team {
-    padding-bottom: rem(155px);
     background-color: white;
+
+    .title-wrapper {
+        padding-top: rem(155px);
+    }
 
     &__items {
         display: flex;
         justify-content: space-between;
+        margin-top: rem(51px);
     }
 
     &__item {
@@ -19,4 +23,5 @@
         }
     }
 }
+
 // === / TEAM ===

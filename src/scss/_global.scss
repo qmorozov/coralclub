@@ -139,40 +139,8 @@ body {
 
 .title-wrapper {
     position: relative;
+    padding-top: rem(100px);
     text-align: center;
-
-    &--top-line {
-        padding-top: rem(100px);
-
-        &::before {
-            position: absolute;
-            top: 0;
-            right: 50%;
-            left: 50%;
-            width: rem(60px);
-            height: rem(100px);
-            content: '';
-            background-color: $green-150;
-            transform: translateX(-50%);
-        }
-    }
-
-    &--center-line {
-        padding-top: rem(97px);
-        margin-bottom: rem(51px);
-
-        &::before {
-            position: absolute;
-            top: 0;
-            right: 50%;
-            left: 50%;
-            width: rem(60px);
-            height: rem(320px);
-            content: '';
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='60' height='320' viewBox='0 0 60 320' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='60' height='100' fill='%2384FF70'/%3e%3crect y='220' width='60' height='100' fill='%2384FF70'/%3e%3crect y='142' width='60' height='30' fill='%23169F00'/%3e%3crect y='190' width='60' height='30' fill='%23169F00'/%3e%3c/svg%3e ");
-            transform: translateX(-50%);
-        }
-    }
 
     &__main {
         font-size: $fs-xxl;
