@@ -67,8 +67,8 @@
     &__text {
         position: relative;
         padding-top: rem(15px);
-        font-size: 20px;
-        line-height: 23px;
+        font-size: $fs-s;
+        line-height: rem(23px);
         color: $dark;
 
         &::before {

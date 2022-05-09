@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     padding: rem(66px) 0 rem(61px) 0;
-    font-size: rem(14px);
+    font-size: $fs-xxs;
     line-height: rem(16px);
 
     &::before {

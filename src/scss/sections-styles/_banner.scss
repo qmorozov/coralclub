@@ -4,6 +4,7 @@
 
     &__items {
         display: flex;
+        overflow: hidden;
     }
 
     &__item {
@@ -11,23 +12,12 @@
         width: 34%;
         height: rem(412px);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-position: center center;
+        background-size: 100% 100%;
+        transition: background-size 0.5s ease;
 
-        &::before {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            content: '';
-            background-color: rgba($gray, 0.3);
-            opacity: 0;
-            transition: $transition;
-            backdrop-filter: blur(1.5rem);
-        }
-
-        &:hover::before {
-            opacity: .5;
+        &:hover {
+            background-size: 108% 108%;
         }
 
         &-title {
@@ -38,7 +28,7 @@
             left: 50%;
             display: inline-table;
             padding: rem(15px) rem(16px) rem(11px) rem(17px);
-            font-size: rem(32px);
+            font-size: $fs-xl;
             line-height: rem(32px);
             color: $white;
             white-space: nowrap;

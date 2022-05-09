@@ -97,9 +97,9 @@ h6 {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: $fs-xs;
     font-weight: 400;
-    line-height: 19px;
+    line-height: rem(19px);
     background-color: $white;
     transition: $transition;
 }
@@ -175,8 +175,8 @@ body {
     }
 
     &__main {
-        font-size: 48px;
-        line-height: 48px;
+        font-size: $fs-xxl;
+        line-height: rem(48px);
         color: $dark;
         text-transform: uppercase;
         @include Bebas_Neue_Cyrillic($weight: 400);
@@ -200,13 +200,13 @@ body {
     transition: $transition;
 
     .btn__text {
-        font-size: 25px;
-        line-height: 29px;
+        font-size: $fs-m;
+        line-height: rem(29px);
         text-align: center;
         white-space: nowrap;
     }
 
-    &--show-more {
+    &--transparent {
         border: rem(1px) solid $red-light;
 
         .btn__text {
@@ -223,7 +223,7 @@ body {
         }
     }
 
-    &--buy {
+    &--orange {
         position: relative;
 
         .btn__text {
@@ -268,7 +268,7 @@ body {
         }
     }
 
-    &--discount {
+    &--red {
         background: $red-light;
         transition: $transition;
 
@@ -369,8 +369,8 @@ body {
 
     &__content {
         margin-top: rem(72px);
-        font-size: 20px;
-        line-height: 23px;
+        font-size: $fs-s;
+        line-height: rem(23px);
         color: $dark;
 
         &-title {
@@ -430,8 +430,8 @@ body {
 
     &__back-description {
         margin: rem(13px) 0 auto 0;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: $fs-s;
+        line-height: rem(23px);
         color: $dark;
     }
 
@@ -442,8 +442,8 @@ body {
 
 .product-card__type {
     padding-bottom: rem(9px);
-    font-size: 20px;
-    line-height: 20px;
+    font-size: $fs-s;
+    line-height: rem(20px);
     color: #adbfbf;
     border-bottom: 1px solid #e6e6e6;
     @include Bebas_Neue_Cyrillic($weight: 400);

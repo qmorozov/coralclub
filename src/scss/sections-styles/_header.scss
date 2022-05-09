@@ -29,8 +29,8 @@
     text-transform: uppercase;
 
     &-item {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: $fs-xxs;
+        line-height: rem(16px);
 
         & + & {
             margin-left: rem(70px);
@@ -97,8 +97,8 @@
     }
 
     &__item {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: rem(24px);
+        line-height: rem(28px);
         cursor: pointer;
         opacity: .2;
         transition: $transition;
@@ -169,7 +169,7 @@
     }
 }
 
-.catalog-dropdown {
+.dropdown {
     position: absolute;
     top: -1000%;
     right: 0;
@@ -177,7 +177,7 @@
     z-index: -1;
     background-color: $white;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
     &__items {
         column-count: 4;
@@ -186,20 +186,15 @@
         margin: 0 auto;
         // overflow: auto;
     }
-
-    &--active {
-        top: rem(217px);
-        opacity: 1;
-    }
 }
 
-.catalog-dropdown__item {
+.dropdown__item {
     max-width: rem(215px);
     margin-bottom: rem(28px);
 
     &-title {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: $fs-s;
+        line-height: rem(20px);
         @include Bebas_Neue_Cyrillic($weight: 400);
     }
 
@@ -212,9 +207,29 @@
     }
 
     &-link {
-        font-size: 14px;
-        line-height: 16px;
+        font-size: $fs-xxs;
+        line-height: rem(16px);
         color: $dark;
+    }
+}
+
+.header-catalog__dropdown--active {
+    top: rem(217px);
+    opacity: 1;
+}
+
+.header-cleansing__dropdown--active {
+    top: rem(217px);
+    opacity: 1;
+}
+
+.header-cleansing {
+    .dropdown__items {
+        column-count: auto;
+    }
+
+    .dropdown__item-point {
+        list-style: auto;
     }
 }
 
