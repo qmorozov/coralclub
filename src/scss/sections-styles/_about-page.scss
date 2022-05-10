@@ -1,0 +1,39 @@
+// === ABOUT - PAGE ===
+.about-page {
+    &-top__text {
+        margin-top: rem(67px);
+    }
+
+    &__video {
+        height: rem(506px);
+        margin: rem(92px) auto 0;
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.about-page-history {
+    margin-top: rem(85px);
+    font-size: rem(20px);
+    font-weight: 400;
+    line-height: rem(23px);
+    color: black;
+
+    &__title {
+        font-size: rem(32px);
+        font-weight: 700;
+        line-height: rem(38px);
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin-top: rem(43px);
+        text-transform: uppercase;
+    }
+}
+// === / ABOUT - PAGE ===
