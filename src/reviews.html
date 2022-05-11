@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body class="reviews-body">
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <section class="reviews">
+                <div class="reviews-inner">
+                    <div class="container">
+
+                        <div class="reviews__title title-wrapper">
+                            <h2 class="title-wrapper__main">
+                                отзывы
+                            </h2>
+                        </div>
+
+
+                        <div class="reviews-tabs-wrapper tabs-wrapper">
+                            <div class="reviews-tabs tabs">
+                                <span class="tab reviews-tabs__item tabs-item active" data-id="1">все</span>
+                                <span class="tab reviews-tabs__item tabs-item" data-id="2">здоровье</span>
+                                <span class="tab reviews-tabs__item tabs-item" data-id="3">красота</span>
+                                <span class="tab reviews-tabs__item tabs-item" data-id="4">продукция</span>
+                                <span class="tab reviews-tabs__item tabs-item" data-id="5">уход за домом</span>
+                            </div>
+                            <div class="reviews-tabs__content">
+                                <div class="reviews__tab tab-item active-tab" id="1">
+                                    <div class="reviews-tags tag-items">
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">коллаген</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">сильвер гель</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">пау дарко кмд</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">омега 3/60</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">сильвер макс</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">супер флора</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">спирулина</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">фитовирон</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">имунити пак</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">куркумин</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">липосомальный витамин д</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">хай файбер</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">фан детокс</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">лецитин</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">сера мсм</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">пентокан</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">пренатал</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">би лурон</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">кул релиф</button> -->
+                                        <!-- <button type="button" class="reviews-tag tag-item" data-filter="">дэйли дэлишес</button> -->
+                                        <button type="button" class="reviews-tag tag-item" data-filter=".a">TEST A</button>
+                                        <button type="button" class="reviews-tag tag-item" data-filter=".b">TEST B</button>
+                                    </div>
+                                </div>
+                                <div class="reviews__tab tab-item" id="2">
+                                    <!-- tags 2 -->
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".c">TEST C</button>
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".d">TEST D</button>
+                                </div>
+                                <div class="reviews__tab tab-item" id="3">
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".f">TEST F</button>
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".s">TEST S</button>
+                                </div>
+                                <div class="reviews__tab tab-item" id="4">
+                                    <!-- tags 4 -->
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".t">TEST T</button>
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".y">TEST Y</button>
+                                </div>
+                                <div class="reviews__tab tab-item" id="5">
+                                    <!-- tags 5 -->
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".q">TEST Q</button>
+                                    <button type="button" class="reviews-tag tag-item" data-filter=".p">TEST P</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-items">
+                            <div class="review__item review mix a" data-order="1">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. A
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix b" data-order="2">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. B
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix c" data-order="3">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. C
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix d" data-order="4">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. D
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix f" data-order="1">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. F
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix s" data-order="2">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. S
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix t" data-order="3">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. T
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix y" data-order="4">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. Y
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="review__item review mix q" data-order="3">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. Q
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review__item review mix p" data-order="4">
+                                <div class="review__photo">
+                                    <img src="images/content/review-1.webp" alt="review photo">
+                                </div>
+                                <div class="review__info">
+                                    <p class="review__info-name">
+                                        Кристина В. P
+                                    </p>
+                                    <p class="review__info-text">
+                                        Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
+                                        За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе 5см. <br>
+                                        Общее состояние улучшилось, стало легче ходить. Вот 😊
+                                    </p>
+                                    <div class="review__info-tags review-tags">
+                                        <span class="review-tags__item tag-item tag-item--inactive">вес</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONSULTANT -->
+            <section class="consultant">
+                <div class="consultant-inner">
+                    <div class="container">
+
+                        <div class="consultant__title title-wrapper">
+                            <h2 class="title-wrapper__main">
+                                ваш дистрибьютор
+                            </h2>
+                        </div>
+
+                        <div class="consultant-content">
+
+                            <div class="consultant-photo">
+                                <img src="images/content/consultant.webp" alt="consultant photo">
+                            </div>
+
+                            <div class="consultant-info">
+                                <h5 class="consultant-info__title">
+                                    наталья талда
+                                </h5>
+                                <a class="consultant-info__phone" href="tel:380632588842" aria-label="consultant phone">
+                                    +38 (063) 258 - 88- 42
+                                </a>
+                                <a class="consultant-info__phone" href="tel:380952588842" aria-label="consultant phone">
+                                    +38 (095) 258 - 88- 42
+                                </a>
+                                <div class="consultant-info__social social__items">
+                                    <a class="social__item" href="#" aria-label="Telegram social">
+                                        <img src="images/default/telegram.webp" alt="social telegram">
+                                    </a>
+                                    <a class="social__item" href="#" aria-label="Whatcapp social">
+                                        <img src="images/default/whatsapp.webp" alt="social whatsapp">
+                                    </a>
+                                    <a class="social__item" href="#" aria-label="Viber social">
+                                        <img src="images/default/viber.webp" alt="social viber">
+                                    </a>
+                                </div>
+                                <p class="consultant-info__description">
+                                    Для приобретения продукции со скидкой -20% вам нужно зарегистрироваться на
+                                    официальном сайте компании CoralClub. После регистрации с вами свяжется консультант
+                                    и поможет выбрать продукт, даст полную о нем консультацию, а также поможет
+                                    осуществить заказ продукции через сайт.
+                                </p>
+                                <button class="consultant-info__btn btn btn--red">
+                                    <span class="btn__text">
+                                        получить 20% скидку
+                                    </span>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / CONSULTANT -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
+
+<!-- <div class="review">
+    <div class="review__photo">
+        <img src="images/content/review-1.webp" alt="review photo">
+    </div>
+    <div class="review__info">
+        <p class="review__info-name">
+            
+        </p>
+        <p class="review__info-text">
+            
+        </p>
+        <div class="review__info-tags review-tags">
+            <span class="review-tags__item tag-item tag-item--inactive"></span>
+            <span class="review-tags__item tag-item tag-item--inactive"></span>
+            <span class="review-tags__item tag-item tag-item--inactive"></span>
+            <span class="review-tags__item tag-item tag-item--inactive"></span>
+        </div>
+    </div>
+</div> -->

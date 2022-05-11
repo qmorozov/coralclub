@@ -1,0 +1,150 @@
+// === REVIEWS ===
+.reviews-body {
+    background-color: #f5f5f5;
+}
+
+.reviews {
+    &__title {
+        margin-bottom: rem(88px);
+    }
+}
+
+// === REVIEV ITEM ===
+
+.tag-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-item {
+    width: fit-content;
+    padding: rem(12px) rem(16px);
+    margin: 0 0 rem(7px) rem(7px);
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #36414d;
+
+    &--inactive {
+        opacity: .5;
+    }
+}
+
+.review {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: rem(1181px);
+    padding-top: rem(17px);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: calc(100% - 110px);
+        height: 1px;
+        content: '';
+        background-color: #d9d9d9;
+    }
+
+    & + & {
+        margin-top: rem(56px);
+    }
+
+    &__photo {
+        width: rem(78px);
+        height: rem(78px);
+        margin-right: rem(32px);
+        border-radius: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__info {
+        font-size: 16px;
+        line-height: 19px;
+        color: black;
+
+        &-name {
+            font-weight: 700;
+        }
+
+        &-text {
+            margin-top: rem(10px);
+        }
+    }
+
+    &-tags {
+        margin-top: rem(59px);
+
+        &__item + &__item {
+            margin-left: rem(13px);
+        }
+    }
+}
+
+// === REVIEWS - TABS ===
+
+.reviews-tabs-wrapper {
+    //
+}
+
+.reviews-tabs {
+    display: flex;
+    margin-left: rem(7px);
+
+    &__item {
+        padding: 12px 16px;
+        font-size: 14px;
+        line-height: 16px;
+        color: $dark;
+        text-transform: uppercase;
+        cursor: pointer;
+        user-select: none;
+        background-color: #dfdfdf;
+        border: 1px solid $dark;
+        transition: $transition;
+
+        &:hover {
+            background-color: rgba(#59fcf3, .2);
+        }
+
+        & + & {
+            margin-left: 16px;
+        }
+    }
+
+    &__content {
+        margin-top: rem(24px);
+    }
+}
+
+.reviews__tab {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+.reviews-tabs__item.active {
+    background-color: #59fcf3;
+}
+
+.reviews-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 61px 0;
+    margin-top: 78px;
+    background-color: white;
+}
+
+// === / REVIEWS ===

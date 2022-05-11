@@ -80,6 +80,7 @@ const scriptLibs = () => {
         'node_modules/imask/dist/imask.min.js',
         'node_modules/nouislider/dist/nouislider.min.js',
         'node_modules/swiper/swiper-bundle.min.js',
+        'node_modules/mixitup/dist/mixitup.min.js',
         'node_modules/choices.js/public/assets/scripts/choices.min.js',
         'node_modules/aos/dist/aos.js'
         ])
