@@ -7,6 +7,10 @@
     &__title {
         margin-bottom: rem(88px);
     }
+
+    &-tag.mixitup-control-active {
+        background-color: #bcfffb;
+    }
 }
 
 // === REVIEV ITEM ===
@@ -26,10 +30,16 @@
     white-space: nowrap;
     cursor: pointer;
     user-select: none;
-    border: 1px solid #36414d;
+    background-color: white;
+    border: 1px solid #36414d !important;
+    transition: $transition;
 
     &--inactive {
         opacity: .5;
+    }
+
+    &:hover {
+        background-color: rgba(89, 252, 243, .2);
     }
 }
 
@@ -55,6 +65,7 @@
     }
 
     &__photo {
+        flex-shrink: 0;
         width: rem(78px);
         height: rem(78px);
         margin-right: rem(32px);
@@ -78,10 +89,23 @@
         &-text {
             margin-top: rem(10px);
         }
+
+        &-list {
+            margin-bottom: rem(20px);
+
+            &-item::before {
+                padding-right: rem(5px);
+                content: '-';
+            }
+        }
     }
 
     &-tags {
         margin-top: rem(59px);
+
+        &__item {
+            cursor: auto;
+        }
 
         &__item + &__item {
             margin-left: rem(13px);
@@ -137,14 +161,23 @@
     background-color: #59fcf3;
 }
 
+.reviews-content {
+    padding: 61px 0;
+    margin-top: 78px;
+    overflow: hidden;
+    background-color: white;
+}
+
 .reviews-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 61px 0;
-    margin-top: 78px;
-    background-color: white;
+}
+
+.review-pagination {
+    margin: rem(180px) auto 0;
+    text-align: center;
 }
 
 // === / REVIEWS ===
