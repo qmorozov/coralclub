@@ -12,7 +12,7 @@
 
 .header-top {
     z-index: 99999;
-    border-bottom: 1px solid $gray;
+    border-bottom: rem(1px) solid $gray;
 
     &__menu {
         max-width: rem(940px);
@@ -56,8 +56,7 @@
     margin: 0 auto;
 
     &__lang {
-        margin-right: rem(41px);
-        margin-left: rem(97px);
+        margin: 0 rem(41px) 0 rem(97px);
     }
 }
 
@@ -75,7 +74,7 @@
 
     &__input {
         width: 0%;
-        border-bottom: 1px solid $gray;
+        border-bottom: rem(1px) solid $gray;
         transition: $transition;
     }
 
@@ -118,10 +117,8 @@
 
 // === MENU ===
 
-.header-bottom {
-    &__menu {
-        background-color: #00c1b6;
-    }
+.header-bottom__menu {
+    background-color: #00c1b6;
 }
 
 .menu {
@@ -213,11 +210,7 @@
     }
 }
 
-.header-catalog__dropdown--active {
-    top: rem(217px);
-    opacity: 1;
-}
-
+.header-catalog__dropdown--active,
 .header-cleansing__dropdown--active {
     top: rem(217px);
     opacity: 1;

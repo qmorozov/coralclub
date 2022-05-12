@@ -86,8 +86,6 @@ const getScrollbarWidth = () => {
 // === INTRO SLIDER ===
 
 let introSlider = new Swiper(".intro__slider", {
-    // slideClass: 'intro__slider-item',
-    // wrapperClass: 'intro__slider-wrapper',
     effect: "fade",
     slidesPerView: 'auto',
     speed: 1000,
@@ -118,7 +116,7 @@ document.querySelectorAll('.about__item-number').forEach(number => {
                     if (start == end) {
                         clearInterval(interval);
                     }
-                }, 60);
+                }, 111);
             }
         });
     } else {
@@ -134,7 +132,7 @@ document.querySelectorAll('.about__item-number').forEach(number => {
                     if (start == end) {
                         clearInterval(interval);
                     }
-                }, 1);
+                }, 0.5);
             }
         });
     }
@@ -184,4 +182,9 @@ tabsWrapper.forEach(item => {
 
 // === MIXITUP ===
 
-const reviewsMixtUp = mixitup(".reviews-items");
+const reviewsItemsMix = document.querySelector('.reviews-items');
+
+if (reviewsItemsMix) {
+    const reviewsMixtUp = mixitup(".reviews-items");
+}
+

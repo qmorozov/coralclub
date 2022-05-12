@@ -1,10 +1,10 @@
 // === PAPER ===
 .paper {
-    padding: 87px 0 94px 0;
+    padding: rem(87px) 0 rem(94px) 0;
 
     &-inner {
-        font-size: 20px;
-        line-height: 35px;
+        font-size: $fs-s;
+        line-height: rem(35px);
         color: #707070;
     }
 

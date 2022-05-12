@@ -5,19 +5,16 @@
         max-width: rem(255px);
         margin: rem(30px) auto 0;
     }
-}
 
-.about__content {
-    background: url('../images/content/map.webp');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
-}
+    &__content {
+        background: url('../images/content/map.webp') top center / contain no-repeat;
+    }
 
-.about__items {
-    padding: rem(110px) 0 rem(170px);
-    text-align: -webkit-center;
-    column-count: 3;
+    &__items {
+        padding: rem(110px) 0 rem(170px);
+        text-align: -webkit-center;
+        column-count: 3;
+    }
 }
 
 .about__item {
