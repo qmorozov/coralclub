@@ -174,6 +174,8 @@
     right: 0;
     left: 0;
     z-index: -1;
+    max-height: 66vh;
+    overflow: auto;
     background-color: $white;
     opacity: 0;
     transition: all 0.5s ease-in-out;
@@ -181,9 +183,8 @@
     &__items {
         column-count: 4;
         max-width: rem(1160px);
-        padding: rem(70px) 0;
+        padding: rem(70px) rem(30px);
         margin: 0 auto;
-        // overflow: auto;
     }
 }
 

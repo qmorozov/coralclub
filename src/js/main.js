@@ -13,24 +13,75 @@ const cleansingDropDown = document.querySelector('.header-cleansing');
 document.querySelector('.menu__list-item-link--catalog').addEventListener('click', (e) => {
     e.preventDefault();
     catalogDropDown.classList.toggle('header-catalog__dropdown--active');
+    if (catalogDropDown.classList.contains('header-catalog__dropdown--active')) {
+        hideScroll();
+    } else {
+        showScroll();
+    }
 });
 
 document.querySelector('.menu__list-item-link--cleansing').addEventListener('click', (e) => {
     e.preventDefault();
     cleansingDropDown.classList.toggle('header-cleansing__dropdown--active');
+    if (cleansingDropDown.classList.contains('header-cleansing__dropdown--active')) {
+        hideScroll();
+    } else {
+        showScroll();
+    }
 });
 
 
 window.addEventListener('click', (e) => {
-    if (!e.target.closest('.menu__list-item-link--catalog') && !e.target.closest('.header-catalog')) {
-        // document.body.classList.remove('shadow');
-        catalogDropDown.classList.remove('header-catalog__dropdown--active');
-    };
-
-    if (!e.target.closest('.menu__list-item-link--cleansing') && !e.target.closest('.header-cleansing')) {
-        cleansingDropDown.classList.remove('header-cleansing__dropdown--active');
-    };
+    // if (!e.target.closest('.menu__list-item-link--catalog') && !e.target.closest('.header-catalog')) {
+    //     catalogDropDown.classList.remove('header-catalog__dropdown--active');
+    // };
+    
+    // if (!e.target.closest('.menu__list-item-link--cleansing')) {
+    //     cleansingDropDown.classList.remove('header-cleansing__dropdown--active');
+    // };
 });
+
+const resetNav = () => {
+    catalogDropDown.classList.remove('header-catalog__dropdown--active');
+    cleansingDropDown.classList.remove('header-cleansing__dropdown--active');
+    showScroll();
+}
+
+window.addEventListener('resize', resetNav);
+
+// === SCROLL FUNCTION ===
+
+const hideScroll = () => {
+    const scrollWidth = `${getScrollbarWidth()}px`;
+    document.body.style.paddingRight = scrollWidth;
+    document.body.style.overflow = 'hidden';
+
+    document.body.style.paddingRight = scrollWidth;
+};
+
+const showScroll = () => {
+    document.body.style.paddingRight = '';
+    document.body.style.overflow = 'visible';
+
+    document.body.style.paddingRight = '';
+};
+
+const getScrollbarWidth = () => {
+    const outer = document.createElement('div');
+
+    outer.style.position = 'absolute';
+    outer.style.top = '-9999px';
+    outer.style.width = '50px';
+    outer.style.height = '50px';
+    outer.style.overflow = 'scroll';
+    outer.style.visibility = 'hidden';
+
+    document.body.appendChild(outer);
+    const ScrollBarWidth = outer.offsetWidth - outer.clientWidth;
+    document.body.removeChild(outer);
+
+    return ScrollBarWidth;
+};
 
 // === INTRO SLIDER ===
 
@@ -133,4 +184,4 @@ tabsWrapper.forEach(item => {
 
 // === MIXITUP ===
 
-var mixer = mixitup(".reviews-items");
+const reviewsMixtUp = mixitup(".reviews-items");
