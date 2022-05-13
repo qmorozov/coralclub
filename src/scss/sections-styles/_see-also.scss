@@ -22,6 +22,8 @@
         font-size: $fs-xl;
         line-height: rem(35px);
         color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: rem(16px);
         transition: $transition;
 
