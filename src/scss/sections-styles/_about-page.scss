@@ -22,8 +22,10 @@
     font-size: rem(20px);
     font-weight: 400;
     line-height: rem(23px);
-    color: black;
-    text-transform: uppercase;
+
+    &__text {
+        color: #707070;
+    }
 
     &__title {
         font-size: rem(32px);
@@ -32,7 +34,11 @@
     }
 
     &__subtitle {
-        margin-top: rem(43px);
+        margin: rem(40px) 0 rem(23px) 0;
+
+        &.title-wrapper {
+            padding-top: 0;
+        }
     }
 }
 // === / ABOUT - PAGE ===

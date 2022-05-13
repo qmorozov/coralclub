@@ -69,8 +69,8 @@ input {
 button {
     padding: 0;
     margin: 0;
-    border: none !important;
-    outline: none !important;
+    border: none;
+    outline: none;
 }
 
 a {
@@ -377,8 +377,10 @@ body {
         width: rem(344px);
         height: rem(436px);
         padding: rem(16px);
+        visibility: hidden;
         background-color: rgb(255, 255, 255);
-        transform: rotateY(-180deg);
+        opacity: 0;
+        // transform: rotateY(-180deg);
 
         &-button {
             min-width: 100%;
@@ -398,8 +400,10 @@ body {
         width: rem(344px);
         height: rem(436px);
         padding: rem(16px);
+        visibility: visible;
         background-color: rgb(255, 255, 255);
-        transform: rotateY(0deg);
+        opacity: 1;
+        // transform: rotateY(0deg);
     }
 
     &__back-description {
@@ -424,9 +428,9 @@ body {
 }
 
 .product-card__flip {
-    position: relative;
-    transition: 0.4s;
-    transform-style: preserve-3d;
+    // position: relative;
+    // transition: 0.4s;
+    // transform-style: preserve-3d;
 }
 
 .product-card__front,
@@ -434,18 +438,22 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    backface-visibility: hidden;
+    // backface-visibility: hidden;
     transition: 0.6s;
-    transform-style: preserve-3d;
+    // transform-style: preserve-3d;
 }
 
 .product-card:hover {
     & .product-card__back {
-        transform: rotateY(0deg);
+        // transform: rotateY(0deg);
+        visibility: visible;
+        opacity: 1;
     }
 
     & .product-card__front {
-        transform: rotateY(-180deg);
+        // transform: rotateY(-180deg);
+        visibility: hidden;
+        opacity: 0;
     }
 }
 

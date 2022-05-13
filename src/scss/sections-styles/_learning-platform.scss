@@ -1,0 +1,53 @@
+// === LEARNING-PLATFORM ===
+.learning-platform {
+    height: rem(270px);
+
+    &-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: $red-light;
+    }
+
+    &__title {
+        margin-bottom: rem(46px);
+
+        &.title-wrapper {
+            padding-top: 0;
+        }
+
+        .title-wrapper__main {
+            color: white;
+        }
+    }
+
+    &__btn {
+        min-width: rem(322px);
+        padding: rem(15px) rem(40px);
+        margin: 0 auto;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 16px;
+        transition: $transition;
+
+        &-text {
+            font-size: 24px;
+            line-height: 28px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            transition: $transition;
+        }
+
+        &:hover {
+            background-color: white;
+
+            .learning-platform__btn-text {
+                color: $red-light;
+            }
+        }
+    }
+}
+// === / LEARNING-PLATFORM ===
