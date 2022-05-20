@@ -4,42 +4,28 @@
 }
 
 .reviews {
+    &-content {
+        padding: rem(61px) 0;
+        margin-top: rem(78px);
+        overflow: hidden;
+        background-color: white;
+    }
+
+    &-items {
+        flex-direction: column;
+        @include displayFlexCenter;
+    }
+
+    &__tab {
+        display: none;
+    }
+
     &__title {
         margin-bottom: rem(88px);
     }
 
     &-tag.mixitup-control-active {
         background-color: #bcfffb;
-    }
-}
-
-// === REVIEV ITEM ===
-
-.tag-items {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tag-item {
-    width: fit-content;
-    padding: rem(12px) rem(16px);
-    margin: 0 0 rem(7px) rem(7px);
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    cursor: pointer;
-    user-select: none;
-    background-color: white;
-    border: 1px solid #36414d !important;
-    transition: $transition;
-
-    &--inactive {
-        opacity: .5;
-    }
-
-    &:hover {
-        background-color: rgba(89, 252, 243, .2);
     }
 }
 
@@ -78,8 +64,8 @@
     }
 
     &__info {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: rem(16px);
+        line-height: rem(19px);
         color: black;
 
         &-name {
@@ -111,6 +97,41 @@
             margin-left: rem(13px);
         }
     }
+
+    &-pagination {
+        margin: rem(180px) auto 0;
+        text-align: center;
+    }
+}
+
+// === REVIEV ITEM ===
+
+.tag-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-item {
+    width: fit-content;
+    padding: rem(12px) rem(16px);
+    margin: 0 0 rem(7px) rem(7px);
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+    background-color: white;
+    border: 1px solid #36414d !important;
+    transition: $transition;
+
+    &--inactive {
+        opacity: .5;
+    }
+
+    &:hover {
+        background-color: rgba(89, 252, 243, .2);
+    }
 }
 
 // === REVIEWS - TABS ===
@@ -120,9 +141,9 @@
     margin-left: rem(7px);
 
     &__item {
-        padding: 12px 16px;
-        font-size: 14px;
-        line-height: 16px;
+        padding: rem(12px) rem(16px);
+        font-size: rem(14px);
+        line-height: rem(16px);
         color: $dark;
         text-transform: uppercase;
         cursor: pointer;
@@ -136,7 +157,11 @@
         }
 
         & + & {
-            margin-left: 16px;
+            margin-left: rem(16px);
+        }
+
+        &.active {
+            background-color: #59fcf3;
         }
     }
 
@@ -145,33 +170,8 @@
     }
 }
 
-.reviews__tab {
-    display: none;
-}
-
 .active-tab {
     display: block;
-}
-
-.reviews-tabs__item.active {
-    background-color: #59fcf3;
-}
-
-.reviews-content {
-    padding: 61px 0;
-    margin-top: 78px;
-    overflow: hidden;
-    background-color: white;
-}
-
-.reviews-items {
-    flex-direction: column;
-    @include displayFlexCenter;
-}
-
-.review-pagination {
-    margin: rem(180px) auto 0;
-    text-align: center;
 }
 
 // === / REVIEWS ===

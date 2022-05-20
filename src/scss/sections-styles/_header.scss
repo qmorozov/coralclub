@@ -289,40 +289,56 @@
     right: 0;
     left: 0;
     z-index: 9999;
-    padding: rem(20px) 0;
-    background-color: rgba(#e5e5e5, .8);
+    height: 30vh;
+    background-color: #fafafa;
     transition: $transition;
 
     &-form {
-        display: flex;
+        &__input-wrapper {
+            position: absolute;
+            top: rem(110px);
+            right: 0;
+            left: 0;
+        }
 
         &__input {
             width: 100%;
-            padding: rem(13px) rem(29px);
-            background-color: #d8d8d8;
-            border-radius: rem(5px);
+            padding: rem(5px) rem(30px);
+            font-size: rem(24px);
+            font-weight: 700;
+            line-height: rem(28px);
+            color: $dark;
+            text-transform: capitalize;
+            border-bottom: 1px solid #d9d9d9;
+
+            &::placeholder {
+                font-size: rem(24px);
+                font-weight: 300;
+                line-height: rem(28px);
+                color: #dddfe0;
+                text-transform: none;
+            }
         }
 
-        &__button {
-            width: rem(50px);
-            height: rem(43px);
-            margin-left: rem(20px);
+        &__info,
+        &__result {
+            margin: rem(21px) rem(30px) 0;
+            font-size: rem(14px);
+            font-weight: 300;
+            line-height: rem(16px);
+            color: $dark;
+        }
+
+        &__button-close {
+            position: absolute;
+            top: rem(18px);
+            right: rem(17px);
+            width: rem(24px);
+            height: rem(24px);
             cursor: pointer;
-            background-color: #d8d8d8;
-            border-radius: rem(5px);
-            transition: $transition;
-            object-fit: cover;
-            @include displayFlexCenter;
-
-            svg {
-                width: rem(17px);
-                height: rem(17px);
-                stroke: $dark;
-            }
-
-            &:hover {
-                background-color: darken(#d8d8d8, 5);
-            }
+            background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M21.6355 4.84323e-05L24 2.36452L2.36451 24L3.84437e-05 21.6355L21.6355 4.84323e-05Z' fill='%2336414D'/%3e%3cpath d='M0 2.36447L2.36447 0L24 21.6355L21.6355 24L0 2.36447Z' fill='%2336414D'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 
@@ -722,26 +738,6 @@
 
     .menu__list-item--mobile {
         @include mobileHeaderArrow;
-    }
-
-    .search-form {
-        &__input {
-            height: rem(30px);
-            padding: rem(10px);
-            font-size: rem(12px);
-            line-height: normal;
-        }
-
-        &__button {
-            width: rem(40px);
-            height: rem(30px);
-            margin-left: rem(10px);
-
-            svg {
-                width: rem(13px);
-                height: rem(13px);
-            }
-        }
     }
 
     .header--active {

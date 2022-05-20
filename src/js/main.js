@@ -1,27 +1,17 @@
 // === HEADER SEARCH FORN ===
+const searchForm = document.querySelector('.search')
 
-const serachButton = document.querySelector('.header-search__button'),
-    searchFormButton = document.querySelector('.search-form__button--close'),
-    searchWrapper = document.querySelector('.search');
-
-serachButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.querySelector('.search').classList.toggle('search--active')
+document.querySelector('.search__button').addEventListener('click', (e) => {
+    e.preventDefault()
+    searchForm.classList.add('search--active')
+    hideScroll()
 })
 
-searchFormButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    searchWrapper.classList.remove('search--active')
+document.querySelector('.search-form__button-close').addEventListener('click', (e) => {
+    e.preventDefault()
+    searchForm.classList.remove('search--active')
+    showScroll()
 })
-
-window.addEventListener('click', (e) => {
-    if (!e.target.closest('.search') && !e.target.closest('.header-search__button')) {
-        searchWrapper.classList.remove('search--active');
-    } else if (e.target.closest('.search-form__button--close')) {
-        e.preventDefault();
-        searchWrapper.classList.remove('search--active');
-    };
-});
 
 // === BURGER BTN ===
 
@@ -35,7 +25,7 @@ document.querySelector('.burger-btn').addEventListener('click', function (e) {
 window.addEventListener('click', (e) => {
     if (!e.target.closest('.header')) {
         header.classList.remove('header--active')
-        showScroll();
+        showScroll()
     } else {
         hideScroll()
     }
@@ -85,6 +75,39 @@ window.addEventListener('click', (e) => {
         cleansingDropDown.classList.remove('header-cleansing__dropdown--active');
     }
 })
+
+// === MOBILE HEADER ===
+
+if (window.innerWidth <= 1000) {
+    document.querySelectorAll('.dropdown__item-mobile').forEach(dropdownItem => {
+        org_dropdown = dropdownItem.innerHTML;
+        new_dropdown = "<div class='dropdown__item-mobile-wrapper'>" + org_dropdown + "</div>";
+        dropdownItem.innerHTML = new_dropdown;
+    })
+
+    const headerItem = document.querySelectorAll('.header__item')
+    document.querySelector('.header__inner').insertBefore(headerItem[0], headerItem[3]);
+    
+    
+    const wrapper = document.createElement('div')
+    
+    document.querySelectorAll('.header__item').forEach(headerItem => {
+        if (headerItem.classList.contains('header__item--mobile')) {
+            wrapper.className = 'header-top-mobile-wrapper'
+            headerItem.parentNode.insertBefore(wrapper, headerItem);
+            wrapper.appendChild(headerItem);
+        }
+    })
+    
+    document.querySelectorAll('.dropdown__item-mobile').forEach(item => {
+        const title = item.querySelector('.dropdown__item-title')     
+        
+        item.addEventListener('click', (e) => {
+            const titleParent = title.closest('.dropdown__item-mobile-wrapper')
+            titleParent.classList.toggle('dropdown__item-mobile--open')
+        })
+    })
+}
 
 // === SCROLL FUNCTION ===
 
@@ -223,39 +246,6 @@ const reviewsItemsMix = document.querySelector('.reviews-items');
 
 if (reviewsItemsMix) {
     const reviewsMixtUp = mixitup(".reviews-items");
-}
-
-// === MOBILE HEADER ===
-
-if (window.innerWidth <= 1000) {
-    document.querySelectorAll('.dropdown__item-mobile').forEach(dropdownItem => {
-        org_dropdown = dropdownItem.innerHTML;
-        new_dropdown = "<div class='dropdown__item-mobile-wrapper'>" + org_dropdown + "</div>";
-        dropdownItem.innerHTML = new_dropdown;
-    })
-
-    const headerItem = document.querySelectorAll('.header__item')
-    document.querySelector('.header__inner').insertBefore(headerItem[0], headerItem[3]);
-    
-    
-    const wrapper = document.createElement('div')
-    
-    document.querySelectorAll('.header__item').forEach(headerItem => {
-        if (headerItem.classList.contains('header__item--mobile')) {
-            wrapper.className = 'header-top-mobile-wrapper'
-            headerItem.parentNode.insertBefore(wrapper, headerItem);
-            wrapper.appendChild(headerItem);
-        }
-    })
-    
-    document.querySelectorAll('.dropdown__item-mobile').forEach(item => {
-        const title = item.querySelector('.dropdown__item-title')     
-        
-        item.addEventListener('click', (e) => {
-            const titleParent = title.closest('.dropdown__item-mobile-wrapper')
-            titleParent.classList.toggle('dropdown__item-mobile--open')
-        })
-    })
 }
 
 // === CUSTOM SELECT ===

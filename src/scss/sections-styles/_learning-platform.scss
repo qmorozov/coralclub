@@ -3,12 +3,10 @@
     height: rem(270px);
 
     &-inner {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         height: 100%;
         background-color: $red-light;
+        @include displayFlexCenter;
     }
 
     &__title {
