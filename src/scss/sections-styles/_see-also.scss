@@ -14,9 +14,6 @@
     }
 
     &__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: rem(586px);
         height: rem(236px);
         font-size: $fs-xl;
@@ -26,6 +23,7 @@
         background-size: cover;
         border-radius: rem(16px);
         transition: $transition;
+        @include displayFlexCenter;
 
         &:hover {
             box-shadow: rem(5px) rem(5px) rem(15px) rem(5px) rgba(0, 0, 0, 0.15);

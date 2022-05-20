@@ -1,11 +1,9 @@
 // === ENTRY ===
 .entry {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 242px;
     background-repeat: no-repeat;
     background-size: cover;
+    @include displayFlexCenter;
 
     &__title {
         font-size: rem(52px);

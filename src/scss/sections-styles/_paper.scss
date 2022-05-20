@@ -13,10 +13,8 @@
     }
 
     &__photo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: rem(96px) auto rem(27px);
+        @include displayFlexCenter;
 
         &--more {
             img {

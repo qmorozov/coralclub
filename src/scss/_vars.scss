@@ -7,6 +7,28 @@
     font-weight: $weight;
 }
 
+@mixin mobileHeaderArrow {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 50%;
+        width: 16px;
+        height: 13px;
+        content: '';
+        background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8 11.3136L14.364 4.94964L15.7782 6.36386L9.41421 12.7278L8 11.3136Z' fill='%2336414D'/%3e%3cpath d='M14.364 7.77817L8.00005 1.41421L9.41427 0L15.7782 6.36386L14.364 7.77817Z' fill='%2336414D'/%3e%3cpath d='M14 7.00001H0V5.00001H14V7.00001Z' fill='%2336414D'/%3e%3c/svg%3e");
+        transform: translateY(-50%);
+    }
+}
+
+@mixin displayFlexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 //@mixin img ($width, $height) {
 //    width: $width;
 //    max-width: 100%;
