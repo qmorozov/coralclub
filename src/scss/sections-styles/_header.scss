@@ -455,6 +455,10 @@
     }
 }
 
+.dropdown__item-list-title-wrapper {
+    display: none;
+}
+
 // === HEADER RESPONSE ===
 
 @media (max-width: rem(1440px)) {
@@ -680,7 +684,6 @@
             }
 
             &-point {
-                display: none;
                 margin: 0;
 
                 & + & {
@@ -761,5 +764,54 @@
         .header-top-mobile-wrapper {
             height: 80vh;
         }
+    }
+
+    .dropdown__item-list-title-wrapper {
+        display: flex;
+        align-items: center;
+        height: rem(75px);
+        padding: 0 rem(22px);
+        cursor: pointer;
+        user-select: none;
+        background-color: #fafafa;
+    }
+
+    .dropdown__item-list-title {
+        position: relative;
+        padding-left: rem(26px);
+        font-size: rem(12px);
+        font-weight: 700;
+        line-height: rem(14px);
+        color: #c4c4c4;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            left: 0;
+            width: rem(16px);
+            height: rem(13px);
+            content: '';
+            background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M7.77808 11.3136L1.41412 4.94964L-9.72748e-05 6.36386L6.36386 12.7278L7.77808 11.3136Z' fill='%23C4C4C4'/%3e%3cpath d='M1.41406 7.77817L7.77802 1.41421L6.36381 0L-9.72748e-05 6.36386L1.41406 7.77817Z' fill='%23C4C4C4'/%3e%3cpath d='M1.77808 7.00001H15.7781V5.00001H1.77808V7.00001Z' fill='%23C4C4C4'/%3e%3c/svg%3e ");
+            transform: translateY(-50%);
+        }
+    }
+
+    .dropdown__item-list-wrapper {
+        position: absolute;
+        top: -130%;//56
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        max-height: 100vh;
+        overflow-y: scroll;
+        background-color: white;
+        transition: $transition;
+    }
+
+    .dropdown__item-list-wrapper.dropdown__item-list-wrapper--active {
+        top: 0;
     }
 }
