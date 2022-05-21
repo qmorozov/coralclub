@@ -23,3 +23,35 @@
     }
 }
 // === / TEAM ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1400px)) {
+    .team__item {
+        height: rem(310px);
+    }
+}
+
+@media (max-width: rem(1000px)) {
+    .team {
+        .title-wrapper {
+            padding-top: rem(80px);
+        }
+
+        &__items {
+            flex-direction: column;
+            margin-top: rem(42px);
+        }
+
+        &__item {
+            width: 100%;
+            height: rem(418px);
+        }
+    }
+}
+
+@media (max-width: rem(450px)) {
+    .team__item {
+        height: rem(232px);
+    }
+}
