@@ -27,12 +27,12 @@
         margin: 0 auto;
         cursor: pointer;
         border: 1px solid #fff;
-        border-radius: 16px;
+        border-radius: rem(16px);
         transition: $transition;
 
         &-text {
-            font-size: 24px;
-            line-height: 28px;
+            font-size: rem(24px);
+            line-height: rem(28px);
             color: white;
             text-align: center;
             text-transform: uppercase;
@@ -49,3 +49,30 @@
     }
 }
 // === / LEARNING-PLATFORM ===
+
+// === MEDIA ===
+
+@media (max-width: rem(600px)) {
+    .learning-platform {
+        height: rem(298px);
+
+        &__title {
+            margin-bottom: rem(65px);
+        }
+
+        .title-wrapper__main {
+            font-size: rem(30px);
+            line-height: rem(30px);
+        }
+
+        &__btn {
+            min-width: rem(260px);
+            padding: rem(10px);
+
+            &-text {
+                font-size: rem(18px);
+                line-height: rem(21px);
+            }
+        }
+    }
+}
