@@ -84,40 +84,43 @@ window.addEventListener('click', (e) => {
 
 // === MOBILE HEADER ===
 
-if (window.innerWidth <= 1000) {
-    document.querySelectorAll('.dropdown__item-mobile').forEach(dropdownItem => {
-        org_dropdown = dropdownItem.innerHTML;
-        new_dropdown = "<div class='dropdown__item-mobile-wrapper'>" + org_dropdown + "</div>";
-        dropdownItem.innerHTML = new_dropdown;
-    })
-
-    const headerItem = document.querySelectorAll('.header__item')
-    document.querySelector('.header__inner').insertBefore(headerItem[0], headerItem[3]);
-    
-    
-    const wrapper = document.createElement('div')
-    
-    document.querySelectorAll('.header__item').forEach(headerItem => {
-        if (headerItem.classList.contains('header__item--mobile')) {
-            wrapper.className = 'header-top-mobile-wrapper'
-            headerItem.parentNode.insertBefore(wrapper, headerItem);
-            wrapper.appendChild(headerItem);
-        }
-    })
-
-    document.querySelectorAll('.dropdown__item-title').forEach(item => {
-        console.log(item.nextSibling);
-        item.addEventListener('click', () => {
-            item.nextSibling.classList.add('dropdown__item-list-wrapper--active')
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 1000) {
+        document.querySelectorAll('.dropdown__item-mobile').forEach(dropdownItem => {
+            org_dropdown = dropdownItem.innerHTML;
+            new_dropdown = "<div class='dropdown__item-mobile-wrapper'>" + org_dropdown + "</div>";
+            dropdownItem.innerHTML = new_dropdown;
         })
-    })
-
-    document.querySelectorAll('.dropdown__item-list-title-wrapper').forEach(item => {
-        item.addEventListener('click', () => {
-            item.closest('.dropdown__item-list-wrapper').classList.remove('dropdown__item-list-wrapper--active')
+    
+        const headerItem = document.querySelectorAll('.header__item')
+        document.querySelector('.header__inner').insertBefore(headerItem[0], headerItem[3]);
+        
+        
+        const wrapper = document.createElement('div')
+        
+        document.querySelectorAll('.header__item').forEach(headerItem => {
+            if (headerItem.classList.contains('header__item--mobile')) {
+                wrapper.className = 'header-top-mobile-wrapper'
+                headerItem.parentNode.insertBefore(wrapper, headerItem);
+                wrapper.appendChild(headerItem);
+            }
         })
-    })
-}
+    
+        document.querySelectorAll('.dropdown__item-title').forEach(item => {
+            console.log(item.nextSibling);
+            item.addEventListener('click', () => {
+                item.nextSibling.classList.add('dropdown__item-list-wrapper--active')
+            })
+        })
+    
+        document.querySelectorAll('.dropdown__item-list-title-wrapper').forEach(item => {
+            item.addEventListener('click', () => {
+                item.closest('.dropdown__item-list-wrapper').classList.remove('dropdown__item-list-wrapper--active')
+            })
+        })
+    }
+})
+
 
 // === SCROLL FUNCTION ===
 
