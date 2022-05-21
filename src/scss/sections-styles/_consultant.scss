@@ -57,3 +57,105 @@
     }
 }
 // === / CONSULTANT ===
+
+// === MEDIA ===
+
+@media (max-width: 1400px) {
+    .consultant {
+        &-photo {
+            width: rem(454px);
+            height: rem(502px);
+        }
+
+        &-info {
+            max-width: rem(572px);
+        }
+    }
+}
+
+@media (max-width: rem(1100px)) {
+    .consultant-info {
+        max-width: rem(450px);
+    }
+}
+
+@media (max-width: rem(1000px)) {
+    .consultant {
+        margin-bottom: rem(80px);
+
+        &-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-info {
+            margin-top: rem(72px);
+            text-align: center;
+
+            &__title {
+                margin-bottom: rem(40px);
+                font-size: rem(48px);
+                line-height: rem(56px);
+            }
+
+            &__social {
+                justify-content: space-between;
+                width: 100%;
+                margin: rem(56px) auto 0;
+
+                .social__item {
+                    width: rem(80px);
+                    height: rem(80px);
+                }
+            }
+
+            &__description {
+                margin-top: rem(40px);
+                font-size: rem(16px);
+                line-height: rem(19px);
+                text-align: left;
+            }
+
+            &__btn {
+                margin-top: rem(40px);
+            }
+        }
+    }
+}
+
+@media (max-width: rem(500px)) {
+    .consultant {
+        &-photo {
+            width: rem(320px);
+            height: rem(319px);
+        }
+
+        &-info {
+            margin-top: rem(32px);
+
+            &__title {
+                margin-bottom: rem(10px);
+                font-size: rem(32px);
+                line-height: rem(38px);
+            }
+
+            .social__item {
+                width: rem(64px);
+                height: rem(64px);
+            }
+    
+            &__social {
+                margin-top: rem(32px);
+            }
+    
+            &__description {
+                margin-top: rem(28px);
+            }
+    
+            &__btn {
+                margin-top: rem(45px);
+            }
+        }
+
+    }
+}
