@@ -463,6 +463,27 @@ body {
     }
 }
 
+@media (max-width: rem(1440px)) {
+    .product-card {
+        width: rem(327px);
+        height: rem(415px);
+
+        &__front,
+        &__back {
+            padding: rem(14px);
+        }
+
+        &__img {
+            max-width: rem(255px);
+            max-height: rem(189px);
+        }
+
+        &__content {
+            margin-top: rem(70px);
+        }
+    }
+}
+
 // === TEXT ===
 
 .text {

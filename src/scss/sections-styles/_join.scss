@@ -22,3 +22,18 @@
     }
 }
 // === / JOIN ===
+
+// === MEDIA ===
+
+@media (max-width: rem(700px)) {
+    .join {
+        height: rem(320px);
+
+        &__button {
+            min-width: rem(272px);
+            padding: 10px;
+            font-size: rem(22px);
+            line-height: rem(26px);
+        }
+    }
+}
