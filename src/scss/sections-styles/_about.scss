@@ -63,3 +63,52 @@
     }
 }
 // === / ABOUT ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1000px)) {
+    .about {
+        .title-wrapper__text {
+            max-width: 100%;
+            margin-top: rem(15px);
+        }
+
+        &__content {
+            background: none;
+        }
+
+        &__items {
+            padding: rem(80px) 0 rem(134px);
+        }
+
+        &__item {
+            max-width: rem(150px);
+            min-height: rem(128px);
+            margin-bottom: rem(67px);
+
+            &-number {
+                font-size: rem(100px);
+                line-height: rem(100px);
+            }
+
+            &-text {
+                margin-top: rem(18px);
+                font-size: rem(16px);
+                line-height: rem(19px);
+            }
+        }
+    }
+}
+
+@media (max-width: rem(550px)) {
+    .about {
+        &-inner {
+            background: url('../images/content/map.webp') center center / cover no-repeat;
+        }
+
+        &__items {
+            padding: rem(41px) 0 rem(51px);
+            column-count: 2;
+        }
+    }
+}
