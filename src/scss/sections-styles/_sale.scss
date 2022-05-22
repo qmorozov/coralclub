@@ -20,11 +20,40 @@
 
 // === MEDIA ===
 
-@media (max-width: 1440px) {
+@media (max-width: rem(1440px)) {
     .sale {
         &__items {
-            // grid-template-columns: repeat(3, 1fr);
-            // grid-row-gap: rem(25px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: rem(40px);
+        }
+    }
+}
+
+@media (max-width: rem(1100px)) {
+    .sale {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: rem(50px);
+        }
+
+        &__top {
+            margin-bottom: rem(27px);
+        }
+
+        .product-card {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: rem(720px)) {
+    .sale {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item:not(:nth-child(-n+3)) {
+            display: none;
         }
     }
 }
