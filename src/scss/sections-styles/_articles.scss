@@ -25,7 +25,7 @@
 .articles-slider {
     position: relative;
     max-width: rem(1596px);
-    padding-bottom: rem(55px);
+    padding: 0 rem(20px) rem(56px);
     margin-bottom: rem(59px);
     overflow: hidden;
 
@@ -44,13 +44,13 @@
 .article-item {
     display: block;
     width: 100%;
-    max-width: rem(370px);
-    min-height: rem(437px);
+    width: rem(370px);
+    // min-height: rem(437px);
     background-color: white;
     transition: $transition;
 
     &__photo {
-        max-width: rem(370px);
+        width: 100%;
         height: rem(310px);
         margin-bottom: rem(46px);
 
@@ -86,3 +86,66 @@
     }
 }
 // === / ARTICLES ===
+
+// === MEDIA ===
+
+@media (max-width: 1440px) {
+    .articles {
+        &-slider {
+            max-width: rem(1163px);
+            padding-bottom: rem(80px);
+            margin: 0 auto;
+        }
+
+        &__btn {
+            margin-top: rem(59px);
+        }
+    }
+
+    .article-item {
+        max-width: rem(334px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .articles-slider {
+        max-width: rem(728px);
+        padding-bottom: rem(50px);
+    }
+}
+
+@media (max-width: 768px) {
+    .articles {
+        padding-bottom: rem(50px);
+
+        &-slider {
+            max-width: rem(700px);
+        }
+
+        &-top {
+            margin-bottom: rem(45px);
+        }
+
+        &__btn {
+            margin-top: rem(30px);
+        }
+
+        & .title-wrapper {
+            padding-top: rem(45px);
+        }
+    }
+
+    .article-item {
+        max-width: rem(331px);
+    }
+}
+
+@media (max-width: 650px) {
+    .articles-slider {
+        max-width: rem(350px);
+    }
+
+    .article-item {
+        max-width: rem(320px);
+    }
+}
