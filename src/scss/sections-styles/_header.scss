@@ -592,6 +592,7 @@
         }
 
         &__list-item {
+            font-size: rem(12px);
             color: $dark;
             text-align: left;
 
@@ -636,6 +637,10 @@
             }
         }
 
+        &-item {
+            font-size: rem(12px);
+        }
+
         &-item + &-item {
             margin: 0;
         }
@@ -667,6 +672,7 @@
         &__item {
             max-width: 100%;
             margin: 0;
+            font-size: rem(12px);
             color: $dark;
             cursor: pointer;
             user-select: none;
@@ -695,6 +701,7 @@
             &-link {
                 position: relative;
                 padding: rem(24px) rem(20px) rem(25px) rem(20px);
+                font-size: rem(12px);
 
                 &::before {
                     position: absolute;
