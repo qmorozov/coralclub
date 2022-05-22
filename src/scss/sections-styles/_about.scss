@@ -107,8 +107,24 @@
         }
 
         &__items {
-            padding: rem(41px) 0 rem(51px);
+            // padding: rem(41px) 0 rem(51px);
+            padding: rem(41px) 0 0;
             column-count: 2;
+        }
+    }
+}
+
+@media (max-width: rem(360px)) {
+    .about {
+        &__item {
+            &-number {
+                font-size: rem(90px);
+                line-height: rem(90px);
+            }
+
+            &-text {
+                margin-top: rem(13px);
+            }
         }
     }
 }

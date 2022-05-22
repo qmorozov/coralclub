@@ -262,6 +262,17 @@ body {
     }
 }
 
+@media (max-width: rem(400px)) {
+    .btn {
+        min-width: rem(266px);
+
+        & .btn__text {
+            font-size: rem(18px);
+            line-height: rem(21px);
+        }
+    }
+}
+
 // === LOGO ===
 
 .logo {
@@ -482,6 +493,13 @@ body {
         &__content {
             margin-top: rem(70px);
         }
+    }
+}
+
+@media (max-width: rem(360px)) {
+    .product-card {
+        width: rem(300px);
+        height: rem(400px);
     }
 }
 

@@ -15,6 +15,12 @@
         grid-column-gap: rem(20px);
         justify-content: center;
     }
+
+    &__btn {
+        display: none;
+        justify-content: center;
+        margin: rem(80px) auto 0;
+    }
 }
 // === / SALE ===
 
@@ -31,6 +37,8 @@
 
 @media (max-width: rem(1100px)) {
     .sale {
+        padding: 0 0 rem(75px);
+
         &__items {
             grid-template-columns: repeat(2, 1fr);
             grid-row-gap: rem(50px);
@@ -42,6 +50,10 @@
 
         .product-card {
             margin: 0 auto;
+        }
+
+        &__btn {
+            display: flex;
         }
     }
 }
