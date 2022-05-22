@@ -762,7 +762,7 @@
         }
 
         .header-top-mobile-wrapper {
-            height: 80vh;
+            height: calc(100vh - 57px);
         }
     }
 
