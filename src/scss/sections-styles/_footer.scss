@@ -55,3 +55,47 @@
     }
 }
 // === / FOOTER ===
+
+// === MEDIA ===
+
+@media (max-width: rem(700px)) {
+    .footer {
+        &__menu {
+            padding: rem(44px) 0 0 0;
+
+            &-items {
+                display: block;
+                column-count: 2;
+            }
+
+            &-item {
+                margin-bottom: rem(60px);
+            }
+        }
+
+        &__bottom {
+            padding: 18px 0 36px;
+
+            &-text {
+                display: none;
+                font-size: 14px;
+                line-height: 16px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: rem(400px)) {
+    .footer {
+        &__menu {
+            &-items {
+                column-count: 1;
+            }
+
+            &-item {
+                margin-bottom: rem(50px);
+            }
+        }
+    }
+}
