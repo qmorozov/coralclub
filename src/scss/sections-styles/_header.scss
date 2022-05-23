@@ -149,15 +149,18 @@
 
 .dropdown {
     position: absolute;
-    top: -1000%;
+    // top: -1000%;
+    top: rem(217px);
     right: 0;
     left: 0;
     z-index: -1;
-    max-height: 66vh;
+    // max-height: 66vh;
+    max-height: 0;
     overflow: auto;
     background-color: $white;
-    opacity: 0;
+    // opacity: 0;
     transition: all 0.5s ease-in-out;
+    transition-delay: overflow 0.6s;
 
     &__items {
         column-count: 4;
@@ -227,8 +230,9 @@
 
 .header-catalog__dropdown--active,
 .header-cleansing__dropdown--active {
-    top: rem(217px);
-    opacity: 1;
+    // top: rem(217px);
+    // opacity: 1;
+    max-height: 66vh;
 }
 
 .header-cleansing {
@@ -237,7 +241,7 @@
     }
 
     .dropdown__item-point {
-        list-style: auto;
+        list-style: none;
     }
 }
 
@@ -289,7 +293,7 @@
     right: 0;
     left: 0;
     z-index: 9999;
-    height: 40vh;
+    height: 100vh;
     padding-bottom: rem(30px);
     background-color: #fafafa;
     transition: $transition;
@@ -649,7 +653,8 @@
 
     .dropdown {
         position: absolute;
-        top: -130%;//56
+        // top: -130%;//56
+        top: -100vh;//56
         right: 0;
         bottom: 0;
         left: 0;

@@ -36,6 +36,7 @@ window.addEventListener('click', (e) => {
 
 const catalogDropDown = document.querySelector('.header-catalog');
 const cleansingDropDown = document.querySelector('.header-cleansing');
+const dropdown = document.querySelector('.dropdown');
 
 document.querySelector('.menu__list-item-link--catalog').addEventListener('click', (e) => {
     e.preventDefault();
@@ -167,48 +168,6 @@ let introSlider = new Swiper(".intro__slider", {
         delay: 7000,
     },
     grabCursor: true,
-});
-
-// === ABOUT NUMBER ANIMATION ===
-
-let cetrificateNumber = document.querySelector('.about__item-number---certificates');
-
-document.querySelectorAll('.about__item-number').forEach(number => {
-
-    if (!number.classList.contains('about__item-number---certificates')) {
-        let numberTop = number.getBoundingClientRect().top - 300,
-            start = +number.innerHTML,
-            end = +number.dataset.max;
-
-        window.addEventListener('scroll', function onScroll() {
-            if (window.pageYOffset > numberTop - window.innerHeight / 2) {
-                this.removeEventListener('scroll', onScroll);
-                let interval = setInterval(function () {
-                    number.innerHTML = ++start;
-                    if (start == end) {
-                        clearInterval(interval);
-                    }
-                }, 56);
-            }
-        });
-    } else {
-        let numberTop = number.getBoundingClientRect().top - 300,
-            start = +number.innerHTML,
-            end = +number.dataset.max;
-
-        window.addEventListener('scroll', function onScroll() {
-            if (window.pageYOffset > numberTop - window.innerHeight / 2) {
-                this.removeEventListener('scroll', onScroll);
-                let interval = setInterval(function () {
-                    number.innerHTML = ++start;
-                    if (start == end) {
-                        clearInterval(interval);
-                    }
-                }, 0);
-            }
-        });
-    }
-
 });
 
 // === ARTICLES - SLIDER ===
