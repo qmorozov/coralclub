@@ -506,9 +506,16 @@ body {
 // === TEXT ===
 
 .text {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: rem(20px);
+    line-height: rem(35px);
     color: #707070;
+}
+
+@media (max-width: rem(500px)) {
+    .text {
+        font-size: rem(16px);
+        line-height: rem(19px);
+    }
 }
 
 // === PAGINATION ===

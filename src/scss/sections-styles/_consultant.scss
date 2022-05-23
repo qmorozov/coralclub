@@ -123,11 +123,24 @@
     }
 }
 
+@media (max-width: rem(800px)) {
+    .consultant-photo {
+        width: 100%;
+        height: rem(650px);
+    }
+}
+
 @media (max-width: rem(500px)) {
     .consultant {
         &-photo {
-            width: rem(320px);
-            height: rem(319px);
+            width: 100%;
+            max-width: rem(720px);
+            height: 100%;
+            max-height: rem(650px);
+        }
+
+        &__title {
+            margin-bottom: rem(45px);
         }
 
         &-info {
@@ -156,5 +169,11 @@
                 margin-top: rem(45px);
             }
         }
+    }
+}
+
+@media (max-width: rem(400px)) {
+    .consultant-info {
+        font-size: rem(20px);
     }
 }

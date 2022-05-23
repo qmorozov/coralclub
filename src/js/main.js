@@ -1,3 +1,4 @@
+// window.onload = function () {}
 // === HEADER SEARCH FORN ===
 const searchForm = document.querySelector('.search')
 

@@ -42,3 +42,34 @@
     }
 }
 // === / ABOUT - PAGE ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1000px)) {
+    .about-page {
+        &-top__text {
+            margin-top: rem(40px);
+        }
+
+        &-history {
+            margin-top: rem(40px);
+        }
+    }
+
+    .about--page .about__items {
+        padding: 0;
+    }
+}
+
+@media (max-width: rem(800px)) {
+    .about-page__video {
+        height: rem(286px);
+        margin-top: rem(40px);
+    }
+}
+
+@media (max-width: rem(400px)) {
+    .about-page__video {
+        height: rem(160px);
+    }
+}
