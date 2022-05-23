@@ -9,7 +9,7 @@
         right: 50%;
         left: 50%;
         width: rem(1216px);
-        height: 721px;
+        height: rem(721px);
         content: '';
         background: url('../images/content/map.webp') top center / cover no-repeat;
         transform: translateX(-50%);
@@ -25,3 +25,19 @@
 }
 
 // === / DELIVERY-AND-PAYMENT ===
+
+// === MEDIA ===
+
+@media (max-width: rem(950px)) {
+    .delivery-and-payment {
+        padding-top: rem(40px);
+
+        .title-wrapper {
+            padding-top: rem(35px);
+        }
+
+        &__text {
+            margin-top: rem(40px);
+        }
+    }
+}
