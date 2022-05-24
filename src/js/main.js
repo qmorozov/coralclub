@@ -36,29 +36,26 @@ window.addEventListener('click', (e) => {
 
 const catalogDropDown = document.querySelector('.header-catalog');
 const cleansingDropDown = document.querySelector('.header-cleansing');
-const dropdown = document.querySelector('.dropdown');
 
-document.querySelector('.menu__list-item-link--catalog').addEventListener('click', (e) => {
-    e.preventDefault();
-    catalogDropDown.classList.toggle('header-catalog__dropdown--active');
-});
-
-document.querySelector('.menu__list-item-link--cleansing').addEventListener('click', (e) => {
-    e.preventDefault();
-    cleansingDropDown.classList.toggle('header-cleansing__dropdown--active');
-});
-
-window.addEventListener('click', () => {
-    if (cleansingDropDown.classList.contains('header-cleansing__dropdown--active')) {
-        hideScroll();
-    } else {
-        showScroll();
+window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('menu__list-item-link--catalog')) {
+        catalogDropDown.classList.toggle('header-catalog__dropdown--active')
+    } else if (!e.target.closest('.dropdown')) {
+        catalogDropDown.classList.remove('header-catalog__dropdown--active')
     }
 
-    if (catalogDropDown.classList.contains('header-catalog__dropdown--active')) {
-        hideScroll();
-    } else {
-        showScroll();
+    if (e.target.classList.contains('menu__list-item-link--cleansing')) {
+        cleansingDropDown.classList.toggle('header-cleansing__dropdown--active')
+    } else if (!e.target.closest('.dropdown')) {
+        cleansingDropDown.classList.remove('header-cleansing__dropdown--active')
+    }
+
+    if (!catalogDropDown.classList.contains('header-catalog__dropdown--active')) {
+        showScroll()
+    }
+    
+    if (!cleansingDropDown.classList.contains('header-cleansing__dropdown--active')) {
+        showScroll()
     }
 })
 
@@ -69,6 +66,19 @@ const resetNav = () => {
 }
 
 window.addEventListener('resize', resetNav);
+
+const resizeObserver = new ResizeObserver(items => {
+    for (let item of items) {
+        if (item.target.clientHeight < 619) {
+            item.target.style.overflow = 'hidden';
+        } else {
+            item.target.style.overflow = 'auto'
+        }
+    }
+})
+
+resizeObserver.observe(cleansingDropDown);
+resizeObserver.observe(catalogDropDown);
 
 // === DROPDOWN MOBILE ===
 

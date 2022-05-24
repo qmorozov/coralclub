@@ -159,8 +159,7 @@
     overflow: auto;
     background-color: $white;
     // opacity: 0;
-    transition: all 0.5s ease-in-out;
-    transition-delay: overflow 0.6s;
+    transition: all .5s ease-in-out;
 
     &__items {
         column-count: 4;
