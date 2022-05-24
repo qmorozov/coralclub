@@ -53,7 +53,7 @@ window.addEventListener('click', (e) => {
     if (!catalogDropDown.classList.contains('header-catalog__dropdown--active')) {
         showScroll()
     }
-    
+
     if (!cleansingDropDown.classList.contains('header-cleansing__dropdown--active')) {
         showScroll()
     }
@@ -67,18 +67,19 @@ const resetNav = () => {
 
 window.addEventListener('resize', resetNav);
 
-const resizeObserver = new ResizeObserver(items => {
-    for (let item of items) {
-        if (item.target.clientHeight < 619) {
-            item.target.style.overflow = 'hidden';
-        } else {
-            item.target.style.overflow = 'auto'
-        }
-    }
-})
+// const resizeObserver = new ResizeObserver(items => {
+//     for (let item of items) {
+//         console.log(item.target.offsetHeight);
+//         if (item.target.clientHeight < item.target.offsetHeight) {
+//             item.target.style.overflow = 'hidden';
+//         } else {
+//             item.target.style.overflow = 'auto'
+//         }
+//     }
+// })
 
-resizeObserver.observe(cleansingDropDown);
-resizeObserver.observe(catalogDropDown);
+// resizeObserver.observe(cleansingDropDown);
+// resizeObserver.observe(catalogDropDown);
 
 // === DROPDOWN MOBILE ===
 

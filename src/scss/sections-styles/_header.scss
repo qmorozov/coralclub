@@ -161,6 +161,10 @@
     // opacity: 0;
     transition: all .5s ease-in-out;
 
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
     &__items {
         column-count: 4;
         max-width: rem(1160px);
