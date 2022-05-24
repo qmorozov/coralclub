@@ -132,10 +132,11 @@
 
 .reviews-tabs {
     display: flex;
-    margin-left: rem(7px);
+    margin-left: rem(-13px);
 
     &__item {
         padding: rem(12px) rem(16px);
+        margin-left: rem(14px);
         font-size: rem(14px);
         line-height: rem(16px);
         color: $dark;
@@ -157,6 +158,7 @@
 
     &__content {
         margin-top: rem(24px);
+        margin-left: -7px;
     }
 }
 
@@ -181,6 +183,10 @@
         &-tabs {
             flex-wrap: wrap;
             white-space: nowrap;
+
+            &__content {
+                margin-left: rem(-10px);
+            }
         }
 
         &-content {
