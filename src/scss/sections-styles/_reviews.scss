@@ -5,7 +5,7 @@
 
 .reviews {
     &-content {
-        padding: rem(61px) 0;
+        padding: rem(61px) rem(20px);
         margin-top: rem(78px);
         overflow: hidden;
         background-color: white;
@@ -92,10 +92,6 @@
         &__item {
             cursor: auto;
         }
-
-        &__item + &__item {
-            margin-left: rem(13px);
-        }
     }
 
     &-pagination {
@@ -106,15 +102,13 @@
 
 // === REVIEV ITEM ===
 
-.tag-items {
-    display: flex;
-    flex-wrap: wrap;
-}
+// .tag-items {}
 
 .tag-item {
+    display: inline-block;
     width: fit-content;
     padding: rem(12px) rem(16px);
-    margin: 0 0 rem(7px) rem(7px);
+    margin: rem(6px);
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
@@ -156,10 +150,6 @@
             background-color: rgba(#59fcf3, .2);
         }
 
-        & + & {
-            margin-left: rem(16px);
-        }
-
         &.active {
             background-color: #59fcf3;
         }
@@ -175,3 +165,59 @@
 }
 
 // === / REVIEWS ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1000px)) {
+    .reviews {
+        &__title {
+            margin-bottom: rem(40px);
+
+            &.title-wrapper {
+                padding-top: rem(40px);
+            }
+        }
+
+        &-tabs {
+            flex-wrap: wrap;
+            white-space: nowrap;
+        }
+
+        &-content {
+            padding-top: rem(40px);
+        }
+
+        &-tabs__item {
+            margin: 7px;
+        }
+    }
+
+    .review {
+        &::before {
+            width: 100%;
+        }
+
+        & + & {
+            margin-top: rem(40px);
+        }
+
+        &-tags {
+            margin-top: rem(27px);
+        }
+
+        &__photo {
+            width: rem(38px);
+            height: rem(38px);
+        }
+
+        &-tags__item {
+            padding: rem(7px) rem(4px);
+            font-size: rem(10px);
+            line-height: rem(8px);
+        }
+
+        &-pagination {
+            margin-top: rem(80px);
+        }
+    }
+}
