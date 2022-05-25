@@ -175,6 +175,9 @@
     &__mobile-title {
         position: relative;
         display: none;
+        align-items: center;
+        width: 100%;
+        height: 100%;
         padding-left: rem(26px);
         font-size: rem(12px);
         font-weight: 700;
@@ -498,9 +501,12 @@
     }
 
     .header-mobile-wrapper,
-    .burger-btn,
-    .dropdown__mobile-title {
+    .burger-btn {
         display: block;
+    }
+
+    .dropdown__mobile-title {
+        display: flex;
     }
 
     .logo {

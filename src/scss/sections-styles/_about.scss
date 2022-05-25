@@ -89,6 +89,10 @@
             background: url('../images/content/map.webp') center center / cover no-repeat;
         }
 
+        &__content {
+            background: none;
+        }
+
         &__items {
             padding: rem(80px) 0 rem(134px);
         }
