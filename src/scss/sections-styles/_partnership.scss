@@ -21,10 +21,14 @@
         }
     }
 
-    &-list__item {
-        font-size: rem(20px);
-        line-height: rem(23px);
-        list-style: disc;
+    &-list {
+        margin-left: rem(20px);
+
+        &__item {
+            font-size: rem(20px);
+            line-height: rem(23px);
+            list-style: disc;
+        }
     }
 }
 
@@ -121,3 +125,96 @@
     }
 }
 // === / PARTNERSHIP ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1100px)) {
+    .partnership__item-photo {
+        width: rem(400px);
+        height: rem(400px);
+    }
+}
+
+@media (max-width: rem(900px)) {
+    .partnership {
+        &__item {
+            & + & {
+                margin-top: rem(40px);
+            }
+
+            &-photo {
+                width: rem(350px);
+                height: rem(350px);
+            }
+
+            &-title {
+                font-size: rem(30px);
+                line-height: rem(30px);
+
+                &-wrapper {
+                    min-width: rem(164px);
+                    padding: rem(11px);
+                }
+            }
+
+            &-subtitle {
+                font-size: rem(30px);
+                line-height: rem(30px);
+
+                &-wrapper {
+                    margin-top: rem(39px);
+                }
+
+                &-wrapper--bg {
+                    min-width: rem(230px);
+                    margin-top: rem(10px);
+                }
+            }
+
+            &-text {
+                margin-top: rem(40px);
+                font-size: rem(16px);
+                line-height: rem(19px);
+            }
+        }
+
+        &-items {
+            margin: rem(40px) 0 rem(80px);
+        }
+    }
+
+    .partnership-features {
+        &__item {
+            &-img {
+                margin-right: rem(58px);
+            }
+
+            &-text {
+                font-size: rem(16px);
+                line-height: rem(19px);
+            }
+        }
+    }
+}
+
+@media (max-width: rem(780px)) {
+    .partnership__item-photo {
+        width: rem(280px);
+        height: rem(280px);
+    }
+}
+
+@media (max-width: rem(650px)) {
+    .partnership {
+        &__item {
+            &-photo {
+                display: none;
+            }
+
+            &-info {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+}
