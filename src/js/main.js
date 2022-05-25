@@ -84,10 +84,6 @@ window.addEventListener('resize', resetNav);
 // === DROPDOWN MOBILE ===
 
 window.addEventListener('click', (e) => {
-    const newItem = e.target;
-
-    console.log(newItem);
-
     if (e.target.classList.contains('dropdown__mobile-title--catalog')) {
         catalogDropDown.classList.remove('header-catalog__dropdown--active');
         showScroll();
