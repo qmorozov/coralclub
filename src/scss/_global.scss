@@ -125,6 +125,10 @@ body {
     margin: 0 auto;
 }
 
+.text-link {
+    color: lighten($dark, 30%);
+}
+
 // === TITLE ===
 
 .title-wrapper {
