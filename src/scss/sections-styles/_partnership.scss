@@ -1,7 +1,7 @@
 // === PARTNERSHIP ===
 .partnership {
     &-items {
-        margin: rem(175px) 0 rem(182px);
+        margin: rem(80px) 0 rem(182px);
     }
 
     &__button {
@@ -11,14 +11,6 @@
 
     &-info {
         margin-top: rem(97px);
-    }
-
-    &__title {
-        margin: rem(40px) 0;
-
-        &.title-wrapper {
-            padding: 0;
-        }
     }
 
     &-list {
@@ -183,16 +175,14 @@
         }
     }
 
-    .partnership-features {
-        &__item {
-            &-img {
-                margin-right: rem(58px);
-            }
+    .partnership-features__item {
+        &-img {
+            margin-right: rem(58px);
+        }
 
-            &-text {
-                font-size: rem(16px);
-                line-height: rem(19px);
-            }
+        &-text {
+            font-size: rem(16px);
+            line-height: rem(19px);
         }
     }
 }
@@ -205,16 +195,14 @@
 }
 
 @media (max-width: rem(650px)) {
-    .partnership {
-        &__item {
-            &-photo {
-                display: none;
-            }
+    .partnership__item {
+        &-photo {
+            display: none;
+        }
 
-            &-info {
-                width: 100%;
-                margin-left: 0;
-            }
+        &-info {
+            width: 100%;
+            margin-left: 0;
         }
     }
 }

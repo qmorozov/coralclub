@@ -16,10 +16,8 @@
         background-size: 100% 100%;
         transition: background-size 0.5s ease;
 
-        @media (any-hover: hover) {
-            &:hover {
-                background-size: 108% 108%;
-            }
+        &:hover {
+            background-size: 108% 108%;
         }
 
         &-title {
@@ -94,14 +92,12 @@
 }
 
 @media (max-width: rem(640px)) {
-    .banner {
-        &__item {
-            height: rem(320px);
+    .banner__item {
+        height: rem(320px);
 
-            &-title {
-                font-size: rem(26px);
-                line-height: rem(26px);
-            }
+        &-title {
+            font-size: rem(26px);
+            line-height: rem(26px);
         }
     }
 }
