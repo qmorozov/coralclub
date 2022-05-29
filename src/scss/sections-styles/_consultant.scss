@@ -35,9 +35,10 @@
 
         &__phone {
             display: block;
+            margin-top: rem(46px);
 
-            &:first-child {
-                margin-top: rem(46px);
+            & + & {
+                margin-top: 0;
             }
         }
 
