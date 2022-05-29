@@ -39,6 +39,9 @@
 // === MEDIA ===
 
 @media (max-width: rem(1000px)) {
+    .about-page-history__subtitle {
+        margin: rem(40px) 0;
+    }
     .about-page-history {
         margin-top: rem(40px);
     }
