@@ -27,6 +27,15 @@
     font-display: swap;
 }
 
+@font-face {
+    // === MEDIUM ===
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Roboto/Roboto-medium.woff2') format('woff2'), url('../fonts/Roboto/Roboto-medium.woff') format('woff');
+    font-display: swap;
+}
+
 // === BEBAS NEUE CYRILLIC ===
 
 @font-face {
