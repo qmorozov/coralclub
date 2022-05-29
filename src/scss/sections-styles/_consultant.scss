@@ -71,6 +71,10 @@
         &-info {
             max-width: rem(572px);
         }
+
+        &-content {
+            justify-content: space-evenly;
+        }
     }
 }
 
@@ -125,6 +129,8 @@
 
             &__phone {
                 margin-top: rem(10px);
+                font-size: rem(32px);
+                line-height: rem(38px);
             }
         }
     }
