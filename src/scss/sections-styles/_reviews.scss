@@ -25,7 +25,8 @@
     }
 
     &-tag.mixitup-control-active {
-        background-color: #bcfffb;
+        // background-color: #bcfffb;
+        border: 1px solid #f6a09a !important;
     }
 }
 
@@ -117,14 +118,16 @@
     user-select: none;
     background-color: white;
     border: 1px solid #36414d !important;
+    border-radius: rem(5px);
     transition: $transition;
+
+    &:hover {
+        border: 1px solid #f6a09a !important;
+    }
 
     &--inactive {
         opacity: .5;
-    }
-
-    &:hover {
-        background-color: rgba(89, 252, 243, .2);
+        pointer-events:none;
     }
 }
 
@@ -143,16 +146,18 @@
         text-transform: uppercase;
         cursor: pointer;
         user-select: none;
-        background-color: #dfdfdf;
+        background-color: white;
         border: 1px solid $dark;
+        border-radius: rem(5px);
         transition: $transition;
 
-        &:hover {
-            background-color: rgba(#59fcf3, .2);
+        &.active {
+            // background-color: #59fcf3;
+            border-color: #f6a09a;
         }
 
-        &.active {
-            background-color: #59fcf3;
+        &:hover {
+            border-color: #f6a09a;
         }
     }
 
