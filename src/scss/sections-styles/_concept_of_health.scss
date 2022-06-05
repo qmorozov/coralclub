@@ -1,7 +1,7 @@
 // === CONCEPT OF HEALTH ===
 
 .concept {
-    padding: rem(109px) 0 rem(97px) 0;
+    padding: rem(109px) 0 0 0;
 
     &-items {
         margin-top: rem(80px);
@@ -51,12 +51,25 @@
     }
 }
 
-.consultant--concept-page {
-    padding-bottom: rem(80px);
-    margin-bottom: 0;
+.concept-video {
+    padding: rem(46px) 0 rem(100px);
+    margin-top: rem(155px);
+    background-color: $white;
 
     .title-wrapper {
-        padding-top: rem(50px);
+        padding: 0;
+    }
+
+    &__wrapper {
+        width: 100%;
+        max-width: rem(1192px);
+        height: rem(506px);
+        margin: rem(40px) auto 0;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -66,7 +79,7 @@
 
 @media (max-width: rem(1000px)) {
     .concept {
-        padding: rem(80px) 0;
+        padding: rem(40px) 0;
 
         &__item-content {
             justify-content: space-between;
@@ -95,6 +108,18 @@
             width: rem(260px);
             height: rem(260px);
         }
+    }
+
+    .concept-video {
+        padding: 0;
+        margin-top: rem(80px);
+        background-color: transparent;
+    }
+}
+
+@media (max-width: rem(600px)) {
+    .concept-video__wrapper {
+        height: rem(400px);
     }
 }
 
@@ -127,5 +152,15 @@
         &-text + &-text {
             margin-top: rem(20px);
         }
+    }
+
+    .concept-video__wrapper {
+        height: rem(250px);
+    }
+}
+
+@media (max-width: rem(380px)) {
+    .concept-video__wrapper {
+        height: rem(230px);
     }
 }
