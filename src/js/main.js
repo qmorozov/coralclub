@@ -263,18 +263,23 @@ window.onload = function () {
     const choices = new Choices(headerLangSelect, {
         searchEnabled: false,
     });
+
+    // === DIFFERENT BG IMAGE ===
+    
+    const wrapper = document.querySelector('.entry')
+    const desktopImg = wrapper.getAttribute('style')
+    const mobileImg = wrapper.getAttribute('data-bg')
+    
+    function differentBgImg () {
+        if (window.innerWidth <= 650) {
+            wrapper.setAttribute('style', mobileImg)
+        } else {
+            wrapper.setAttribute('style', desktopImg)
+        }
+    }
+    differentBgImg()
+    window.addEventListener(`resize`, event => {
+        differentBgImg()
+    }, false);
 }
 
-// === DIFFERENT BG IMAGE ===
-
-const wrapper = document.querySelector('.entry')
-const oldImg = wrapper.getAttribute('style')
-const newImg = wrapper.getAttribute('data-bg')
-
-window.addEventListener(`resize`, event => {
-    if (window.innerWidth <= 500) {
-        wrapper.setAttribute('style', newImg)
-    } else {
-        wrapper.setAttribute('style', oldImg)
-    }
-}, false);
