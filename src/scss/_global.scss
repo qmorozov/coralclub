@@ -189,6 +189,10 @@ body {
         line-height: rem(29px);
         text-align: center;
         white-space: nowrap;
+
+        br {
+            display: none;
+        }
     }
 
     &--transparent {

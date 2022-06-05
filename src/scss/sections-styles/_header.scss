@@ -493,6 +493,10 @@
 }
 
 @media (max-width: rem(1000px)) {
+    .btn .btn__text br {
+        display: block;
+    }
+
     .wrapper {
         padding-top: rem(57px);
     }
@@ -593,19 +597,19 @@
         }
 
         &__discount {
-            margin-right: rem(8px);
+            margin: 0 rem(8px);
 
             & .btn {
                 min-width: auto;
                 max-width: rem(90px);
-                padding: rem(8px) rem(5px);
+                padding: rem(5px) rem(5px);
                 border-radius: rem(8px);
 
                 .btn__text {
                     display: block;
                     font-size: rem(10px);
                     line-height: rem(10px);
-                    white-space: pre-wrap;
+                    // white-space: pre-wrap;
                 }
             }
         }
@@ -623,6 +627,8 @@
             &-title {
                 display: block;
                 width: 45%;
+                font-size: rem(14px);
+                line-height: rem(15px);
                 text-align: center;
                 text-transform: uppercase;
             }
