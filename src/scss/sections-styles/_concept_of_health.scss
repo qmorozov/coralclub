@@ -1,0 +1,131 @@
+// === CONCEPT OF HEALTH ===
+
+.concept {
+    padding: rem(109px) 0 rem(97px) 0;
+
+    &-items {
+        margin-top: rem(80px);
+    }
+
+    &__item {
+        list-style: auto inside;
+
+        & + & {
+            margin-top: rem(95px);
+        }
+
+        &-title,
+        &::marker {
+            display: inline;
+            font-size: rem(35px);
+            font-weight: 700;
+            line-height: rem(41px);
+            color: $dark;
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: rem(43px);
+        }
+
+        &-info {
+            width: 75%;
+        }
+
+        &-img {
+            flex-shrink: 0;
+            width: rem(160px);
+            height: rem(160px);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-text + &-text {
+            margin-top: rem(40px);
+        }
+    }
+}
+
+.consultant--concept-page {
+    padding-bottom: rem(80px);
+    margin-bottom: 0;
+
+    .title-wrapper {
+        padding-top: rem(50px);
+    }
+}
+
+// === / CONCEPT OF HEALTH ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1000px)) {
+    .concept {
+        padding: rem(80px) 0;
+
+        &__item-content {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: rem(800px)) {
+    .concept__item {
+        list-style: none;
+
+        &-content {
+            flex-direction: column;
+        }
+
+        &-title {
+            @include Bebas_Neue_Cyrillic($weight: 400);
+        }
+
+        &-info {
+            width: 100%;
+            margin-top: rem(50px);
+        }
+
+        &-img {
+            width: rem(260px);
+            height: rem(260px);
+        }
+    }
+}
+
+@media (max-width: rem(500px)) {
+    .concept__item {
+        &-content {
+            margin-top: rem(80px);
+        }
+
+        &-title {
+            font-size: rem(30px);
+            font-weight: 400;
+            line-height: rem(30px);
+            text-transform: uppercase;
+        }
+
+        &-img {
+            width: rem(160px);
+            height: rem(160px);
+        }
+
+        &-info {
+            margin-top: rem(40px);
+        }
+
+        & + & {
+            margin-top: rem(80px);
+        }
+
+        &-text + &-text {
+            margin-top: rem(20px);
+        }
+    }
+}

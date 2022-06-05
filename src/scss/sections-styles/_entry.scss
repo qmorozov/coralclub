@@ -1,7 +1,8 @@
 // === ENTRY ===
 .entry {
-    height: 242px;
+    height: rem(255px);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     @include displayFlexCenter;
 
@@ -9,8 +10,43 @@
         font-size: rem(52px);
         font-weight: 700;
         line-height: rem(35px);
-        color: white;
+        text-align: center;
         text-transform: uppercase;
+
+        &--light {
+            color: white;
+        }
+
+        &--dark {
+            color: $dark;
+        }
     }
 }
 // === ENTRY ===
+
+// === MEDIA ===
+
+@media (max-width: rem(800px)) {
+    .entry {
+        height: rem(216px);
+
+        &__title {
+            font-size: rem(35px);
+            line-height: rem(30px);
+        }
+    }
+}
+
+@media (max-width: rem(500px)) {
+    .entry__title {
+        font-size: rem(25px);
+        line-height: rem(20px);
+    }
+}
+
+@media (max-width: rem(400px)) {
+    .entry__title {
+        font-size: rem(16px);
+        line-height: rem(19px);
+    }
+}
