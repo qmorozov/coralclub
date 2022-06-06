@@ -67,20 +67,6 @@ window.onload = function () {
 
     window.addEventListener('resize', resetNav);
 
-    // const resizeObserver = new ResizeObserver(items => {
-    //     for (let item of items) {
-    //         console.log(item.target.offsetHeight);
-    //         if (item.target.clientHeight < item.target.offsetHeight) {
-    //             item.target.style.overflow = 'hidden';
-    //         } else {
-    //             item.target.style.overflow = 'auto'
-    //         }
-    //     }
-    // })
-
-    // resizeObserver.observe(cleansingDropDown);
-    // resizeObserver.observe(catalogDropDown);
-
     // === DROPDOWN MOBILE ===
 
     window.addEventListener('click', (e) => {
@@ -226,11 +212,9 @@ window.onload = function () {
 
     // === TABS ===
 
-    const tabsWrapper = document.querySelectorAll('.tabs-wrapper')
-
-    tabsWrapper.forEach(item => {
-        const btnTab = item.querySelectorAll('.tab'),
-            tabContent = item.querySelectorAll('.tab-item')
+    document.querySelectorAll('.tabs-wrapper').forEach(item => {
+        const btnTab = item.querySelectorAll('.tab')
+        const tabContent = item.querySelectorAll('.tab-item')
 
         btnTab.forEach(itemBtn => itemBtn.addEventListener('click', selectTab))
 
@@ -241,7 +225,7 @@ window.onload = function () {
             selectTabContent(tabAtt);
         }
 
-        function selectTabContent(tabAtt) {
+        const selectTabContent = tabAtt => {
             tabContent.forEach((itemContent) => {
                 itemContent.getAttribute('id') === tabAtt ? itemContent.classList.add('active-tab') : itemContent.classList.remove('active-tab')
             })
@@ -252,9 +236,7 @@ window.onload = function () {
 
     const reviewsItemsMix = document.querySelector('.reviews-items');
 
-    if (reviewsItemsMix) {
-        const reviewsMixtUp = mixitup(".reviews-items");
-    }
+    (reviewsItemsMix) && mixitup(".reviews-items")
 
     // === CUSTOM SELECT ===
 
@@ -265,21 +247,39 @@ window.onload = function () {
     });
 
     // === DIFFERENT BG IMAGE ===
-    
+
     const wrapper = document.querySelector('.entry')
-    const desktopImg = wrapper.getAttribute('style')
-    const mobileImg = wrapper.getAttribute('data-bg')
-    
-    function differentBgImg () {
-        if (window.innerWidth <= 650) {
-            wrapper.setAttribute('style', mobileImg)
-        } else {
-            wrapper.setAttribute('style', desktopImg)
+
+    if (wrapper) {
+        const desktopImg = wrapper.getAttribute('style')
+        const mobileImg = wrapper.getAttribute('data-bg')
+
+        if (desktopImg && mobileImg) {
+            const differentBgImg = () => {
+                (window.innerWidth <= 650) ? wrapper.setAttribute('style', mobileImg): wrapper.setAttribute('style', desktopImg)
+            }
+            differentBgImg()
+            window.addEventListener(`resize`, () => differentBgImg(), false);
         }
     }
-    differentBgImg()
-    window.addEventListener(`resize`, event => {
-        differentBgImg()
-    }, false);
-}
 
+
+    // === SHOW MORE TEXT ===
+
+    const showMoreBtn = document.querySelector('.show-more__button')
+
+    showMoreBtn.addEventListener('click', () => {
+        const dots = document.querySelector('.show-more__dots')
+        const moreText = document.querySelector('.show-more__more-text')
+
+        if (dots.style.display === 'none') {
+            dots.style.display = 'inline'
+            showMoreBtn.innerHTML = 'Подробнее'
+            moreText.style.display = 'none'
+        } else {
+            dots.style.display = 'none'
+            showMoreBtn.innerHTML = 'Скрыть'
+            moreText.style.display = 'inline'
+        }
+    })
+}

@@ -1,0 +1,125 @@
+// === PRODUCT - PAGE ===
+.product-page {
+    background-color: #fafafa;
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: rem(216px);
+    }
+
+    &__img-box {
+        width: 45%;
+
+        img {
+            width: rem(550px);
+            height: rem(350px);
+        }
+    }
+
+    &__content {
+        width: 45%;
+    }
+
+    &__title {
+        font-size: $fs-xl;
+        font-weight: 700;
+        line-height: rem(38px);
+    }
+
+    &__btn {
+        margin-top: rem(40px);
+    }
+}
+
+.product-page__tabs {
+    margin-top: rem(51px);
+}
+
+.product-page__tab-buttons {
+    padding-bottom: rem(9px);
+    border-bottom: rem(1px) solid #e6e6e6;
+}
+
+.product-page__tab {
+    position: relative;
+    font-size: rem(14px);
+    font-weight: 700;
+    line-height: rem(16px);
+    color: #acbfca;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    transition: $transition;
+
+    &::before {
+        position: absolute;
+        right: 0;
+        bottom: rem(-10px);
+        left: auto;
+        width: 0;
+        height: rem(1px);
+        content: '';
+        background-color: $dark;
+        transition: $transition;
+    }
+
+    &.active {
+        color: $dark;
+
+        &::before {
+            right: auto;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &:hover {
+        color: darken(#acbfca, 30%);
+    }
+
+    & + & {
+        margin-left: rem(30px);
+    }
+}
+
+.product-page__tab-item {
+    display: none;
+
+    &.active-tab {
+        display: block;
+    }
+}
+
+.product-page__tab-content {
+    margin-top: rem(25px);
+}
+
+// === SHOW - MORE ===
+
+.product-page__description {
+    max-width: rem(560px);
+
+    .show-more {
+        font-size: rem(18px);
+        font-weight: 400;
+        line-height: rem(21px);
+    }
+
+    .show-more__button {
+        padding-bottom: rem(4px);
+        margin-left: rem(15px);
+        font-size: rem(16px);
+        font-weight: 700;
+        line-height: rem(19px);
+        cursor: pointer;
+        user-select: none;
+        border-bottom: rem(2px) solid $orange;
+    }
+
+    .show-more__more-text {
+        display: none;
+    }
+}
+
+// === / PRODUCT - PAGE ===

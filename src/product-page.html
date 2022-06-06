@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <!-- PRODUCT - PAGE -->
+            <section class="product-page">
+                <div class="container">
+
+                    <!-- BREADCRUMBS -->
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__list-item">
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a href="#">
+                                    Продукция
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a href="#">
+                                    Здоровье
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a href="#">
+                                    Антистресс и сон
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <span>
+                                    Корал Майн Сильвер
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- / BREADCRUMBS -->
+
+                    <div class="product-page__inner">
+
+                        <div class="product-page__img-box">
+                            <img src="images/content/product-page-img-1.webp" alt="Product image">
+                        </div>
+
+                        <div class="product-page__content">
+                            <h1 class="product-page__title">
+                                Целевая программа: Здоровый кишечник + Лецитин в банке (набор)
+                            </h1>
+                            <button class="product-page__btn btn btn--orange">
+                                <span class="btn__text">
+                                    купить / узнать цену
+                                </span>
+                            </button>
+
+                            <div class="product-page__tabs tabs-wrapper">
+                                <div class="product-page__tab-buttons tabs">
+                                    <span class="product-page__tab tab active" data-id="1">
+                                        описание
+                                    </span>
+                                    <span class="product-page__tab tab" data-id="2">
+                                        отзывы
+                                    </span>
+                                </div>
+                                <div class="product-page__tab-content tab__content">
+                                    <div class="product-page__tab-item tab-item active-tab" id="1">
+                                        <p class="product-page__description show-more">
+                                            Способствует комплексному поэтапному восстановлению здорового функционирования кишечника и нормализации процесса пищеварения в целом.<span class="show-more__dots">...</span>
+                                            <span class="show-more__more-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem similique quas id, libero eos accusantium dolore itaque. Eum praesentium aspernatur sequi neque inventore dolores ullam voluptatem illo? Labore, molestias maxime!</span>
+                                            <button class="show-more__button">
+                                                Подробнее
+                                            </button>
+                                        </p>
+                                    </div>
+                                    <div class="product-page__tab-item tab-item" id="2">
+                                        отзывы
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- / PRODUCT - PAGE -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
