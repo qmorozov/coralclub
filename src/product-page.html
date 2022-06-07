@@ -21,87 +21,534 @@
 
             <!-- PRODUCT - PAGE -->
             <section class="product-page">
-                <div class="container">
 
-                    <!-- BREADCRUMBS -->
-                    <div class="breadcrumbs">
-                        <ul class="breadcrumbs__list">
-                            <li class="breadcrumbs__list-item">
-                                <a href="#">
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__list-item">
-                                <a href="#">
-                                    Продукция
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__list-item">
-                                <a href="#">
-                                    Здоровье
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__list-item">
-                                <a href="#">
-                                    Антистресс и сон
-                                </a>
-                            </li>
-                            <li class="breadcrumbs__list-item">
-                                <span>
-                                    Корал Майн Сильвер
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- / BREADCRUMBS -->
+                <div class="product-page__inner">
+                    
+                    <div class="product-page__top">
+                        <div class="container">
 
-                    <div class="product-page__inner">
+                            <!-- BREADCRUMBS -->
+                            <div class="breadcrumbs">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__list-item">
+                                        <a href="#">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__list-item">
+                                        <a href="#">
+                                            Продукция
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__list-item">
+                                        <a href="#">
+                                            Здоровье
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__list-item">
+                                        <a href="#">
+                                            Антистресс и сон
+                                        </a>
+                                    </li>
+                                    <li class="breadcrumbs__list-item">
+                                        <span>
+                                            Корал Майн Сильвер
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- / BREADCRUMBS -->
 
-                        <div class="product-page__img-box">
-                            <img src="images/content/product-page-img-1.webp" alt="Product image">
-                        </div>
-
-                        <div class="product-page__content">
-                            <h1 class="product-page__title">
-                                Целевая программа: Здоровый кишечник + Лецитин в банке (набор)
-                            </h1>
-                            <button class="product-page__btn btn btn--orange">
-                                <span class="btn__text">
-                                    купить / узнать цену
-                                </span>
-                            </button>
-
-                            <div class="product-page__tabs tabs-wrapper">
-                                <div class="product-page__tab-buttons tabs">
-                                    <span class="product-page__tab tab active" data-id="1">
-                                        описание
-                                    </span>
-                                    <span class="product-page__tab tab" data-id="2">
-                                        отзывы
-                                    </span>
+                            <!-- PRODUCT CARD ( photo \ text ) -->
+                            <div class="product-page__content">
+                                <div class="product-page__photo">
+                                    <img src="images/content/product-page-img-1.webp" alt="Product image">
                                 </div>
-                                <div class="product-page__tab-content tab__content">
-                                    <div class="product-page__tab-item tab-item active-tab" id="1">
-                                        <p class="product-page__description show-more">
-                                            Способствует комплексному поэтапному восстановлению здорового функционирования кишечника и нормализации процесса пищеварения в целом.<span class="show-more__dots">...</span>
-                                            <span class="show-more__more-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem similique quas id, libero eos accusantium dolore itaque. Eum praesentium aspernatur sequi neque inventore dolores ullam voluptatem illo? Labore, molestias maxime!</span>
-                                            <button class="show-more__button">
-                                                Подробнее
-                                            </button>
-                                        </p>
+
+                                <div class="product-page__info">
+
+                                    <h1 class="product-page__title">
+                                        Целевая программа: Здоровый кишечник + Лецитин в банке (набор)
+                                    </h1>
+
+                                    <button class="product-page__btn btn btn--orange">
+                                        <span class="btn__text">
+                                            купить / узнать цену
+                                        </span>
+                                    </button>
+
+                                    <div class="product-page__tabs-buttons">
+                                        <span class="product-page__tab active" data-id="1">
+                                            описание
+                                        </span>
+                                        <span class="product-page__tab" data-id="2">
+                                            отзывы
+                                        </span>
                                     </div>
-                                    <div class="product-page__tab-item tab-item" id="2">
-                                        отзывы
-                                    </div>
+
+                                    <p class="product-page__description show-more">
+                                        Способствует комплексному поэтапному восстановлению здорового функционирования кишечника и нормализации процесса пищеварения в целом.<span class="show-more__dots">...</span>
+                                        <span class="show-more__more-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem similique quas id, libero eos accusantium dolore itaque. Eum praesentium aspernatur sequi neque inventore dolores ullam voluptatem illo? Labore, molestias maxime!</span>
+                                        <button class="show-more__button">
+                                            Подробнее
+                                        </button>
+                                    </p>
+                                    
                                 </div>
                             </div>
+                            <!-- / PRODUCT CARD ( photo \ text ) -->
 
                         </div>
-
                     </div>
+
+                    <div class="product-page__tabs-content">
+                        <div class="container">
+
+                            <div class="product-page__tabs-item active-tab" id="1">
+                                
+                                <!-- DESCRIPTION BLOCK -->
+                                <div class="product-page__desc product-desc">
+
+                                    <p class="product-desc__text text">
+                                        Способствует комплексному поэтапному восстановлению здорового функционирования кишечника и нормализации процесса пищеварения в целом.
+                                    </p>
+
+                                    <ul class="product-desc__list">
+                                        <p class="product-desc__list-title">
+                                            Программа помогает:
+                                        </p>
+                                        <li class="product-desc__list-item">
+                                            нормализовать работу кишечника;
+                                        </li>
+                                        <li class="product-desc__list-item">
+                                            укрепить иммунитет;
+                                        </li>
+                                        <li class="product-desc__list-item">
+                                            улучшить усвоение питательных веществ;
+                                        </li>
+                                        <li class="product-desc__list-item">
+                                            оптимизировать обмен веществ.
+                                        </li>
+                                    </ul>
+
+                                    <div class="product-desc__img">
+                                        <img src="images/content/product-desc-1.webp" alt="Product description">
+                                    </div>
+
+                                    <p class="product-desc__text text">
+                                        В программу входят 17 продуктов: Корал-Майн (30 саше), АкваОкс (10 капсул), Ассимилятор (10 капсул), Заферан (30 капсул), Каскара Саграда (10 таблеток), Корал Артишок (10 капсул), Корал Бурдок Рут (20 капсул), Корал Карнитин (10 капсул), Корал Лецитин (30 капсул), Корал Люцерна (20 капсул), Корал Магний (20 капсул), Корал Таурин (10 капсул), Корал Черный Орех (20 капсул), Омега 3/60 (10 капсул), Папайя (20 таблеток), ГринГрин (10 капсул), Супер-Флора (30 капсул).
+                                        Программа рассчитана на 30 дней и состоит из 3 последовательных этапов по 10 дней каждый.
+                                    </p>
+
+                                    <h3 class="product-desc__title">
+                                        ЭТАП#2 (11-20 день)
+                                    </h3>
+
+                                    <p class="product-desc__text text">
+                                        Второй этап способствует постепенному восстановлению микрофлоры кишечника и пищеварительной функции в целом для улучшения усвоения питательных веществ и энергии. Для этого в состав этапа включены продукты, помогающие увеличить численность полезных бактерий, синтез ферментов. оптимизировать пищеварение.
+                                    </p>
+
+                                    <h3 class="product-desc__title">
+                                        ЭТАП#3 (21-30 день)
+                                    </h3>
+
+                                    <p class="product-desc__text text">
+                                        Заключительный этап способствует нормализации пищеварительной функции. Ферменты, пробиотические культуры, пищевые волокна, фитонутриенты, ПНЖК омега 3, фосфолипиды, витамины и минералы – все активные компоненты программы обеспечивают качественное пищеварение и усвоение питательных веществ.
+                                    </p>
+
+                                    <div class="product-desc__includes">
+                                        <p class="product-desc__text text">
+                                            В состав программы входят:
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            акваокс
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Растительный комплекс из четырех природных антиоксидантов: экстрактов граната, ягод асаи, какао-бобов и розмарина. Защищает клетки организма от повреждений свободными радикалами. Способствует активному долголетию, помогает сохранять интеллектуальную и физическую работоспособность. 
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            ассимилятор
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Комплекс пищеварительных ферментов в сочетании с витаминами A и D способствует лучшему усвоению питательных веществ и уменьшает дискомфорт в желудке и кишечнике.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            заферан
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Источник куркумина — экстракта тропического растения куркума. Куркумин помогает нормализовать работу печени и желчного пузыря, уменьшить дискомфорт в ЖКТ.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            каскара саграда
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Мягкое слабительное средство на основе крушины Пурша. Помогает улучшить перистальтику кишечника, формировать регулярный мягкий стул.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал артишок
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Экстракты артишока, расторопши, одуванчика и бетаин помогают защитить клетки печени.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал-майн
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Минеральная композиция из реликтовых кораллов. Содержит в своем составе соли полезных макро- и микроэлементов (кальция, магния, калия, железа, фосфора, серы, кремния, хрома, марганца, цинка и др.). При взаимодействии с водой минералы из солей переходят в воду, положительно влияя на ее физиологическую полноценность и органолептические свойства, регулируют минеральный состав, кислотно-щелочной баланс.
+                                        </p>
+                                        
+                                        <h3 class="product-desc__title">
+                                            корал бурдок рут
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Корень лопуха является известным средством для очищения организма. Активные компоненты экстракта корня лопуха помогают регулировать работу печени и желчного пузыря.   
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал бурдок рут    
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Корень лопуха является известным средством для очищения организма. Активные компоненты экстракта корня лопуха помогают регулировать работу печени и желчного пузыря.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал карнитин
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Карнитин помогает восстановить энергетические запасы организма, повысить выносливость и работоспособность. Помогает улучшить жировой обмен и поддерживать вес в норме.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал лецитин
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Источник фосфатидилхолина — основной составляющей всех клеточных оболочек организма человека. Также является предшественником холина, улучшающего обменные процессы в нервной ткани и клетках головного мозга. Регулирует жировой обмен и поддерживает работу печени.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал люцерна
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Растительный источник минералов, витаминов, незаменимых аминокислот. Оказывает общеукрепляющее действие на весь организм, повышает его жизненный тонус.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал магний
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Источник одного из самых важных макроэлементов в организме человека. Регулирует мышечный тонус, в том числе кишечника, работу нервной и сердечно-сосудистой системы. Лучшую биодоступность магния в составе продукта обеспечивают хелатные соединения — глицинат и таурат магния.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал таурин
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Источник таурина — аминокислоты, которая помогает поддерживать нормальное функционирование сердечно-сосудистой системы. Принимает участие в обмене веществ, поддерживает работу печени и желчного пузыря.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            корал черный орех
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Экстракт листьев черного ореха помогает избавить организм от паразитов. Состав продукта усилен экстрактом листьев душицы для более интенсивного противопаразитарного действия и нормализации работы желудочно-кишечного тракта.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            омега 3/60
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Незаменимые полиненасыщенные жирные кислоты омега 3 не синтезируются в организме человека, поэтому так важно их достаточное поступление из пищи для укрепления иммунитета и поддержания нормальной работы сердечно-сосудистой системы. В каждой капсуле содержится ПНЖК омега-3 из рыбьего жира холодноводных морских рыб.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            папайя
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Жевательные таблетки из сочной мякоти плодов папайи для улучшения пищеварительного процесса и активизации работы кишечника.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            грингрин
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Богатый источник пищевых волокон. Питает микрофлору кишечника, помогает выводить токсины и продукты жизнедеятельности.
+                                        </p>
+
+                                        <h3 class="product-desc__title">
+                                            супер-флора 
+                                        </h3>
+
+                                        <p class="product-desc__text text">
+                                            Сбалансированная комбинация пробиотиков (бифидо- и лактобактрий) и пребиотика инулина для нормализации микрофлоры кишечника. Помогает увеличить численность полезных бактерий в кишечнике, улучшить процесс переваривания пищи, укрепить иммунитет.
+                                        </p>
+                                    </div>
+
+                                    <h3 class="product-desc__title">
+                                        противопоказания
+                                    </h3>
+
+                                    <p class="product-desc__text text">
+                                        Индивидуальная непереносимость компонентов продукта, беременность, кормление грудью, диарея, механическая непроходимость кишечника. Перед применением рекомендуется проконсультироваться с врачом.
+                                    </p>
+
+                                    <h3 class="product-desc__title">
+                                        способ хранения
+                                    </h3>
+
+                                    <p class="product-desc__text text">
+                                        Хранить в сухом, защищенном от прямых солнечных лучей, недоступном для детей месте при температуре не выше +25°С.
+                                    </p>
+
+                                    <h3 class="product-desc__title">
+                                        срок годности
+                                    </h3>
+
+                                    <p class="product-desc__text text">
+                                        2 года с даты производства
+                                    </p>
+
+                                    <h3 class="product-desc__title">
+                                        страна производства
+                                    </h3>
+
+                                    <p class="product-desc__text text">
+                                        США, Япония
+                                    </p>
+
+                                    <button class="product-desc__btn btn btn--orange">
+                                        <span class="btn__text">
+                                            купить / узнать цену
+                                        </span>
+                                    </button>
+                                </div>
+                                <!-- / DESCRIPTION BLOCK -->
+
+                                <!-- FEEDBACK BLOCK -->
+                                <div class="product-page__reviews product-reviews">
+                                    <div class="product-reviews__title title-wrapper">
+                                        <h2 class="title-wrapper__main">
+                                            отзывы
+                                        </h2>
+                                    </div> 
+
+                                    <div class="product-reviews__items">
+
+                                        <div class="product-reviews__item product-review">
+                                            <div class="product-review__img">
+                                                <img src="images/content/product-review-1.webp" alt="Product review photo">
+                                            </div>
+                                            <div class="product-review__info">
+                                                <div class="product-review__info-top">
+                                                    <p class="product-review__name">
+                                                        Олеся
+                                                    </p>
+                                                    <span class="product-review__date">
+                                                        05.04.2021
+                                                    </span>
+                                                </div>
+                                                <p class="product-review__text">
+                                                    Я пью Детокс плюс на постоянной основе. От этого достаточно энергии в течение дня, хорошо работает ЖКТ, хорошее настроение и самочувствие. <br>
+                                                    Я разобралась, что токсины поступают к нам в тело каждый день. Если их не выводить, то они накапливаются в разных органах и приводят к хронической усталости и болезням. С тех пор - это базовая программа в нашей семье. Уже к ней мы прибавляем другие продукты.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-reviews__item product-review">
+                                            <div class="product-review__img">
+                                                <img src="images/content/product-review-2.webp" alt="Product review photo">
+                                            </div>
+                                            <div class="product-review__info">
+                                                <div class="product-review__info-top">
+                                                    <p class="product-review__name">
+                                                        Роза Обухова
+                                                    </p>
+                                                    <span class="product-review__date">
+                                                        05.04.2021
+                                                    </span>
+                                                </div>
+                                                <p class="product-review__text">
+                                                    Видеоотзыв о проблеме ляляля
+                                                </p>
+                                                <div class="product-review__videos">
+                                                    <div class="product-review__video">
+                                                        <iframe src="https://www.youtube.com/embed/-h96JT4KDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                        </iframe>
+                                                    </div>
+
+                                                    <div class="product-review__video">
+                                                        <iframe src="https://www.youtube.com/embed/-h96JT4KDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                        </iframe>
+                                                    </div>
+
+                                                    <div class="product-review__video">
+                                                        <iframe src="https://www.youtube.com/embed/-h96JT4KDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                        </iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-reviews__item product-review">
+                                            <div class="product-review__img">
+                                                <img src="images/content/product-review-1.webp" alt="Product review photo">
+                                            </div>
+                                            <div class="product-review__info">
+                                                <div class="product-review__info-top">
+                                                    <p class="product-review__name">
+                                                        Олеся
+                                                    </p>
+                                                    <span class="product-review__date">
+                                                        05.04.2021
+                                                    </span>
+                                                </div>
+                                                <p class="product-review__text">
+                                                    Я пью Детокс плюс на постоянной основе. От этого достаточно энергии в течение дня, хорошо работает ЖКТ, хорошее настроение и самочувствие. <br>
+                                                    Я разобралась, что токсины поступают к нам в тело каждый день. Если их не выводить, то они накапливаются в разных органах и приводят к хронической усталости и болезням. С тех пор - это базовая программа в нашей семье. Уже к ней мы прибавляем другие продукты.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <button class="product-review__btn btn btn--orange">
+                                        <span class="btn__text">
+                                            все отзывы
+                                        </span>
+                                    </button>
+
+                                </div>
+                                <!-- / FEEDBACK BLOCK -->
+
+                            </div>
+
+                            <div class="product-page__tabs-item" id="2">
+
+                                <!-- FEEDBACK BLOCK -->
+                                <div class="product-page__reviews product-reviews">
+                                    <div class="product-reviews__items">
+
+                                        <div class="product-reviews__item product-review">
+                                            <div class="product-review__img">
+                                                <img src="images/content/product-review-1.webp" alt="Product review photo">
+                                            </div>
+                                            <div class="product-review__info">
+                                                <div class="product-review__info-top">
+                                                    <p class="product-review__name">
+                                                        Олеся
+                                                    </p>
+                                                    <span class="product-review__date">
+                                                        05.04.2021
+                                                    </span>
+                                                </div>
+                                                <p class="product-review__text">
+                                                    Я пью Детокс плюс на постоянной основе. От этого достаточно энергии в течение дня, хорошо работает ЖКТ, хорошее настроение и самочувствие. <br>
+                                                    Я разобралась, что токсины поступают к нам в тело каждый день. Если их не выводить, то они накапливаются в разных органах и приводят к хронической усталости и болезням. С тех пор - это базовая программа в нашей семье. Уже к ней мы прибавляем другие продукты.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-reviews__item product-review">
+                                            <div class="product-review__img">
+                                                <img src="images/content/product-review-2.webp" alt="Product review photo">
+                                            </div>
+                                            <div class="product-review__info">
+                                                <div class="product-review__info-top">
+                                                    <p class="product-review__name">
+                                                        Роза Обухова
+                                                    </p>
+                                                    <span class="product-review__date">
+                                                        05.04.2021
+                                                    </span>
+                                                </div>
+                                                <p class="product-review__text">
+                                                    Видеоотзыв о проблеме ляляля
+                                                </p>
+                                                <div class="product-review__videos">
+                                                    <div class="product-review__video">
+                                                        <iframe src="https://www.youtube.com/embed/-h96JT4KDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+
+                                                    <div class="product-review__video">
+                                                        <iframe src="https://www.youtube.com/embed/-h96JT4KDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+
+                                                    <div class="product-review__video">
+                                                        <iframe src="https://www.youtube.com/embed/-h96JT4KDd8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="product-reviews__item product-review">
+                                            <div class="product-review__img">
+                                                <img src="images/content/product-review-1.webp" alt="Product review photo">
+                                            </div>
+                                            <div class="product-review__info">
+                                                <div class="product-review__info-top">
+                                                    <p class="product-review__name">
+                                                        Олеся
+                                                    </p>
+                                                    <span class="product-review__date">
+                                                        05.04.2021
+                                                    </span>
+                                                </div>
+                                                <p class="product-review__text">
+                                                    Я пью Детокс плюс на постоянной основе. От этого достаточно энергии в течение дня, хорошо работает ЖКТ, хорошее настроение и самочувствие. <br>
+                                                    Я разобралась, что токсины поступают к нам в тело каждый день. Если их не выводить, то они накапливаются в разных органах и приводят к хронической усталости и болезням. С тех пор - это базовая программа в нашей семье. Уже к ней мы прибавляем другие продукты.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <button class="product-review__btn btn btn--orange">
+                                        <span class="btn__text">
+                                            все отзывы
+                                        </span>
+                                    </button>
+
+                                </div>
+                                <!-- / FEEDBACK BLOCK -->
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <!-- / PRODUCT - PAGE -->
+
+            <!-- RECOMMENDED - PRODUCTS -->
+            @include('components/_recommended.html')
+            <!-- / RECOMMENDED - PRODUCTS -->
+
+            <!-- CONSULTANT -->
+            @include('components/_consultant.html')
+            <!-- / CONSULTANT -->
 
         </main>
 

@@ -89,7 +89,7 @@
 
 // === MEDIA ===
 
-@media (max-width: 1440px) {
+@media (max-width: rem(1440px)) {
     .articles {
         &-slider {
             max-width: rem(1163px);
@@ -107,14 +107,14 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: rem(1024px)) {
     .articles-slider {
         max-width: rem(728px);
         padding-bottom: rem(50px);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: rem(768px)) {
     .articles {
         padding-bottom: rem(50px);
 
@@ -140,7 +140,7 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: rem(650px)) {
     .articles-slider {
         max-width: rem(350px);
     }

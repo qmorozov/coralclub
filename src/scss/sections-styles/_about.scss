@@ -36,14 +36,14 @@
     &-number {
         font-size: rem(160px);
         line-height: rem(160px);
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
 
         &--blue {
-            color: #4b6387;
+            color: $blue-50;
         }
 
         &--dark-green {
-            color: #328c4f;
+            color: $green-50;
         }
 
         &--light-red {
@@ -51,15 +51,15 @@
         }
 
         &--light-green {
-            color: #91c164;
+            color: $green-100;
         }
 
         &--dark-red {
-            color: #a5121e;
+            color: $red;
         }
 
         &--purple {
-            color: #6d4fbf;
+            color: $purple;
         }
     }
 

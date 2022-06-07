@@ -96,7 +96,7 @@
         }
 
         &-title {
-            @include Bebas_Neue_Cyrillic($weight: 400);
+            @include Bebas_Neue_Cyrillic;
         }
 
         &-info {

@@ -210,6 +210,42 @@ window.onload = function () {
         }
     });
 
+    // === RECOMENDED SECTION SLIDER ===
+    
+    let recommendedSlider = new Swiper(".recommended-slider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        slidesPerColumn: 1,
+        loop: true,
+        clickable: true,
+        speed: 1000,
+        autoplay: {
+            delay: 7000,
+        },
+        grabCursor: true,
+        breakpoints: {
+            660: {
+                slidesPerView: 2
+            },
+
+            800: {
+                slidesPerView: 2,
+            },
+
+            1024: {
+                slidesPerView: 3,
+            },
+
+            1440: {
+                slidesPerView: 4,
+            },
+
+            1600: {
+                slidesPerView: 4,
+            }
+        }
+    });
+
     // === TABS ===
 
     document.querySelectorAll('.tabs-wrapper').forEach(item => {
@@ -231,6 +267,29 @@ window.onload = function () {
             })
         }
     })
+
+    // === PRODUCT TABS ===
+
+    const productTabs = () => {
+        const btnTab = document.querySelectorAll('.product-page__tab')
+        const tabContent = document.querySelectorAll('.product-page__tabs-item')
+
+        btnTab.forEach(itemBtn => itemBtn.addEventListener('click', selectTab))
+
+        function selectTab() {
+            btnTab.forEach((itemBtn) => itemBtn.classList.remove('active'))
+            this.classList.add('active');
+            let tabAtt = this.getAttribute('data-id')
+            selectTabContent(tabAtt);
+        }
+
+        const selectTabContent = tabAtt => {
+            tabContent.forEach((itemContent) => {
+                itemContent.getAttribute('id') === tabAtt ? itemContent.classList.add('active-tab') : itemContent.classList.remove('active-tab')
+            })
+        }
+    }
+    productTabs()
 
     // === MIXITUP ===
 
@@ -268,18 +327,20 @@ window.onload = function () {
 
     const showMoreBtn = document.querySelector('.show-more__button')
 
-    showMoreBtn.addEventListener('click', () => {
-        const dots = document.querySelector('.show-more__dots')
-        const moreText = document.querySelector('.show-more__more-text')
-
-        if (dots.style.display === 'none') {
-            dots.style.display = 'inline'
-            showMoreBtn.innerHTML = 'Подробнее'
-            moreText.style.display = 'none'
-        } else {
-            dots.style.display = 'none'
-            showMoreBtn.innerHTML = 'Скрыть'
-            moreText.style.display = 'inline'
-        }
-    })
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+            const dots = document.querySelector('.show-more__dots')
+            const moreText = document.querySelector('.show-more__more-text')
+    
+            if (dots.style.display === 'none') {
+                dots.style.display = 'inline'
+                showMoreBtn.innerHTML = 'Подробнее'
+                moreText.style.display = 'none'
+            } else {
+                dots.style.display = 'none'
+                showMoreBtn.innerHTML = 'Скрыть'
+                moreText.style.display = 'inline'
+            }
+        })
+    }
 }

@@ -16,31 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 
-//::-webkit-scrollbar {
-//    width: 5px;
-//}
-//
-//::-webkit-scrollbar-track {
-//    background: transparent;
-//}
-//
-//::-webkit-scrollbar-thumb {
-//    background-color: #cbbb9f;
-//}
-//
-//:root {
-//    scrollbar-color: #cbbb9f transparent;
-//    scrollbar-width: thin;
-//}
-
 input[type='number'] {
     -moz-appearance: textfield;
 }
-
-//input::-webkit-outer-spin-button,
-//input::-webkit-inner-spin-button {
-//    -webkit-appearance: none;
-//}
 
 div {
     margin: 0;
@@ -141,7 +119,7 @@ body {
         line-height: rem(48px);
         color: $dark;
         text-transform: uppercase;
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
     }
 
     &__text {
@@ -440,7 +418,7 @@ body {
     }
 
     &__back-button {
-        margin-top: 43px;
+        margin-top: rem(43px);
     }
 }
 
@@ -449,8 +427,8 @@ body {
     font-size: $fs-s;
     line-height: rem(20px);
     color: #adbfbf;
-    border-bottom: 1px solid #e6e6e6;
-    @include Bebas_Neue_Cyrillic($weight: 400);
+    border-bottom: rem(1px) solid #e6e6e6;
+    @include Bebas_Neue_Cyrillic;
 }
 
 .product-card__flip {
@@ -532,9 +510,8 @@ body {
 .pagination {
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
+    font-size: $fs-xs;
+    line-height: rem(19px);
     color: #d9d9d9;
 
     &__title {
@@ -554,8 +531,10 @@ body {
     }
 }
 
+// === BREADCRUMBS ===
+
 .breadcrumbs {
-    padding: rem(67px) 0 rem(9px) 0;
+    padding: 0 0 rem(9px) 0;
     margin-bottom: rem(29px);
     border-bottom: rem(1px) solid #e6e6e6;
 

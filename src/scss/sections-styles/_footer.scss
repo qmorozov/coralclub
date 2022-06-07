@@ -43,7 +43,7 @@
     &-title {
         font-size: rem(24px);
         line-height: rem(24px);
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
     }
 
     &-link {

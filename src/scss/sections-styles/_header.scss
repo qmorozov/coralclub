@@ -186,7 +186,7 @@
         font-size: rem(12px);
         font-weight: 700;
         line-height: rem(14px);
-        color: #c4c4c4;
+        color: $gray;
         text-transform: uppercase;
 
         &::before {
@@ -220,7 +220,7 @@
     &-title {
         font-size: $fs-s;
         line-height: rem(20px);
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
     }
 
     &-point {
@@ -385,9 +385,8 @@
 
     &-phone {
         font-size: rem(20px);
-        font-weight: 400;
         line-height: rem(24px);
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
     }
 
     &-bottom__info {
@@ -452,7 +451,6 @@
             .choices__item {
                 padding: rem(10px) 0;
                 font-size: rem(16px);
-                font-weight: 400;
                 line-height: rem(14px);
                 color: $dark;
 
@@ -838,7 +836,7 @@
         font-size: rem(12px);
         font-weight: 700;
         line-height: rem(14px);
-        color: #c4c4c4;
+        color: $gray;
         text-transform: uppercase;
 
         &::before {

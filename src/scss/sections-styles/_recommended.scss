@@ -1,0 +1,48 @@
+// === RECOMMENDED ===
+
+.recommended {
+    padding: rem(64px) 0 rem(54px) 0;
+    background-color: $white;
+
+    .title-wrapper {
+        padding: 0;
+    }
+
+    &-slider {
+        margin: rem(50px) auto 0;
+        overflow: hidden;
+    }
+
+    &-items {
+        display: flex;
+        max-width: rem(1436px);
+    }
+}
+
+// === / RECOMMENDED ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1440px)) {
+    .recommended-slider {
+        max-width: rem(1163px);
+    }
+}
+
+@media (max-width: rem(1024px)) {
+    .recommended-slider {
+        max-width: rem(728px);
+    }
+}
+
+@media (max-width: rem(768px)) {
+    .recommended-slider {
+        max-width: rem(700px);
+    }
+}
+
+@media (max-width: rem(658px)) {
+    .recommended-slider {
+        max-width: rem(350px);
+    }
+}

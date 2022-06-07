@@ -55,7 +55,7 @@
         line-height: rem(60px);
         color: white;
         text-align: center;
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
 
         &-wrapper {
             display: inline-block;
@@ -69,7 +69,7 @@
         font-size: rem(48px);
         line-height: rem(48px);
         color: black;
-        @include Bebas_Neue_Cyrillic($weight: 400);
+        @include Bebas_Neue_Cyrillic;
 
         &-wrapper {
             margin-top: rem(49px);
