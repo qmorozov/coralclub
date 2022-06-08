@@ -571,3 +571,96 @@ body {
         }
     }
 }
+
+// === VIDEO ===
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.video {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #00c1b6;
+    border-radius: rem(5px);
+
+    &::before {
+        position: absolute;
+        top: 45%;
+        right: 48%;
+        z-index: 1;
+        width: rem(50px);
+        height: rem(50px);
+        content: '';
+        border: rem(5px) solid #000;
+        border-right-color: transparent;
+        border-bottom-color: #555;
+        border-left-color: #333;
+        border-radius: 100%;
+        animation: loading 600ms infinite linear;
+    }
+
+    iframe {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: rem(5px);
+        object-fit: cover;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        border-radius: rem(5px);
+    }
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:focus {
+            outline: none;
+        }
+
+        &-shape {
+            fill: $dark;
+            fill-opacity: .8;
+            transition: $transition;
+        }
+
+        &-icon {
+            fill: $white;
+        }
+    }
+
+    &__btn-reset {
+        z-index: 2;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+    }
+
+    &:hover .video__play-shape,
+    &:focus .video__play-shape {
+        fill: $red-light;
+        fill-opacity: 1;
+    }
+}
+
+@media (max-width: rem(600px)) {
+    .video::before {
+        top: 41%;
+        right: 44%;
+    }
+}
