@@ -57,6 +57,11 @@ window.onload = function () {
         if (!cleansingDropDown.classList.contains('header-cleansing__dropdown--active')) {
             showScroll()
         }
+
+        if (e.target.classList.contains('concept__button')) {
+            cleansingDropDown.classList.toggle('header-cleansing__dropdown--active')
+            header.classList.toggle('header--active')
+        }
     })
 
     const resetNav = () => {

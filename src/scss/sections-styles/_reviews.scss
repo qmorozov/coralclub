@@ -25,8 +25,8 @@
     }
 
     &-tag.mixitup-control-active {
-        border: 1px solid #f6a09a !important;
-        box-shadow: 0 0 0 2.5px rgba(#f6a09a, 1) inset;
+        border: 1px solid #fa5f55 !important;
+        box-shadow: 0 0 0 2.5px rgba(#fa5f55, 1) inset;
     }
 }
 
@@ -122,8 +122,8 @@
     transition: $transition;
 
     &:hover {
-        border: 1px solid #f6a09a !important;
-        box-shadow: 0 0 0 2.5px rgba(#f6a09a, 1) inset;
+        border: 1px solid #fa5f55 !important;
+        box-shadow: 0 0 0 2.5px rgba(#fa5f55, 1) inset;
     }
 
     &--inactive {
@@ -153,13 +153,13 @@
         transition: $transition;
 
         &.active {
-            border: 1px solid #f6a09a !important;
-            box-shadow: 0 0 0 2.5px rgba(#f6a09a, 1) inset;
+            border: 1px solid #fa5f55 !important;
+            box-shadow: 0 0 0 2.5px rgba(#fa5f55, 1) inset;
         }
 
         &:hover {
-            border: 1px solid #f6a09a !important;
-            box-shadow: 0 0 0 2.5px rgba(#f6a09a, 1) inset;
+            border: 1px solid #fa5f55 !important;
+            box-shadow: 0 0 0 2.5px rgba(#fa5f55, 1) inset;
         }
     }
 
