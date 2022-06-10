@@ -3,6 +3,7 @@
 .LSOverride
 .vs
 
+src.zip
 node_modules/
 .vscode/
 .idea/
