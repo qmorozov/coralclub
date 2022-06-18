@@ -2,6 +2,10 @@
 .team {
     background-color: white;
 
+    &-inner {
+        padding-bottom: rem(116px);
+    }
+
     .title-wrapper {
         padding-top: rem(155px);
     }
@@ -47,6 +51,10 @@
         &__item {
             width: 100%;
             height: rem(418px);
+        }
+
+        &-inner {
+            padding-bottom: rem(50px);
         }
     }
 }

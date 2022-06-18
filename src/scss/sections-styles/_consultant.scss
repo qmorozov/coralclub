@@ -4,6 +4,10 @@
 
     &__title {
         margin-bottom: rem(74px);
+
+        &.title-wrapper {
+            padding-top: rem(37px);
+        }
     }
 
     &-content {
@@ -55,6 +59,10 @@
         &__btn {
             margin-top: rem(35px);
         }
+    }
+
+    &--dark-bg {
+        background-color: $white;
     }
 }
 // === / CONSULTANT ===

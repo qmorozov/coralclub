@@ -4,6 +4,8 @@
 }
 
 .reviews {
+    padding-bottom: rem(100px);
+
     &-content {
         padding: rem(61px) rem(20px);
         margin-top: rem(78px);
@@ -179,6 +181,8 @@
 
 @media (max-width: rem(1000px)) {
     .reviews {
+        padding-bottom: rem(50px);
+
         &__title {
             margin-bottom: rem(40px);
 

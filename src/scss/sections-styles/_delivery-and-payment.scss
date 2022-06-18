@@ -15,6 +15,10 @@
         transform: translateX(-50%);
     }
 
+    &-inner {
+        padding-bottom: rem(60px);
+    }
+
     &__text {
         margin-top: rem(79px);
     }
@@ -39,5 +43,10 @@
         &__text {
             margin-top: rem(40px);
         }
+
+        &-inner {
+            padding-bottom: rem(30px);
+        }
     }
+
 }

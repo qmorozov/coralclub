@@ -48,14 +48,12 @@ window.onload = function () {
         }
 
         if (e.target.classList.contains('concept__button')) {
-            cleansingDropDown.classList.toggle('header-cleansing__dropdown--active')
             header.classList.toggle('header--active')
         }
     })
 
     const resetNav = () => {
         catalogDropDown.classList.remove('header-catalog__dropdown--active');
-        cleansingDropDown.classList.remove('header-cleansing__dropdown--active');
         showScroll();
     }
 
@@ -70,7 +68,6 @@ window.onload = function () {
         }
 
         if (e.target.classList.contains('dropdown__mobile-title--cleansing')) {
-            cleansingDropDown.classList.remove('header-cleansing__dropdown--active');
             hideScroll();
         }
     })
@@ -246,7 +243,7 @@ window.onload = function () {
     let paperSlider = new Swiper(".paper__slider", {
         effect: "fade",
         slidesPerView: 'auto',
-        speed: 1000,
+        speed: 500,
         loop: true,
         autoplay: true,
         autoplay: {

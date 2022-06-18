@@ -1,5 +1,7 @@
 // === PARTNERSHIP ===
 .partnership {
+    padding-bottom: rem(86px);
+
     &-items {
         margin: rem(80px) 0 rem(182px);
     }
@@ -194,9 +196,13 @@
 }
 
 @media (max-width: rem(780px)) {
-    .partnership__item-photo {
-        width: rem(280px);
-        height: rem(280px);
+    .partnership {
+        padding-bottom: rem(43px);
+
+        &__item-photo {
+            width: rem(280px);
+            height: rem(280px);
+        }
     }
 }
 
