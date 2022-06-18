@@ -1,0 +1,129 @@
+// === MARATHONS ===
+.marathons {
+    padding-bottom: rem(44px);
+
+    &__title {
+        text-align: center;
+    }
+
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: rem(20px);
+        grid-column-gap: rem(20px);
+        margin-top: rem(80px);
+    }
+
+    &__card {
+        min-height: rem(280px);
+        padding: rem(42px) rem(26px);
+        color: white;
+        user-select: none;
+        background-position: center center;
+        background-size: cover;
+        border-radius: rem(16px);
+        transition: background-size .5s;
+
+        &-title {
+            font-size: rem(38px);
+            font-weight: 700;
+            line-height: rem(35px);
+            text-transform: uppercase;
+        }
+
+        &-text {
+            margin-top: rem(24px);
+            font-size: $fs-s;
+            line-height: rem(23px);
+        }
+
+        @media (any-hover: hover) {
+            background-size: 100% 100%;
+            transition: background-size .5s;
+
+            &:hover {
+                background-size: 108% 108%;
+            }
+        }
+    }
+}
+// === / MARATHONS ===
+
+// === MEDIA ===
+
+@media (max-width: rem(1440px)) {
+    .marathons {
+        .container {
+            max-width: rem(1184px);
+        }
+
+        &__cards {
+            &-title {
+                font-size: rem(38px);
+                line-height: rem(35px);
+            }
+
+            &-text {
+                font-size: rem(18px);
+                line-height: rem(21px);
+            }
+        }
+    }
+}
+
+@media (max-width: rem(950px)) {
+    .marathons {
+        .container {
+            max-width: rem(800px);
+        }
+
+        &-cards {
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: rem(40px);
+        }
+
+        &__cards {
+            &-text {
+                font-size: rem(20px);
+                line-height: rem(23px);
+            }
+        }
+    }
+}
+
+@media (max-width: rem(550px)) {
+    .marathons {
+        &-cards {
+            grid-row-gap: rem(20px);
+            margin-top: rem(40px);
+        }
+
+        &__card {
+            min-height: rem(240px);
+            padding: rem(25px) rem(15px);
+
+            &-title {
+                font-size: rem(18px);
+                line-height: rem(35px);
+            }
+
+            &-text {
+                font-size: $fs-xs;
+                line-height: rem(20px);
+            }
+        }
+    }
+}
+
+@media (max-width: rem(450px)) {
+    .marathons__card {
+        min-height: rem(200px);
+        padding: rem(25px) rem(20px);
+
+        &-text {
+            margin-top: rem(19px);
+            font-size: rem(12px);
+            line-height: rem(12px);
+        }
+    }
+}

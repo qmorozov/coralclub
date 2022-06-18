@@ -94,7 +94,7 @@
 
 @media (max-width: rem(1000px)) {
     .consultant {
-        margin-bottom: rem(80px);
+        padding-bottom: rem(80px);
 
         &-content {
             flex-direction: column;
@@ -161,7 +161,7 @@
         }
 
         &__title {
-            margin-bottom: rem(45px);
+            padding-bottom: rem(45px);
         }
 
         &-info {
