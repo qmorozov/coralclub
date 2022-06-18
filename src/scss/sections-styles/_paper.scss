@@ -1,7 +1,23 @@
 // === PAPER ===
-.paper__inner {
-    font-size: $fs-s;
-    line-height: rem(23px);
+.paper {
+    &__inner {
+        font-size: $fs-s;
+        line-height: rem(23px);
+    }
+
+    &-list__item {
+        list-style: disc;
+    }
+
+    &__title {
+        padding: rem(80px) 0;
+    }
+
+    &__slider-img {
+        width: 100%;
+        height: 100%;
+        max-height: rem(850px);
+    }
 }
 
 // .paper__photo {
@@ -19,19 +35,6 @@
 //         }
 //     }
 // }
-
-.paper-list__tiem {
-    list-style: disc;
-}
-
-.paper__title {
-    padding: rem(80px) 0;
-}
-
-.paper__picture-img {
-    width: 100%;
-    height: 100%;
-}
 
 .paper__text {
     color: $dark;
@@ -85,13 +88,20 @@
         margin: 0 auto;
     }
 }
+
 // === / PAPER ===
 
 // === MEDIA ===
 
+@media (max-width: rem(1440px)) {
+    .paper__slider-img {
+        max-height: rem(808px);
+    }
+}
+
 @media (max-width: rem(1000px)) {
     .paper__video {
-        margin: 0 -15px;
+        margin: 0 rem(-15px);
     }
 }
 
@@ -101,55 +111,67 @@
         line-height: rem(35px);
     }
 
-    .paper__inner {
-        font-size: 16px;
-        line-height: 19px;
-    }
+    .paper {
+        &__inner {
+            font-size: $fs-xxs;
+            line-height: rem(19px);
+        }
 
-    .paper__subtitle {
-        padding: 40px 0;
-    }
+        &__subtitle {
+            padding: rem(40px) 0;
+        }
 
-    .paper__video {
-        height: 350px;
+        &__video {
+            height: rem(350px);
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__slider-img {
+            max-height: rem(956px);
+        }
     }
 
     .paper-steps-list .paper__text + .paper__text {
-        margin-top: 40px;
-    }
-
-    .paper__title {
-        text-align: center;
+        margin-top: rem(40px);
     }
 }
 
 @media (max-width: rem(500px)) {
     .paper__title {
-        padding: 40px 0;
+        padding: rem(40px) 0;
 
         &--second {
-            padding: 100px 0;
+            padding: rem(100px) 0;
 
             .title-wrapper__main {
-                font-size: 20px;
-                line-height: 20px;
+                font-size: $fs-s;
+                line-height: rem(20px);
             }
         }
     }
 
     .paper-steps__title {
-        padding: 40px 0;
-        font-size: 20px;
-        line-height: 23px;
+        padding: rem(40px) 0;
+        font-size: $fs-s;
+        line-height: rem(23px);
     }
 
     .paper__video {
-        height: 220px;
+        height: rem(220px);
+    }
+}
+
+@media (max-width: rem(400px)) {
+    .paper__slider-img {
+        max-height: rem(320px);
     }
 }
 
 @media (max-width: rem(350px)) {
     .paper__video {
-        height: 160px;
+        height: rem(160px);
     }
 }

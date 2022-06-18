@@ -238,21 +238,8 @@
     }
 }
 
-.header-catalog__dropdown--active,
-.header-cleansing__dropdown--active {
-    // top: rem(217px);
-    // opacity: 1;
+.header-catalog__dropdown--active {
     max-height: 66vh;
-}
-
-.header-cleansing {
-    .dropdown__items {
-        column-count: auto;
-    }
-
-    .dropdown__item-point {
-        list-style: none;
-    }
 }
 
 // === HEADER ===
@@ -782,14 +769,7 @@
         }
     }
 
-    .header-cleansing__dropdown--active {
-        .dropdown__item-point {
-            display: block;
-        }
-    }
-
-    .header-catalog__dropdown--active,
-    .header-cleansing__dropdown--active {
+    .header-catalog__dropdown--active {
         top: rem(56px);
         z-index: 1;
     }

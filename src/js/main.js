@@ -35,7 +35,6 @@ window.onload = function () {
     // === CATALOG DROPDOWN MENU ===
 
     const catalogDropDown = document.querySelector('.header-catalog');
-    const cleansingDropDown = document.querySelector('.header-cleansing');
 
     window.addEventListener('click', (e) => {
         if (e.target.classList.contains('menu__list-item-link--catalog')) {
@@ -44,17 +43,7 @@ window.onload = function () {
             catalogDropDown.classList.remove('header-catalog__dropdown--active')
         }
 
-        if (e.target.classList.contains('menu__list-item-link--cleansing')) {
-            cleansingDropDown.classList.toggle('header-cleansing__dropdown--active')
-        } else if (!e.target.closest('.dropdown')) {
-            cleansingDropDown.classList.remove('header-cleansing__dropdown--active')
-        }
-
         if (!catalogDropDown.classList.contains('header-catalog__dropdown--active')) {
-            showScroll()
-        }
-
-        if (!cleansingDropDown.classList.contains('header-cleansing__dropdown--active')) {
             showScroll()
         }
 
@@ -250,6 +239,20 @@ window.onload = function () {
                 slidesPerView: 4,
             }
         }
+    });
+
+    // === PAPER SLIDER ===
+
+    let paperSlider = new Swiper(".paper__slider", {
+        effect: "fade",
+        slidesPerView: 'auto',
+        speed: 1000,
+        loop: true,
+        autoplay: true,
+        autoplay: {
+            delay: 7000,
+        },
+        grabCursor: true,
     });
 
     // === TABS ===
