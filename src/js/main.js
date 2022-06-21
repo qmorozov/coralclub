@@ -299,9 +299,9 @@ window.onload = function () {
 
     // === MIXITUP ===
 
-    const reviewsItemsMix = document.querySelector('.reviews-items');
+    const reviewsItemsMix = document.querySelector('.tag-system-items');
 
-    (reviewsItemsMix) && mixitup(".reviews-items")
+    (reviewsItemsMix) && mixitup(".tag-system-items")
 
     // === CUSTOM SELECT ===
 

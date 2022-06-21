@@ -9,7 +9,7 @@
 
 </head>
 
-<body class="reviews-body">
+<body class="tag-system-body">
 
     <div class="wrapper">
 
@@ -19,234 +19,260 @@
 
         <main>
 
-            <!-- REVIEWS -->
-            <section class="reviews">
-                <div class="reviews-inner">
-                    <div class="container">
+            <!-- TAG SYSTEM REVIEWS -->
+            <section class="tag-system tag-system--review">
+                <div class="container">
 
-                        <div class="reviews__title title-wrapper">
-                            <h2 class="title-wrapper__main">
+                
+                    <div class="tag-system-inner">
+
+                        <div class="title-wrapper">
+                            <h1 class="title-wrapper__main">
                                 отзывы о coral club
-                            </h2>
+                            </h1>
                         </div>
 
-                        <div class="reviews-tabs-wrapper tabs-wrapper">
-                            <div class="reviews-tabs tabs">
-                                <span class="tab reviews-tabs__item tabs-item active" data-filter="all">все</span>
-                                <span class="tab reviews-tabs__item tabs-item" data-id="2">здоровье</span>
-                                <span class="tab reviews-tabs__item tabs-item" data-id="3">красота</span>
-                                <span class="tab reviews-tabs__item tabs-item" data-id="4">продукция</span>
-                                <span class="tab reviews-tabs__item tabs-item" data-id="5">уход за домом</span>
-                                <span class="tab reviews-tabs__item tabs-item" data-id="6">бизнес</span>
+                        <div class="tabs-wrapper">
+                            <div class="tabs">
+                                <span class="tab tabs-item active" data-filter="all">все</span>
+                                <span class="tab tabs-item" data-id="2">здоровье</span>
+                                <span class="tab tabs-item" data-id="3">красота</span>
+                                <span class="tab tabs-item" data-id="4">продукция</span>
+                                <span class="tab tabs-item" data-id="5">уход за домом</span>
+                                <span class="tab tabs-item" data-id="6">бизнес</span>
                             </div>
-                            <div class="reviews-tabs__content">
-                                <div class="reviews__tab tab-item active-tab" id="1">
-                                    <!-- <div class="reviews-tags tag-items">
+                            <div class="tag-system-tabs__content tabs-content">
+                                <div class="tab-item active-tab" id="1">
+                                    <!-- <div class="tag-items">
                                         tags 1
                                     </div> -->
                                 </div>
-                                <div class="reviews__tab tab-item" id="2">
-                                    <div class="reviews-tags tag-items">
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".weight">вес</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Cleaning">очистка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".immunity">иммунитет</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".lymphCleaning">лимфа очистка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Antiparasitar">антипаразитарка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".allergy">аллергия</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".fatigue">усталость</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".stress">стресс</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".postKovic">пост ковид</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".headache">головная боль</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".pressure">давление</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".aid kit">аптечка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Vessels">сосуды</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".children'sHealth">детское здоровье</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".womenHealth">женское здоровье</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".men'sHealth">мужское здоровье</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".liver">печень</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".constipation">запор</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".gear">жкт</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".heart">сердце</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".badSleep">плохой сон</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".memory">память</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".joint">суставы</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".spine">позвоночник</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".vision">зрение</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".photo">отёки</button>
+                                <div class="tab-item" id="2">
+                                    <div class="tag-items">
+                                        <button type="button" class="tag-item" data-filter=".weight">вес</button>
+                                        <button type="button" class="tag-item" data-filter=".Cleaning">очистка</button>
+                                        <button type="button" class="tag-item" data-filter=".immunity">иммунитет</button>
+                                        <button type="button" class="tag-item" data-filter=".lymphCleaning">лимфа очистка</button>
+                                        <button type="button" class="tag-item" data-filter=".Antiparasitar">антипаразитарка</button>
+                                        <button type="button" class="tag-item" data-filter=".allergy">аллергия</button>
+                                        <button type="button" class="tag-item" data-filter=".fatigue">усталость</button>
+                                        <button type="button" class="tag-item" data-filter=".stress">стресс</button>
+                                        <button type="button" class="tag-item" data-filter=".postKovic">пост ковид</button>
+                                        <button type="button" class="tag-item" data-filter=".headache">головная боль</button>
+                                        <button type="button" class="tag-item" data-filter=".pressure">давление</button>
+                                        <button type="button" class="tag-item" data-filter=".aid kit">аптечка</button>
+                                        <button type="button" class="tag-item" data-filter=".Vessels">сосуды</button>
+                                        <button type="button" class="tag-item" data-filter=".children'sHealth">детское здоровье</button>
+                                        <button type="button" class="tag-item" data-filter=".womenHealth">женское здоровье</button>
+                                        <button type="button" class="tag-item" data-filter=".men'sHealth">мужское здоровье</button>
+                                        <button type="button" class="tag-item" data-filter=".liver">печень</button>
+                                        <button type="button" class="tag-item" data-filter=".constipation">запор</button>
+                                        <button type="button" class="tag-item" data-filter=".gear">жкт</button>
+                                        <button type="button" class="tag-item" data-filter=".heart">сердце</button>
+                                        <button type="button" class="tag-item" data-filter=".badSleep">плохой сон</button>
+                                        <button type="button" class="tag-item" data-filter=".memory">память</button>
+                                        <button type="button" class="tag-item" data-filter=".joint">суставы</button>
+                                        <button type="button" class="tag-item" data-filter=".spine">позвоночник</button>
+                                        <button type="button" class="tag-item" data-filter=".vision">зрение</button>
+                                        <button type="button" class="tag-item" data-filter=".photo">отёки</button>
                                     </div>
                                 </div>
-                                <div class="reviews__tab tab-item" id="3">
-                                    <div class="reviews-tags tag-items">
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".drySkin">сухая кожа</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".cleanSkin">чистая кожа</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".AcneAndWrinkles">прыщи, морщины</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".rejuvenation">омоложение</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".cellulite">целлюлит</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Moisturization">увлажнение</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".figure">фигура</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Turgor">тургор</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".fragileNails">хрупкие ногти</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".hair">волосы</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".dandruff">перхоть</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".darkSpots">пигментные пятна</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".AntiAge">анти эйдж</button>
+                                <div class=" tab-item" id="3">
+                                    <div class="tag-items">
+                                        <button type="button" class="tag-item" data-filter=".drySkin">сухая кожа</button>
+                                        <button type="button" class="tag-item" data-filter=".cleanSkin">чистая кожа</button>
+                                        <button type="button" class="tag-item" data-filter=".AcneAndWrinkles">прыщи, морщины</button>
+                                        <button type="button" class="tag-item" data-filter=".rejuvenation">омоложение</button>
+                                        <button type="button" class="tag-item" data-filter=".cellulite">целлюлит</button>
+                                        <button type="button" class="tag-item" data-filter=".Moisturization">увлажнение</button>
+                                        <button type="button" class="tag-item" data-filter=".figure">фигура</button>
+                                        <button type="button" class="tag-item" data-filter=".Turgor">тургор</button>
+                                        <button type="button" class="tag-item" data-filter=".fragileNails">хрупкие ногти</button>
+                                        <button type="button" class="tag-item" data-filter=".hair">волосы</button>
+                                        <button type="button" class="tag-item" data-filter=".dandruff">перхоть</button>
+                                        <button type="button" class="tag-item" data-filter=".darkSpots">пигментные пятна</button>
+                                        <button type="button" class="tag-item" data-filter=".AntiAge">анти эйдж</button>
                                     </div>
                                 </div>
-                                <div class="reviews__tab tab-item" id="4">
-                                    <div class="reviews-tags tag-items">
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".protein">протеин</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".water">вода</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Vitamins">витамины</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".colenen">коллаген</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".hyaluronicAcid">гиалуроновая кислота</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Antistress">антистресс</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Probiotics">пробиотики</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Minerals">минералы</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".omega">омега</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".enzyme">ферменты</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Antioxidants">антиоксиданты</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Cleaning">очистка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Antiparasitar">антипаразитарка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".detox">детокс</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".healthyStart">здоровый старт</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Promarin">промарин</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".beeLuron">би лурон</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Co Water">коло вада</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".parashild">парашилд</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".immuneToThePuck">имунити пак</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".mentalFors">ментал форс</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".fanDetox">фан детокс</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Lipstick fit">липстик фит</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".fiddleons">фитовирон</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Healthy intestines">здоровый кишечник</button>
+                                <div class="tab-item" id="4">
+                                    <div class="tag-items">
+                                        <button type="button" class="tag-item" data-filter=".protein">протеин</button>
+                                        <button type="button" class="tag-item" data-filter=".water">вода</button>
+                                        <button type="button" class="tag-item" data-filter=".Vitamins">витамины</button>
+                                        <button type="button" class="tag-item" data-filter=".colenen">коллаген</button>
+                                        <button type="button" class="tag-item" data-filter=".hyaluronicAcid">гиалуроновая кислота</button>
+                                        <button type="button" class="tag-item" data-filter=".Antistress">антистресс</button>
+                                        <button type="button" class="tag-item" data-filter=".Probiotics">пробиотики</button>
+                                        <button type="button" class="tag-item" data-filter=".Minerals">минералы</button>
+                                        <button type="button" class="tag-item" data-filter=".omega">омега</button>
+                                        <button type="button" class="tag-item" data-filter=".enzyme">ферменты</button>
+                                        <button type="button" class="tag-item" data-filter=".Antioxidants">антиоксиданты</button>
+                                        <button type="button" class="tag-item" data-filter=".Cleaning">очистка</button>
+                                        <button type="button" class="tag-item" data-filter=".Antiparasitar">антипаразитарка</button>
+                                        <button type="button" class="tag-item" data-filter=".detox">детокс</button>
+                                        <button type="button" class="tag-item" data-filter=".healthyStart">здоровый старт</button>
+                                        <button type="button" class="tag-item" data-filter=".Promarin">промарин</button>
+                                        <button type="button" class="tag-item" data-filter=".beeLuron">би лурон</button>
+                                        <button type="button" class="tag-item" data-filter=".Co Water">коло вада</button>
+                                        <button type="button" class="tag-item" data-filter=".parashild">парашилд</button>
+                                        <button type="button" class="tag-item" data-filter=".immuneToThePuck">имунити пак</button>
+                                        <button type="button" class="tag-item" data-filter=".mentalFors">ментал форс</button>
+                                        <button type="button" class="tag-item" data-filter=".fanDetox">фан детокс</button>
+                                        <button type="button" class="tag-item" data-filter=".Lipstick fit">липстик фит</button>
+                                        <button type="button" class="tag-item" data-filter=".fiddleons">фитовирон</button>
+                                        <button type="button" class="tag-item" data-filter=".Healthy intestines">здоровый кишечник</button>
                                     </div>
                                 </div>
-                                <div class="reviews__tab tab-item" id="5">
-                                    <div class="reviews-tags tag-items">
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".ecoHousese">эко дом</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".paulGlass">пол, стёкла</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".wash">стирка</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".safely">безопасно</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".vessel">посуда</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".kitchen">кухня</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".bathtub">ванна</button>
+                                <div class="tab-item" id="5">
+                                    <div class="tag-items">
+                                        <button type="button" class="tag-item" data-filter=".ecoHousese">эко дом</button>
+                                        <button type="button" class="tag-item" data-filter=".paulGlass">пол, стёкла</button>
+                                        <button type="button" class="tag-item" data-filter=".wash">стирка</button>
+                                        <button type="button" class="tag-item" data-filter=".safely">безопасно</button>
+                                        <button type="button" class="tag-item" data-filter=".vessel">посуда</button>
+                                        <button type="button" class="tag-item" data-filter=".kitchen">кухня</button>
+                                        <button type="button" class="tag-item" data-filter=".bathtub">ванна</button>
                                     </div>
                                 </div>
-                                <div class="reviews__tab tab-item" id="6">
-                                    <div class="reviews-tags tag-items">
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Success">успех</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".additionalIncome">дополнительный доход</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".theMainIncome">основной доход</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".networkBusiness">сетевой бизнес</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".training">обучение</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Car bonus">авто бонус</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".realEstateBonus">бонус недвижимости</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".marketingPlan">маркетинг план</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".team">команда</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".angedProfession">присоединённая профессия</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".beautyToTheMaster">бьюти мастеру</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".rehabilitologist">реабилитологу</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Massage">массажисту</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".Success storys">истории успеха</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".housewife">домохозяйке</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".businessman">бизнесмену</button>
-                                        <button type="button" class="reviews-tag tag-item" data-filter=".athlete">спортсмену</button>
+                                <div class="tab-item" id="6">
+                                    <div class="tag-items">
+                                        <button type="button" class="tag-item" data-filter=".Success">успех</button>
+                                        <button type="button" class="tag-item" data-filter=".additionalIncome">дополнительный доход</button>
+                                        <button type="button" class="tag-item" data-filter=".theMainIncome">основной доход</button>
+                                        <button type="button" class="tag-item" data-filter=".networkBusiness">сетевой бизнес</button>
+                                        <button type="button" class="tag-item" data-filter=".training">обучение</button>
+                                        <button type="button" class="tag-item" data-filter=".Car bonus">авто бонус</button>
+                                        <button type="button" class="tag-item" data-filter=".realEstateBonus">бонус недвижимости</button>
+                                        <button type="button" class="tag-item" data-filter=".marketingPlan">маркетинг план</button>
+                                        <button type="button" class="tag-item" data-filter=".team">команда</button>
+                                        <button type="button" class="tag-item" data-filter=".angedProfession">присоединённая профессия</button>
+                                        <button type="button" class="tag-item" data-filter=".beautyToTheMaster">бьюти мастеру</button>
+                                        <button type="button" class="tag-item" data-filter=".rehabilitologist">реабилитологу</button>
+                                        <button type="button" class="tag-item" data-filter=".Massage">массажисту</button>
+                                        <button type="button" class="tag-item" data-filter=".Success storys">истории успеха</button>
+                                        <button type="button" class="tag-item" data-filter=".housewife">домохозяйке</button>
+                                        <button type="button" class="tag-item" data-filter=".businessman">бизнесмену</button>
+                                        <button type="button" class="tag-item" data-filter=".athlete">спортсмену</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="reviews-content">
-                            <div class="reviews-items">
+                        <div class="tag-system-content">
+                            <div class="tag-system-items">
     
-                                <div class="review__item review mix" data-order="1">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-2.webp" alt="review photo" loading="lazy">
+                                <div class="tag-system__item mix" data-order="1">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-1.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Lina Е.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Я тоже решила поделится результатами. Но мои результаты не «на лицо» 😉 
-                                            <ul class="review__info-list">
-                                                <li class="review__info-list-item">
+                                            <ul class="tag-system__info-list">
+                                                <li class="tag-system__info-list-item">
                                                     Прошли боли в коленках
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     Появилось чуть больше энергии 
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     Прошли сильные приступы мигрени
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     Женские проблемы стали намного лучше 
                                                 </li>
                                             </ul>
-                                            Мне для этого понадобилось два марафона и конечно же мотивация моих наставников. А то я бы лично уже бы давно сдалась 🙈 А растительным препаратам просто нужно больше времени. Вылечила одно, а другое не покалечила, как это часто в аптечной медицине бывает. 😂 
+                                            Мне для этого понадобилось два марафона и конечно же мотивация моих наставников. А то я бы лично уже бы давно сдалась 🙈 А растительным препаратам просто нужно больше времени. Вылечила одно, а другое не покалечила, как это часто в аптечной медицине бывает. 😂
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">женское здоровье</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                женское здоровье
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                энергия
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                коло вада
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="2">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-1.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix weight" data-order="2">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-2.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Кристина В.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Доброе утро. Меня зовут Кристина. Тоже хочу поделиться результатами. <br>
                                             За 2 месяца Детокса + Коло-Вады ушло 5кг, в талии 10см, в бедрах 5см, в животе
                                             5см. <br>
                                             Общее состояние улучшилось, стало легче ходить. Вот 😊
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">вес</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                вес
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                энергия
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                коло вада
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="3">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-3.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix weight pressure gear" data-order="3">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-3.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
-                                            Петр Л.
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
+                                            Петр Л.  
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Мне 40 лет, работаю физически. Пришел с запросом, что сил нет, давление бывает под 200, запоры, боли в спине. Одним словом - разваливаюсь... Начал с двух месяцев программы Корал Детокс и более полезного питания.
                                             В результате: -8 кг, давление стало 120/80, наладился стул, боли в спине стани реже и меньше. Энергии стало больше. Даже после работы я не падал на кровать без сил, как это было обычно. Продолжаю работу над собой. Благодарю всех причастных.
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">вес</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">жкт</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">запор</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                вес
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                жкт 
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                запор
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="4">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-4.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix weight" data-order="4">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-4.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Алевтина Р.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Мои результаты меня искренне радуют не только по снижению веса, а главное по изменению показателей на весцеральных японских весах. <br>
                                             Возраст -14 лет, весцеральный жир с 10 снизился до 8 при норме от 1-12. <br>
                                             Лёгкость, море энергии и я уверена, старые анализы это подтвердят. <br> 
@@ -254,24 +280,32 @@
                                             Я искренне благодарю за такие марафоны. <br>
                                             В команде все интересней, стимулирует соревновательный момент и конечно хочется Победить.🏇
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">вес</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">женское здоровье</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                вес  
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                энергия 
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                женское здоровье
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="5">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-5.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix weight" data-order="5">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-5.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Наталья
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Добрый вечер, всем участникам  программы! Мы дошли до финала программы марафона! Поздравляю всех участников и экспертов!👍Было круто и результативно! <br>
                                             Мои результаты: <br>
                                             Минус 4 кг, <br>
@@ -281,151 +315,194 @@
                                             Минус быстрая утомляемость! <br>
                                             Плюс хорошее самочувствие, прекрасное настроение, работоспособность, комплименты  окружающих!
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">вес</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">сухая кожа</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                вес
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                энергия
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                сухая кожа
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="6">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-6.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix weight" data-order="6">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-6.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Галина П.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Хочу рассказать свой результат после Colo Vada
-                                            <ul class="review__info-list">
-                                                <li class="review__info-list-item">
+                                            <ul class="tag-system__info-list">
+                                                <li class="tag-system__info-list-item">
                                                     ушли 2 кг, но в объёмах уменьшилась значительно больше 
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     пью с удовольствием воду в течении дня, выпиваю свою норму легко, раньше это было проблемой 
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     очень активно прошли дни голодания, совсем не меняла ритм дня,
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     сейчас почти не пью кофе, а совсем недавно жить без него не могла
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     нет отёков по утрам
                                                 </li>
-                                                <li class="review__info-list-item">
+                                                <li class="tag-system__info-list-item">
                                                     и самое главное, в конце марта так вдохновилась концепцией компании, что за месяц закрыла статус директора 😀
                                                 </li>
                                             </ul>
+                                            
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">вес</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">морщины</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">коло вада</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                вес
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                морщины
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                коло вада
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                энергия
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="7">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-7.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix headache" data-order="7">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-7.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Карина С.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             У меня пятеро детей, но еще нет и 40. Когда обратилась з помощью, то оказалось, что куча проблем по здоровью, одна из них - сильные головные боли, особенно когда наклонялась. 
                                             Я пропила АПП и сразу после этого лимфоочистку. 
                                             Еще 1,5 - 2 недели после окончания приема лимфоочистки у меня продолжались выделения слизи через носовые пазухи, на 16-й день вышло много сгустков и с этого дня у меня перестала болеть голова.
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">головная боль</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">паразиты</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                головная боль
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                паразиты
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="review__item review mix DaleyDenyshes" data-order="8">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-8.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix weight" data-order="8">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-8.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Надежда С.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Девочки, хотела рассказать свой первый опыт по коктейлям 😊 <br>
                                             Когда я ходила на фитнес + тренажеры, у меня была цель увеличить мышечную массу. Три месяца я ходила на тренировки 2-3 раза в неделю без коктейля - результат ноль 🙄. <br>
                                             Потом добавила Бьюти Шейк. Пила перед тренировкой или после. Если пила перед - было больше сил и энергии при выполнении упражнений 👍 <br>
                                             За месяц или два мышечная масса увеличилась на 0.8 кг!!! 😍😊💪 <br>
                                             Поэтому всем спортсменам и любителям очень советую!
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">вес</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">дэйли дэлишес</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                вес 
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                дэйли дэлишес
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="9">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-9.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix gear" data-order="9">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-9.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Алекс П.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Мне 14 лет, спортсмен, занимаюсь гандболом. Мама пришла с вопросом о моем зрении, т.к. оно каждый год ухудшалось. Мы взяли Корал Детокс и Визи прайм - это витамины для зрения. Через месяц у меня улучшился стул - стал 2-3 раза в день, легко и хорошо, на тренировках стало больше энергии.  <br>
                                             А еще через месяц мы пошли на ежегодную мед комиссию. Там мы выяснили, что зрение не ухудшилось! Мы очень довольны и продолжаем восстанавливать здоровье. Мама тоже подключилась)
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">зрение</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">жкт</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">запор</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                зрение
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                жкт 
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                запор
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="review__item review mix" data-order="10">
-                                    <div class="review__photo">
-                                        <img src="images/content/review-10.webp" alt="review photo" loading="lazy">
+
+                                <div class="tag-system__item mix gear" data-order="10">
+                                    <div class="tag-system__photo">
+                                        <img src="images/content/review-10.webp" alt="tag-system photo" loading="lazy">
                                     </div>
-                                    <div class="review__info">
-                                        <p class="review__info-name">
+                                    <div class="tag-system__info">
+                                        <p class="tag-system__info-name">
                                             Олеся В.
                                         </p>
-                                        <p class="review__info-text">
+                                        <p class="tag-system__info-text">
                                             Я пью Детокс плюс на постоянной основе. От этого достаточно энергии в течение дня, хорошо работает ЖКТ, хорошее настроение и самочувствие. <br>
                                             Я разобралась, что токсины поступают к нам в тело каждый день. Если их не выводить, то они накапливаются в разных органах и приводят к хронической усталости и болезням. С тех пор - это базовая программа в нашей семье. Уже к ней мы прибавляем другие продукты.
                                         </p>
-                                        <div class="review__info-tags review-tags">
-                                            <span class="review-tags__item tag-item tag-item--inactive">жкт</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">детокс</span>
-                                            <span class="review-tags__item tag-item tag-item--inactive">энергия</span>
+                                        <div class="tag-system__item-tags">
+                                            <span class="tag-system__item-tag tag-item">
+                                                жкт
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                детокс
+                                            </span>
+                                            <span class="tag-system__item-tag tag-item">
+                                                энергия
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
     
                             </div>
     
-                            <div class="review-pagination pagination">
-                                <p class="pagination__title">Страницы:</p>
+                            <div class="pagination">
+                                <p class="pagination__title">
+                                    Страницы:
+                                </p>
                                 <span class="pagination__item pagination__item-current">1</span>
                                 <a class="pagination__item" href="javascript:void(0)" aria-label="pagination__item">2</a>
                             </div>
                         </div>
 
                     </div>
+
+
                 </div>
             </section>
-            <!-- / REVIEWS -->
+            <!-- / TAG SYSTEM REVIEWS -->
 
             <!-- CONSULTANT -->
             <section class="consultant">
@@ -445,9 +522,9 @@
                             </div>
             
                             <div class="consultant-info">
-                                <h5 class="consultant-info__title">
+                                <h3 class="consultant-info__title">
                                     наталья талда
-                                </h5>
+                                </h3>
                                 <a class="consultant-info__phone" href="tel:380509175463" aria-label="consultant phone">
                                     +380 50 917 54 63
                                 </a>
@@ -496,25 +573,3 @@
 </body>
 
 </html>
-
-<!-- 
-    <div class="review__item review mix" data-order="2">
-    <div class="review__photo">
-        <img src="images/content/review-1.webp" alt="review photo" loading="lazy">
-    </div>
-    <div class="review__info">
-        <p class="review__info-name">
-            
-        </p>
-        <p class="review__info-text">
-            
-        </p>
-        <div class="review__info-tags review-tags">
-            <span class="review-tags__item tag-item tag-item--inactive"></span>
-            <span class="review-tags__item tag-item tag-item--inactive"></span>
-            <span class="review-tags__item tag-item tag-item--inactive"></span>
-            <span class="review-tags__item tag-item tag-item--inactive"></span>
-        </div>
-    </div>
-</div> 
--->

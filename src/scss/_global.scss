@@ -664,3 +664,13 @@ body {
         right: 44%;
     }
 }
+
+// === TABS ===
+
+.tab-item {
+    display: none;
+
+    &.active-tab {
+        display: block;
+    }
+}

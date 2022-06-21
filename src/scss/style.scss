@@ -62,10 +62,6 @@
 
 @import 'sections-styles/about-page';
 
-// === REVIEWS ===
-
-@import 'sections-styles/reviews';
-
 // === LEARNING-PLATFORM ===
 
 @import 'sections-styles/learning-platform';
@@ -89,5 +85,9 @@
 // === MARATHONS ===
 
 @import 'sections-styles/marathons';
+
+// === TAG SYSTEM ===
+
+@import 'sections-styles/tag-system';
 
 @import "media";
