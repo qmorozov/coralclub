@@ -177,10 +177,30 @@
         &__slider-img {
             max-height: rem(956px);
         }
+
+        &__text-img-photo {
+            margin-right: rem(40px);
+        }
     }
 
     .paper-steps-list .paper__text + .paper__text {
         margin-top: rem(40px);
+    }
+}
+
+@media (max-width: rem(600px)) {
+    .paper__text-img {
+        flex-direction: column;
+        margin-top: rem(20px);
+
+        &-info {
+            width: 100%;
+            margin-top: rem(40px);
+        }
+
+        &-photo {
+            margin-right: 0;
+        }
     }
 }
 
@@ -194,14 +214,21 @@
         }
     }
 
-    .paper-steps__title {
-        padding: rem(40px) 0;
-        font-size: $fs-s;
-        line-height: rem(23px);
-    }
+    .paper {
+        &-steps__title {
+            padding: rem(40px) 0;
+            font-size: $fs-s;
+            line-height: rem(23px);
+        }
 
-    .paper__video {
-        height: rem(220px);
+        &__video {
+            height: rem(220px);
+        }
+
+        &__text {
+            font-size: rem(16px);
+            line-height: rem(19px);
+        }
     }
 }
 
