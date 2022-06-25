@@ -193,23 +193,23 @@
             box-shadow: 0 0 0 rem(2.5px) rgba($red-light, 1) inset;
         }
 
-        &:nth-child(1n) {
+        &:nth-child(2n) {
             background-color: #e5ffd1;
         }
 
-        &:nth-child(2n) {
+        &:nth-child(3n) {
             background-color: #ffc5c1;
         }
 
-        &:nth-child(3n) {
+        &:nth-child(4n) {
             background-color: #ddfdff;
         }
 
-        &:nth-child(4n) {
+        &:nth-child(5n) {
             background-color: #fef5c5;
         }
 
-        &:nth-child(5n) {
+        &:nth-child(6n) {
             background-color: #e7deff;
         }
     }
