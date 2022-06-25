@@ -192,6 +192,26 @@
             border: rem(1px) solid $red-light !important;
             box-shadow: 0 0 0 rem(2.5px) rgba($red-light, 1) inset;
         }
+
+        &:nth-child(1n) {
+            background-color: #e5ffd1;
+        }
+
+        &:nth-child(2n) {
+            background-color: #ffc5c1;
+        }
+
+        &:nth-child(3n) {
+            background-color: #ddfdff;
+        }
+
+        &:nth-child(4n) {
+            background-color: #fef5c5;
+        }
+
+        &:nth-child(5n) {
+            background-color: #e7deff;
+        }
     }
 
     &-content {
@@ -242,6 +262,10 @@
             &-tags {
                 margin-top: rem(27px);
             }
+        }
+
+        .tag-item {
+            padding: rem(9px);
         }
     }
 

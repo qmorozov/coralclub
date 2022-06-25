@@ -243,11 +243,12 @@ window.onload = function () {
     let paperSlider = new Swiper(".paper__slider", {
         effect: "fade",
         slidesPerView: 'auto',
-        speed: 500,
+        spaceBetween: 100,
+        speed: 200,
         loop: true,
         autoplay: true,
         autoplay: {
-            delay: 7000,
+            delay: 2000,
         },
         grabCursor: true,
     });

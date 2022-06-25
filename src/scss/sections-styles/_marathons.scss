@@ -15,9 +15,11 @@
     }
 
     &__card {
+        display: flex;
+        flex-direction: column;
         min-height: rem(280px);
-        padding: rem(42px) rem(26px);
-        color: white;
+        padding: rem(36px) rem(10px) rem(10px) rem(10px);
+        color: $dark;
         user-select: none;
         background-position: center center;
         background-size: cover;
@@ -28,22 +30,54 @@
             font-size: rem(38px);
             font-weight: 700;
             line-height: rem(35px);
+            color: white;
+            text-align: center;
             text-transform: uppercase;
         }
 
+        &-info {
+            height: 100%;
+            padding: rem(20px);
+            margin-top: rem(30px);
+            background-color: white;
+            border-radius: 0 0 rem(9px) rem(9px);
+        }
+
+        &-subtitle {
+            font-size: rem(30px);
+            font-weight: 700;
+            line-height: rem(35px);
+            text-align: center;
+        }
+
         &-text {
-            margin-top: rem(24px);
+            margin-top: rem(20px);
             font-size: $fs-s;
             line-height: rem(23px);
         }
 
-        @media (any-hover: hover) {
-            background-size: 100% 100%;
-            transition: background-size .5s;
+        &:nth-child(1n) {
+            background-color: #05c8e4;
+        }
 
-            &:hover {
-                background-size: 108% 108%;
-            }
+        &:nth-child(2n) {
+            background-color: #f23589;
+        }
+
+        &:nth-child(3n) {
+            background-color: #f39404;
+        }
+
+        &:nth-child(4n) {
+            background-color: #512970;
+        }
+
+        &:nth-child(5n) {
+            background-color: #2c7406;
+        }
+
+        &:nth-child(6n) {
+            background-color: #117d7d;
         }
     }
 }
@@ -82,11 +116,19 @@
             grid-row-gap: rem(40px);
         }
 
-        &__cards {
-            &-text {
-                font-size: rem(20px);
-                line-height: rem(23px);
-            }
+        &__cards-text {
+            font-size: rem(20px);
+            line-height: rem(23px);
+        }
+    }
+}
+
+@media (max-width: rem(600px)) {
+    .marathons__card {
+        padding-top: rem(20px);
+
+        &-info {
+            margin-top: rem(15px);
         }
     }
 }
@@ -100,7 +142,11 @@
 
         &__card {
             min-height: rem(240px);
-            padding: rem(25px) rem(15px);
+            border-radius: rem(10px);
+
+            &-info {
+                border-radius: 0 0 rem(5px) rem(5px);
+            }
 
             &-title {
                 font-size: rem(18px);
@@ -118,10 +164,19 @@
 @media (max-width: rem(450px)) {
     .marathons__card {
         min-height: rem(200px);
-        padding: rem(25px) rem(20px);
+        padding-top: rem(10px);
+
+        &-info {
+            padding: rem(8px) rem(10px);
+            margin-top: rem(5px);
+        }
+
+        &-subtitle {
+            font-size: rem(20px);
+        }
 
         &-text {
-            margin-top: rem(19px);
+            margin-top: rem(10px);
             font-size: rem(12px);
             line-height: rem(12px);
         }
