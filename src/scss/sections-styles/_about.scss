@@ -37,37 +37,38 @@
         font-size: rem(160px);
         line-height: rem(160px);
         @include Bebas_Neue_Cyrillic;
-
-        &--blue {
-            color: $blue-50;
-        }
-
-        &--dark-green {
-            color: $green-50;
-        }
-
-        &--light-red {
-            color: #dc554c;
-        }
-
-        &--light-green {
-            color: $green-100;
-        }
-
-        &--dark-red {
-            color: $red;
-        }
-
-        &--purple {
-            color: $purple;
-        }
     }
 
     &-text {
         font-size: rem(36px);
         line-height: rem(42px);
     }
+
+    &:nth-child(1n) &-number {
+        color: $blue-50;
+    }
+
+    &:nth-child(2n) &-number {
+        color: $green-50;
+    }
+
+    &:nth-child(3n) &-number {
+        color: #dc554c;
+    }
+
+    &:nth-child(4n) &-number {
+        color: $green-100;
+    }
+
+    &:nth-child(5n) &-number {
+        color: $red;
+    }
+
+    &:nth-child(6n) &-number {
+        color: $purple;
+    }
 }
+
 // === / ABOUT ===
 
 // === MEDIA ===
