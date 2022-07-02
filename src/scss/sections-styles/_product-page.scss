@@ -345,8 +345,6 @@
             }
 
             span {
-                display: block;
-                width: 100%;
                 max-width: rem(250px);
                 white-space: pre-wrap;
             }
@@ -398,6 +396,11 @@
                     height: rem(1px);
                     margin-right: rem(50px);
                     content: '';
+                }
+
+                span {
+                    display: block;
+                    width: 100%;
                 }
             }
         }
