@@ -9,7 +9,7 @@
     &__title {
         font-size: rem(52px);
         font-weight: 700;
-        line-height: rem(35px);
+        line-height: rem(50px);
         text-align: center;
         text-transform: uppercase;
 
@@ -38,9 +38,13 @@
 }
 
 @media (max-width: rem(500px)) {
-    .entry__title {
-        font-size: rem(25px);
-        line-height: rem(20px);
+    .entry {
+        height: rem(130px);
+
+        &__title {
+            font-size: rem(25px);
+            line-height: rem(20px);
+        }
     }
 }
 

@@ -164,6 +164,7 @@ window.onload = function () {
         slidesPerView: 1,
         spaceBetween: 25,
         slidesPerColumn: 1,
+        autoHeight: true,
         pagination: {
             el: ".swiper-pagination",
         },
@@ -240,7 +241,7 @@ window.onload = function () {
 
     // === PAPER SLIDER ===
 
-    let paperSlider = new Swiper(".paper__slider", {
+    let bigSlider = new Swiper(".big-slider", {
         effect: "fade",
         slidesPerView: 'auto',
         spaceBetween: 100,

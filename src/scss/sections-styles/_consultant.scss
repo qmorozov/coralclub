@@ -1,12 +1,12 @@
 // === CONSULTANT ===
 .consultant {
-    padding-bottom: rem(150px);
+    padding: rem(40px) 0 rem(100px);
 
     &__title {
         padding-bottom: rem(74px);
 
         &.title-wrapper {
-            padding-top: rem(37px);
+            padding-top: 0;
         }
     }
 
@@ -64,6 +64,10 @@
     &--dark-bg {
         background-color: $white;
     }
+
+    &--pink-bg {
+        background-color: #fff4fa;
+    }
 }
 // === / CONSULTANT ===
 
@@ -94,7 +98,7 @@
 
 @media (max-width: rem(1000px)) {
     .consultant {
-        padding-bottom: rem(80px);
+        padding: rem(40px) 0 rem(80px);
 
         &-content {
             flex-direction: column;
@@ -107,7 +111,7 @@
 
             &__title {
                 margin-bottom: rem(40px);
-                font-size: rem(48px);
+                font-size: $fs-xxl;
                 line-height: rem(56px);
             }
 
@@ -124,7 +128,7 @@
 
             &__description {
                 margin-top: rem(40px);
-                font-size: rem(16px);
+                font-size: $fs-xs;
                 line-height: rem(19px);
                 text-align: left;
             }
@@ -137,7 +141,7 @@
 
             &__phone {
                 margin-top: rem(10px);
-                font-size: rem(32px);
+                font-size: $fs-xl;
                 line-height: rem(38px);
             }
         }
@@ -169,7 +173,7 @@
 
             &__title {
                 margin-bottom: rem(10px);
-                font-size: rem(32px);
+                font-size: $fs-xl;
                 line-height: rem(38px);
             }
 
@@ -195,6 +199,6 @@
 
 @media (max-width: rem(400px)) {
     .consultant-info {
-        font-size: rem(20px);
+        font-size: $fs-s;
     }
 }

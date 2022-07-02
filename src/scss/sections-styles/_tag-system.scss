@@ -171,11 +171,12 @@
 
 .tag-system .tabs {
     display: flex;
+    flex-wrap: wrap;
     margin-left: rem(-13px);
 
     &-item {
         padding: rem(12px) rem(16px);
-        margin-left: rem(14px);
+        margin: 0 0 rem(10px) rem(14px);
         font-size: $fs-xxs;
         line-height: rem(16px);
         color: $dark;

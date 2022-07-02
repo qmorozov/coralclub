@@ -63,10 +63,10 @@ img {
     object-fit: cover;
 }
 
-* {
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-}
+// * {
+//     outline: none;
+//     -webkit-tap-highlight-color: transparent;
+// }
 
 h1,
 h2,
@@ -101,6 +101,10 @@ body {
     max-width: rem(1435px);
     padding: 0 rem(15px);
     margin: 0 auto;
+
+    &--small {
+        max-width: rem(1190px);
+    }
 }
 
 .text-link {
@@ -154,6 +158,7 @@ body {
 .btn {
     display: inline-block;
     min-width: rem(322px);
+    max-width: rem(322px);
     padding: rem(12px);
     text-align: center;
     text-transform: uppercase;
@@ -166,7 +171,6 @@ body {
         font-weight: 600;
         line-height: rem(29px);
         text-align: center;
-        white-space: nowrap;
 
         br {
             display: none;
@@ -412,6 +416,7 @@ body {
 
     &__back-description {
         margin: rem(13px) 0 auto 0;
+        overflow: auto;
         font-size: $fs-s;
         line-height: rem(23px);
         color: $dark;
@@ -672,5 +677,32 @@ body {
 
     &.active-tab {
         display: block;
+    }
+}
+
+// === BIG SLIDER ===
+
+.big-slider__img {
+    width: 100%;
+    height: 100%;
+    max-height: rem(850px);
+    object-fit: contain;
+}
+
+@media (max-width: rem(1440px)) {
+    .big-slider__img {
+        max-height: rem(808px);
+    }
+}
+
+@media (max-width: rem(800px)) {
+    .big-slider__img {
+        max-height: rem(956px);
+    }
+}
+
+@media (max-width: rem(400px)) {
+    .big-slider__img {
+        max-height: rem(320px);
     }
 }

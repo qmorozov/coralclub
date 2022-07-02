@@ -24,7 +24,12 @@
     }
 
     &-text {
+        max-width: 40%;
         opacity: 0.5;
+    }
+
+    &-copyright {
+        max-width: 40%;
     }
 }
 
