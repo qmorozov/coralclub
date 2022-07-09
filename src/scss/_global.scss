@@ -3,16 +3,22 @@
 
 // === RESET STYLES ===
 
-*,
-*::after,
-*::before {
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    outline-offset: 20px;
+    transition: 0.2s all ease;
+
+    &:focus {
+        border-radius: 3px;
+        outline: 4px solid #00c1b6b3;
+        outline-offset: 0;
+    }
 }
 
 html {
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -44,13 +50,6 @@ input {
     border: none;
 }
 
-button {
-    padding: 0;
-    margin: 0;
-    border: none;
-    outline: none;
-}
-
 a {
     padding: 0;
     margin: 0;
@@ -62,11 +61,6 @@ img {
     display: flex;
     object-fit: cover;
 }
-
-// * {
-//     outline: none;
-//     -webkit-tap-highlight-color: transparent;
-// }
 
 h1,
 h2,
@@ -633,10 +627,6 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
-        &:focus {
-            outline: none;
-        }
 
         &-shape {
             fill: $dark;
