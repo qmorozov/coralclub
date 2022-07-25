@@ -2,8 +2,12 @@
 .AppleDouble
 .LSOverride
 .vs
+.idea
 
+package-lock.json
+src.7z
 src.zip
+
 node_modules/
 .vscode/
 .idea/

@@ -18,11 +18,12 @@
     &-photo {
         flex-shrink: 0;
         width: rem(556px);
-        height: rem(564px);
+        height: rem(556px);
 
         img {
             width: 100%;
             height: 100%;
+            border-radius: 100%;
         }
     }
 
@@ -76,8 +77,9 @@
 @media (max-width: 1400px) {
     .consultant {
         &-photo {
-            width: rem(454px);
-            height: rem(502px);
+            width: 100%;
+            max-width: rem(454px);
+            height: rem(454px);
         }
 
         &-info {
@@ -151,7 +153,8 @@
 @media (max-width: rem(800px)) {
     .consultant-photo {
         width: 100%;
-        height: rem(650px);
+        max-width: rem(450px);
+        height: rem(450px);
     }
 }
 
@@ -159,9 +162,8 @@
     .consultant {
         &-photo {
             width: 100%;
-            max-width: rem(720px);
-            height: 100%;
-            max-height: rem(650px);
+            max-width: rem(350px);
+            height: rem(350px);
         }
 
         &__title {
@@ -198,7 +200,16 @@
 }
 
 @media (max-width: rem(400px)) {
-    .consultant-info {
-        font-size: $fs-s;
+    .consultant {
+        &-photo {
+            width: 100%;
+            max-width: rem(300px);
+            height: 100%;
+            max-height: rem(300px);
+        }
+
+        &-info {
+            font-size: $fs-s;
+        }
     }
 }

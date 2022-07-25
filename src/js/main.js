@@ -349,7 +349,7 @@ window.onload = function () {
 
         if (desktopImg && mobileImg) {
             const differentBgImg = () => {
-                (window.innerWidth <= 650) ? wrapper.setAttribute('style', mobileImg): wrapper.setAttribute('style', desktopImg)
+                (window.innerWidth <= 700) ? wrapper.setAttribute('style', mobileImg): wrapper.setAttribute('style', desktopImg)
             }
             differentBgImg()
             window.addEventListener(`resize`, () => differentBgImg(), false);

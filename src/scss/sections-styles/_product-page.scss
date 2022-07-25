@@ -546,6 +546,52 @@
     }
 }
 
+// === YOUTH IS OUT OF TIME SECTION ===
+
+.product-outside-time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: rem(828px);
+    background: url('../images/content/outside-time-bg.webp') center / cover no-repeat;
+    $parrent: &;
+
+    &__title {
+        width: 100%;
+        max-width: rem(335px);
+        font-size: rem(80px);
+        line-height: rem(80px);
+        color: $white;
+        @include Bebas_Neue_Cyrillic;
+    }
+
+    &__button {
+        width: 100%;
+        max-width: rem(300px);
+        padding: rem(11px) rem(15px);
+        margin-top: rem(120px);
+        cursor: pointer;
+        background-color: $white;
+        border-radius: rem(16px);
+        transition: $transition;
+
+        &-text {
+            font-size: rem(25px);
+            line-height: rem(29px);
+            color: $dark;
+            transition: $transition;
+        }
+
+        &:hover {
+            background-color: $dark;
+
+            #{$parrent}__button-text {
+                color: $white;
+            }
+        }
+    }
+}
+
 // === PRODUCT PAGE -- YOUTHFULNESS WITH COLLAGEN ===
 @import 'sections-styles/product-page--youthfulness';
 
@@ -930,5 +976,11 @@
     // === PRODUCT - RESULT SECTION ===
     .product-result {
         background-position: rem(-840px);
+    }
+
+    // === YOUTH IS OUT OF TIME SECTION ===
+    .product-outside-time__title {
+        font-size: 70px;
+        line-height: 70px;
     }
 }
