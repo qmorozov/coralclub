@@ -85,7 +85,7 @@ const scriptLibs = () => {
 }
 
 const htmlInclude = () => {
-    return src(['./src/*.html'])
+    return src(['./src/**/*.html'])
         .pipe(fileinclude({
             prefix: '@',
             basepath: '@file'
@@ -97,7 +97,7 @@ const htmlInclude = () => {
 
 // === MOVE PHOTOS TO THE APP FOLDER ===
 const imgToApp = () => {
-    return src('./src/images/*/**.*')
+    return src('./src/images/**/**.*')
         // === IMG TO WEBP ===
         .pipe(webp())
         .pipe(dest('./app/images'))
@@ -106,7 +106,7 @@ const imgToApp = () => {
 // === MOVE HTML FILES TO APP FOLDER ===
 
 const htmlFiles = () => {
-    return src('./src/*.html')
+    return src('./src/**/*.html')
         .pipe(htmlminify())
         .pipe(dest('./app'))
 }

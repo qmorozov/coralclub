@@ -1,31 +1,32 @@
 window.onload = function () {
     // === ACCESSIBILITY ===
-    (function(document, window){
+    (function (document, window) {
         if (!document || !window) {
             return;
         }
-        
+
         var styleText = '::-moz-focus-inner{border:0 !important;}:focus{outline: none !important;';
         var unfocus_style = document.createElement('STYLE');
-    
-        window.unfocus = function(){
+
+        window.unfocus = function () {
             document.getElementsByTagName('HEAD')[0].appendChild(unfocus_style);
-    
-            document.addEventListener('mousedown', function(){
-                unfocus_style.innerHTML = styleText+'}';
+
+            document.addEventListener('mousedown', function () {
+                unfocus_style.innerHTML = styleText + '}';
             });
-            document.addEventListener('keydown', function(){
+            document.addEventListener('keydown', function () {
                 unfocus_style.innerHTML = '';
             });
         };
-    
-        unfocus.style = function(style){
+
+        unfocus.style = function (style) {
             styleText += style;
         };
-    
+
         unfocus();
     })(document, window);
-    // === HEADER SEARCH FORN ===
+
+    // === HEADER SEARCH FORM ===
     const searchForm = document.querySelector('.search')
 
     document.querySelector('.search__button').addEventListener('click', (e) => {
@@ -99,7 +100,6 @@ window.onload = function () {
     })
 
     // === MOBILE HEADER ===
-
     if (window.innerWidth <= 1000) {
         document.querySelectorAll('.dropdown__item-mobile').forEach(dropdownItem => {
             org_dropdown = dropdownItem.innerHTML;
@@ -109,7 +109,6 @@ window.onload = function () {
 
         const headerItem = document.querySelectorAll('.header__item')
         document.querySelector('.header__inner').insertBefore(headerItem[0], headerItem[3]);
-
 
         const wrapper = document.createElement('div')
 
@@ -133,7 +132,6 @@ window.onload = function () {
             })
         })
     }
-
 
     // === SCROLL FUNCTION ===
 
@@ -168,7 +166,7 @@ window.onload = function () {
 
         return ScrollBarWidth;
     };
-    
+
     // === SLIDERS ===
     // === INTRO SLIDER ===
 
@@ -183,7 +181,7 @@ window.onload = function () {
         },
         grabCursor: true,
     });
-    
+
     // === ARTICLES - SLIDER ===
 
     let articlesSlider = new Swiper(".articles-slider", {
@@ -230,7 +228,7 @@ window.onload = function () {
     });
 
     // === RECOMENDED SECTION SLIDER ===
-    
+
     let recommendedSlider = new Swiper(".recommended-slider", {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -365,7 +363,7 @@ window.onload = function () {
         showMoreBtn.addEventListener('click', () => {
             const dots = document.querySelector('.show-more__dots')
             const moreText = document.querySelector('.show-more__more-text')
-    
+
             if (dots.style.display === 'none') {
                 dots.style.display = 'inline'
                 showMoreBtn.innerHTML = 'Подробнее'

@@ -495,6 +495,10 @@ body {
     font-size: rem(20px);
     line-height: rem(35px);
     color: #707070;
+
+    &--highlight {
+        font-weight: 700;
+    }
 }
 
 @media (max-width: rem(500px)) {

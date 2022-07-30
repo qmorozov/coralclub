@@ -25,6 +25,11 @@
         background-size: cover;
         border-radius: rem(16px);
         transition: background-size .5s;
+        transition: $transition;
+
+        &:hover {
+            box-shadow: 0 0 rem(15px) 0 rgba($dark, 0.5);
+        }
 
         &-title {
             font-size: rem(38px);
