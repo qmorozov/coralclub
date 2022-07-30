@@ -268,8 +268,10 @@
         text-align: center;
     }
 
-    .marathon-what-await .title-wrapper {
-        padding: 0;
+    .marathon-what-await {
+        .title-wrapper {
+            padding: 0;
+        }
     }
 
     .marathon-organized {
@@ -384,6 +386,11 @@
             grid-column-gap: 0;
         }
 
+        &__text {
+            font-size: $fs-xs;
+            line-height: rem(19px);
+        }
+
         &__photo {
             margin-top: rem(80px);
         }
@@ -415,5 +422,11 @@
 
     .marathon-organized {
         padding-bottom: rem(20px);
+    }
+
+    .marathon-what-await {
+        .title-wrapper {
+            padding: 0;
+        }
     }
 }
