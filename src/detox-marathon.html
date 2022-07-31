@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+
+    <!-- HEAD -->
+    @include('components/_head.html')
+    <!-- / HEAD -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        @include('components/_header.html')
+        <!-- / HEADER -->
+
+        <main>
+
+            <!-- ENTRY -->
+            <section class="entry" style="background-image: url(./images/content/entry-13.webp);">
+                <h1 class="entry__title entry__title--light">
+                    программа “корал детокс”
+                </h1>
+            </section>
+            <!-- / ENTRY -->
+
+            <!-- DETOX-MARATHON -->
+            <section class="detox-marathon">
+                    <div class="detox-marathon__inner">
+
+                        <div class="container">
+                            <div class="detox-marathon__tabs">
+                                <button class="detox-marathon__tab tab active" data-id="1" aria-label="Who is suitable button">
+                                    кому подходит
+                                </button>
+                                <button class="detox-marathon__tab tab" data-id="2" aria-label="description button">
+                                    описание
+                                </button>
+                                <button class="detox-marathon__tab tab" data-id="3" aria-label="reviews button">
+                                    отзывы
+                                </button>
+                                <button class="detox-marathon__tab tab" data-id="4" aria-label="Food on the program button">
+                                    питание на программе
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="detox-marathon__tab-content">
+                            <div class="detox-marathon__tab-item tab-item active-tab" id="1">
+                                <div class="container">
+                                    <div class="title-wrapper">
+                                        <h2 class="title-wrapper__main">
+                                            кому подходит
+                                        </h2>
+                                    </div>
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            Людям, которые ведут активный образ жизни
+                                        </li>
+                                        <li class="list__item">
+                                            Всем, кто хочет повысить уровень энергии и улучшить работу желудочно-кишечного тракта
+                                        </li>
+                                        <li class="list__item">
+                                            Всем, кто много работает и не питается правильно
+                                        </li>
+                                        <li class="list__item">
+                                            Всем, кто занимается спортом и профилактикой здоровья
+                                        </li>
+                                        <li class="list__item">
+                                            Всем, кто хочет повысить свои ресурсы здоровья и использовать их экономно и эффективно
+                                        </li>
+                                        <li class="list__item">
+                                            Всем, кто хочет видеть родных и близких здоровыми
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            <div class="detox-marathon__tab-item tab-item" id="2">
+                                <div class="container">
+                                    <div class="title-wrapper">
+                                        <h2 class="title-wrapper__main">
+                                            описание программы
+                                        </h2>
+                                    </div>
+                                    <p class="text">
+                                        <span>Программы "Корал Детокс" и "Корал Детокс Плюс" подготавливают организм к более глубокой очистке,</span> чтобы провести ее мягче. Эту программу можно сравнить с замачиваем перед основной стиркой. 
+                                    </p>
+                                    <p class="text">
+                                        Здесь происходит размягчение накопленных шлаков и токсины спускаются с клеток в кишечник. Поэтому очень важно следить за его качественной работой.
+                                    </p>
+                                    <img class="detox-marathon__img" src="./images/content/detox-marathon-1.webp" alt="detox marathon img" loading="lazy">
+                                    <p class="text">
+                                        Минеральный концентрат <span>Корал-Майн</span> готовит воду с наилучшими свойствами. 
+                                    </p>
+                                    <p class="text">
+                                        <span>Корал-Майн</span> и <span>Н-500</span> помогают токсинам, которые выводятся с водой, эвакуироваться через почки. А <span>Лецитин</span> и <span>Ассимилятор</span> выводят жирорастворимые токсины через кишечник. Если почки и кишечник по какой-то причине не справляются, то в процесс выведения, как выделительные системы, могут включаться легкие или кожа.
+                                    </p>
+                                    <img class="detox-marathon__img" src="./images/content/detox-marathon-2.webp" alt="detox marathon img" loading="lazy">
+                                    <p class="text">
+                                        Видео о степенях зашлакованности организма и каким образом Корал Детокс с ними работает:
+                                    </p>
+                                    <div class="detox-marathon__video video" data-video="https://youtu.be/-h96JT4KDd8">
+                                        <img class="video__img" src="" alt="video preview" loading="lazy">
+                                        <button class="video__play video__btn-reset" aria-label="Video play button">
+                                            <svg width="68" height="48" viewBox="0 0 68 48">
+                                                <path class="video__play-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                                                </path>
+                                                <path class="video__play-icon" d="M 45,24 27,14 27,34"></path>
+                                            </svg>
+                                        </button>
+                                        <div class="video__loading"></div>
+                                    </div>
+                                    <p class="text">Применение:</p>
+                                    <p class="text">
+                                        1-граммовый пакет-саше Корал-Майн добавляется на 1,5 литра очищенной негазированной воды. После чего закрывается пакет с кораллом и емкость с водой. Через 5 минут вода готова к употреблению. Её можно пить в промежутках между едой. С едой лучше не смешивать. Пить за 20-30 мин до еды и потом через 1-3 часа после, в зависимости от того, насколько плотный был прием пищи. Обязательно выпивайте натощак 1-3 стакана. НЕ КИПЯТИТЬ! 
+                                    </p>
+                                    <h4 class="detox-marathon__subtitle">
+                                        Остальные компоненты Корал Детокс Плюс:
+                                    </h4>
+                                    <ul class="detox-marathon__list">
+                                        <li class="detox-marathon__list-title">Утро:</li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Н-500 выпить вместе с утренней коралловой водой
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            1 табл Пентокана растворить в 50 мл воды
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            Завтрак через 15-20 мин
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Ассимилятора
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Корал Лецитина
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            С едой (до или после) 
+                                        </li>
+                                    </ul>
+                                    <ul class="detox-marathon__list">
+                                        <li class="detox-marathon__list-title">День:</li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Н-500 с Коралловой водой
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            Обед через 15-20 мин
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Ассимилятора
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Корал Лецитина
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            С едой
+                                        </li>
+                                    </ul>
+                                    <ul class="detox-marathon__list">
+                                        <li class="detox-marathon__list-title">Вечер:</li>
+                                        <li class="detox-marathon__list-item">
+                                            Коралловая вода
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            Через 15-20 мин ужин
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            1 капс Ассимилятора
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            2 капс Корал Лецитина
+                                        </li>
+                                        <li class="detox-marathon__list-item">
+                                            С едой
+                                        </li>
+                                    </ul>
+                                    <p class="text">
+                                        Если есть проблемы с регулярным опорожнением кишечника, к этой программе нужно добавить <span>Каскару Саграду</span> или <span>Хай-Файбер</span>. Они решат этот вопрос. 
+                                    </p>
+                                    <p class="text">
+                                        Каскара - это легкое растительное слабительное. А Хай-Файбер - коктейль из клетчатки. Они запускают работу кишечника, если возникают вопросы.
+                                    </p>
+                                    <img class="detox-marathon__img" src="./images/content/detox-marathon-3.webp" alt="detox marathon img" loading="lazy">
+                                    <p class="text">Применение:</p>
+                                    <p class="text">
+                                        <span>Хай-Файбер</span>: 1 мерную ложку размешать с водой, кефиром или не сладким йогуртом (150-250 мл). Дать постоять 1 мин и можно кушать.
+                                        <span>Каскара Саграда</span>: 1-2 капс после ужина. <br>
+                                        На этой программе еще можно добавлять Фан Детокс, если мы хотим дополнительно разгрузить печень и Бьюти Шейк, если стоит вопрос коррекции веса.
+                                    </p>
+                                    <img class="detox-marathon__img" src="./images/content/detox-marathon-4.webp" alt="detox marathon img" loading="lazy">
+                                    <p class="text">Применение:</p>
+                                    <p class="text">1 стик растворить в 150 мл теплой или густо теплой воды. Помешать и можно пить.</p>
+                                    <img class="detox-marathon__img" src="./images/content/detox-marathon-5.webp" alt="detox marathon img" loading="lazy">
+                                    <p class="text">Применение:</p>
+                                    <p class="text">
+                                        2 мерных ложки смешать с водой, молоком или кефиром (150-250 мл). Размешать ложкой или взбить блендером. Дать настояться 1 минуту. 
+                                    </p>
+                                    <p class="text">
+                                        По желанию можно добавить банан, семена чиа, молотый лен, кунжут и другие специи.
+                                    </p>
+                                    <p class="text">
+                                        Употреблять на завтрак, на ужин или в качестве перекуса днем.
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <div class="detox-marathon__tab-item tab-item" id="3">
+                                <div class="detox-marathon__reviews marathon-reviews">
+                                    <div class="container">
+                                        <div class="title-wrapper">
+                                            <h2 class="title-wrapper__main">
+                                                отзывы
+                                            </h2>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    Надежда
+                                                </p>
+                                                <div class="review__video video" data-video="https://youtu.be/-h96JT4KDd8">
+                                                    <img class="video__img" src="" alt="video preview" loading="lazy">
+                                                    <button class="video__play video__btn-reset" aria-label="Video play button">
+                                                        <svg width="68" height="48" viewBox="0 0 68 48">
+                                                            <path class="video__play-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                                                            </path>
+                                                            <path class="video__play-icon" d="M 45,24 27,14 27,34"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="video__loading"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    Надежда
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Результат на программе Корал Детокс Плюс : 
+                                                    <ul class="review__info-list">
+                                                        <li class="review__info-list-item">
+                                                            почистила свой организм от токсинов
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            ушла отечность
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            наладился сон 
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            появилась энергия
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            прибавились силы. 
+                                                        </li>
+                                                    </ul>
+                                                    Программой очень довольна.
+                                                </p>
+                                                <div class="review__images">
+                                                    <div class="review__images-item">
+                                                        <img src="./images/content/review-img-1.webp" alt="review photo" loading="lazy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    ТАмила
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Результаты на Корал Детоксе стабильные, он у меня на постояннойоснове. Чем помогает: чувствуется больше энергии при очень серьезной нагрузке на работе и в сравнении с другими коллегами, которые стараются "проснуться" или "зарядиться" с помощью кофе. Я принимаю шикарную воду к-майн +Н-500 (2 -3 капс,) + пентокан. Моментально возрастает энергия. Тогда все пары проходят на одном дыхании!
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    Наталья
+                                                </p>
+                                                <p class="review__info-text">
+                                                    За месяц программы Корал Детокс мои результаты:
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Минус 4 кг,
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Минус 5 см в объеме, 
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Минус сухость кожи при возрасте 60+,
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Минус пигментация,
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Минус быстрая утомляемость!
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Плюс хорошее самочувствие, прекрасное настроение, работоспособность, комплименты окружающих!
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    Ирина
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Хочу поблагодарить всех, кто помог мне открыть глаза 👀 на концепцию здоровья, за мои шикарные результаты и понимание того, что здоровье в моих руках!
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Если более конкретно:
+                                                    <ul class="review__info-list">
+                                                        <li class="review__info-list-item">
+                                                            улучшился тургор кожи
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            перестали выпирать вены
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            кожа гладкая и равномерная
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            ушли лишние 3 кг, причём без особых усилий
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            наладился ЖКТ 
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            появилось больше бодрости
+                                                        </li>
+                                                        <li class="review__info-list-item">
+                                                            утром нет запаха изо рта и налёта на языке 😛🙃
+                                                        </li>
+                                                    </ul>
+                                                </p>
+                                                <div class="review__images">
+                                                    <div class="review__images-item">
+                                                        <img src="./images/content/review-img-2.webp" alt="review photo" loading="lazy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    Тагир
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Ушли сильные головные боли. <br>
+                                                    Появилось больше энергии. <br>
+                                                    Наладилась работа ЖКТ. <br>
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                        <div class="review">
+                                            <div class="review__avatar">
+                                                <img src="./images/content/review-1.webp" alt="review user avatar" loading="lazy">
+                                            </div>
+                                            <div class="review__info">
+                                                <p class="review__info-name">
+                                                    Алина
+                                                </p>
+                                                <p class="review__info-text">
+                                                    Снизился вес на 4 кг. <br>
+                                                    Улучшился сон и стал крепкий. <br>
+                                                    Стала лёгкость в теле. <br>
+                                                    Больше энергии.  <br>
+                                                    Уменьшились липомы на теле. <br>
+                                                    Сетка венозная на ногах почти ушла. <br>
+                                                </p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="detox-marathon__tab-item tab-item" id="4">
+                                <div class="container">
+                                    <div class="title-wrapper">
+                                        <h2 class="title-wrapper__main">
+                                            питание на программе
+                                        </h2>
+                                    </div>
+                                    <p class="text">Питание на программе:</p>
+                                    <p class="text">Можно проходить в нескольких вариантах в зависимости от целей по здоровью.</p>
+                                    <p class="text">Вы не меняете свой рацион питания, а программа помогает вам компенсировать те нагрузки на здоровье со стороны питания, стрессов, экологии и т.п., которые вы получаете. Это дает вам возможность поддерживать более высокий уровень качества здоровья. <br>
+                                    Но если вы хотите получить не только эффект поддержки, а еще и улучшения, то тогда необходимо скорректировать питание. Оно может быть изменено именно под ваш запрос - для этого вам нужно обратиться к консультанту. Или воспользоваться стандартными рекомендациями, которые тоже приносят очень хорошие результаты. <br> Советы по питанию:</p>
+                                    <p class="text">Исключаем из рациона сахар, белую муку высшего сорта и изделия из них, уксус, консервированные продукты, жаренную, копченую и сильно соленую пищу, а также продукты длительного хранения и содержащие большое количество консервантов.</p>
+                                    <p class="text">Корал Детокс - это первый этап Программы 90 дней (ссылка на П90)</p>
+                                    <p class="text">Программа 90 дней (результаты)</p>
+                                    <p class="text"><span>Если у вас возникли вопросы или для индивидуального подбора программы обратитесь к вашему консультанту. Если у вас его еще нет - вы можете обратиться ко мне</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </section>
+            <!-- / DETOX-MARATHON -->
+
+            <!--  CONSULTANT -->
+            @include('components/_consultant.html')
+            <!-- / CONSULTANT -->
+
+        </main>
+
+        <!-- FOOTER -->
+        @include('components/_footer.html')
+        <!-- / FOOTER -->
+
+    </div>
+
+    <!-- SCRIPTS -->
+    @include('components/_scripts.html')
+    <!-- / SCRIPTS -->
+
+</body>
+
+</html>
+<!-- 
+<div class="review">
+    <div class="review__avatar">
+        <img src="" alt="review user avatar" loading="lazy">
+    </div>
+    <div class="review__info">
+        <p class="review__info-name">
+
+        </p>
+        <p class="review__info-text">
+            <ul class="review__info-list">
+                <li class="review__info-list-item">
+                   
+                </li>
+                <li class="review__info-list-item">
+                    
+                </li>
+                <li class="review__info-list-item">
+                    
+                </li>
+                <li class="review__info-list-item">
+                    
+                </li>
+            </ul>
+        </p>
+
+        <div class="review__video video" data-video="">
+            <img class="video__img" src="" alt="video preview" loading="lazy">
+            <button class="video__play video__btn-reset" aria-label="Video play button">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                    <path class="video__play-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                    </path>
+                    <path class="video__play-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+            </button>
+            <div class="video__loading"></div>
+        </div>
+
+        <div class="review__images">
+            <div class="review__images-item">
+                <img src="" alt="review photo" loading="lazy">
+            </div>
+            <div class="review__images-item">
+                <img src="" alt="review photo" loading="lazy">
+            </div>
+            <div class="review__images-item">
+                <img src="" alt="review photo" loading="lazy">
+            </div>
+        </div>
+
+        <div class="review__tags">
+            <span class="review__tags-item tag-item">
+                
+            </span>
+            <span class="review__tags-item tag-item">
+                
+            </span>
+            <span class="review__tags-item tag-item">
+                
+            </span>
+            <span class="review__tags-item tag-item">
+                
+            </span>
+        </div>
+
+
+    </div>
+</div>
+-->

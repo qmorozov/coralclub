@@ -303,8 +303,8 @@ window.onload = function () {
     // === PRODUCT TABS ===
 
     const productTabs = () => {
-        const btnTab = document.querySelectorAll('.product-page__tab')
-        const tabContent = document.querySelectorAll('.product-page__tabs-item')
+        const btnTab = document.querySelectorAll('.tab')
+        const tabContent = document.querySelectorAll('.tab-item')
 
         btnTab.forEach(itemBtn => itemBtn.addEventListener('click', selectTab))
 
@@ -412,5 +412,66 @@ window.onload = function () {
             el.querySelector('button').remove()
         })
     })
+
+    // === MARATHON TABS ===
+
+    function debounce(cb, delay = 0) {
+        let timeout
+        return (...args) => {
+            clearTimeout(timeout)
+            timeout = setTimeout(() => {
+                cb(...args)
+            }, delay)
+        }
+    }
+
+    if (document.querySelectorAll('.detox-marathon__tab').length > 0) {
+        const items = [...document.querySelectorAll(".detox-marathon__tab")]
+        const radius = "1rem"
+        const updateDocumentWidth = debounce(() => {
+            let itemTopLeft = items[0],
+                itemTopRight, itemBottomLeft, itemBottomRight, itemEnd = items[items.length - 1]
+            let offsetTop = items[0].offsetTop
+            let rowLength
+            items.forEach((e, i) => {
+                e.removeAttribute("style")
+     
+                if (offsetTop < e.offsetTop) {
+                    if (!rowLength) {
+                        rowLength = i + 1
+                    }
+                    offsetTop = e.offsetTop
+                    itemBottomLeft = items[i]
+                    if (!itemTopRight)
+                        itemTopRight = items[i - 1]
+                    itemBottomRight = items[i - 1]
+                }
+     
+            })
+            itemTopLeft.style.borderTopLeftRadius = radius
+            if (itemTopRight) {
+                itemTopRight.style.borderTopRightRadius = radius
+            } else{
+                itemEnd.style.borderTopRightRadius = radius
+            }
+            if (itemBottomLeft) {
+                itemBottomLeft.style.borderBottomLeftRadius = radius
+            } else {
+                itemTopLeft.style.borderBottomLeftRadius = radius
+            }
+     
+            if (itemBottomRight) {
+                const itemUnderIt = items.indexOf(itemBottomRight) + rowLength
+                if (itemUnderIt > items.length)
+                    itemBottomRight.style.borderBottomRightRadius = radius
+            }
+            itemEnd.style.borderBottomRightRadius = radius
+        }, 100)
+        const resizeObserver = new ResizeObserver((entries) =>
+            updateDocumentWidth()
+        );
+        resizeObserver.observe(document.querySelector(".detox-marathon__tabs"));
+    } 
+    
 
 }

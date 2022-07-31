@@ -147,6 +147,35 @@ body {
     }
 }
 
+// === LIST ===
+
+.list__item {
+    margin-left: rem(15px);
+    font-size: $fs-xs;
+    line-height: rem(19px);
+    color: #707070;
+    list-style: outside;
+}
+
+// === TEXT ===
+
+.text {
+    font-size: rem(20px);
+    line-height: rem(35px);
+    color: #707070;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+@media (max-width: rem(500px)) {
+    .text {
+        font-size: rem(16px);
+        line-height: rem(19px);
+    }
+}
+
 // === BUTTONS ===
 
 .btn {
@@ -486,25 +515,6 @@ body {
     .product-card {
         width: rem(300px);
         height: rem(400px);
-    }
-}
-
-// === TEXT ===
-
-.text {
-    font-size: rem(20px);
-    line-height: rem(35px);
-    color: #707070;
-
-    &--highlight {
-        font-weight: 700;
-    }
-}
-
-@media (max-width: rem(500px)) {
-    .text {
-        font-size: rem(16px);
-        line-height: rem(19px);
     }
 }
 

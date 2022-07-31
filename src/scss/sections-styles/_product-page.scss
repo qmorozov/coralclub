@@ -70,14 +70,6 @@
         margin-top: rem(50px);
         border-bottom: rem(1px) solid #e6e6e6;
     }
-
-    &-item {
-        display: none;
-
-        &.active-tab {
-            display: block;
-        }
-    }
 }
 
 // === PRODUCT TAB ====

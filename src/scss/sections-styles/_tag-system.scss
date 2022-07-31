@@ -34,89 +34,28 @@
     }
 }
 
-// === DEFAULT ITEM ===
+// === TAG SYSTEM REVIEW PAGE ===
 
-.tag-system {
-    &__item {
-        position: relative;
+.tag-system--review .review {
+    width: 100%;
+    max-width: rem(1181px);
+    padding-top: rem(17px);
+}
+
+// === TAG SYSTEM RESULT PAGE ===
+
+.tag-system--result {
+    .review {
         width: 100%;
         max-width: rem(1181px);
         padding-top: rem(17px);
 
         &::before {
-            position: absolute;
-            top: 0;
-            right: 0;
             width: 100%;
-            height: rem(1px);
-            content: '';
-            background-color: #d9d9d9;
-        }
-
-        &-tags {
-            margin-top: rem(59px);
-        }
-
-        &-tag {
-            pointer-events: none;
-            cursor: auto;
-            opacity: .5;
         }
     }
 
-    &__info {
-        font-size: $fs-xs;
-        line-height: rem(19px);
-        color: $dark;
-
-        &-name {
-            font-weight: 700;
-        }
-
-        &-text {
-            margin-top: rem(10px);
-        }
-
-        &-list {
-            margin-bottom: rem(20px);
-
-            &-item::before {
-                padding-right: rem(5px);
-                content: '-';
-            }
-        }
-    }
-}
-
-// === TAG SYSTEM REVIEW PAGE ===
-
-.tag-system--review {
-    .tag-system__item {
-        display: flex;
-
-        &::before {
-            width: calc(100% - 110px);
-        }
-    }
-
-    .tag-system__photo {
-        flex-shrink: 0;
-        width: rem(78px);
-        height: rem(78px);
-        margin-right: rem(32px);
-        border-radius: 100%;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-
-// === TAG SYSTEM RESULT PAGE ===
-
-.tag-system--result .tag-system {
-    &__img {
+    .review__images {
         display: grid;
         grid-template-rows: repeat(1, minmax(rem(250px), min-content));
         grid-template-columns: repeat(auto-fit, minmax(rem(250px), 1fr));
@@ -137,14 +76,14 @@
         }
     }
 
-    &__item-tags {
+    .review__tags {
         margin-top: rem(40px);
     }
 }
 
 // tag item
 
-.tag-system .tag-item {
+.tag-item {
     display: inline-block;
     width: fit-content;
     padding: rem(12px) rem(16px);
@@ -282,13 +221,6 @@
         padding: rem(12px) rem(10px);
         font-size: rem(10px);
         line-height: rem(8px);
-    }
-
-    // === TAG REVIEW PAGE ===
-
-    .tag-system--review .tag-system__photo {
-        width: rem(38px);
-        height: rem(38px);
     }
 
     // === TAG RESULT PAGE ===
