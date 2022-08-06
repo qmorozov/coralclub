@@ -8,13 +8,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    outline-offset: rem(20px);
-
-    &:focus {
-        border-radius: rem(3px);
-        outline: rem(4px) solid #00c1b6b3;
-        outline-offset: 0;
-    }
 }
 
 html {

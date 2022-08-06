@@ -209,9 +209,12 @@
 
     .detox-program {
         &__img,
-        &__video,
         &__subtitle {
             margin: rem(40px) 0;
+        }
+
+        &__video {
+            margin: rem(40px) auto;
         }
 
         &__list {
