@@ -1,6 +1,6 @@
 // === FOOTER ===
 .footer {
-    color: $white;
+    color: $light-50;
     background-color: $dark;
 }
 
@@ -55,7 +55,7 @@
         transition: $transition;
 
         &:hover {
-            color: darken($white, 25%);
+            color: darken($light-50, 25%);
         }
     }
 }
@@ -92,15 +92,13 @@
 }
 
 @media (max-width: rem(400px)) {
-    .footer {
-        &__menu {
-            &-items {
-                column-count: 1;
-            }
+    .footer__menu {
+        &-items {
+            column-count: 1;
+        }
 
-            &-item {
-                margin-bottom: rem(50px);
-            }
+        &-item {
+            margin-bottom: rem(50px);
         }
     }
 }

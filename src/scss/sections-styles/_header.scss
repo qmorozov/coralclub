@@ -100,7 +100,7 @@
 // === MENU ===
 
 .header-bottom__menu {
-    background-color: #00c1b6;
+    background-color: $light-green;
 }
 
 .menu {
@@ -116,7 +116,7 @@
         &-item {
             position: relative;
             padding: 0 rem(20px);
-            color: $white;
+            color: $light-50;
             text-align: center;
             text-transform: uppercase;
 
@@ -128,7 +128,7 @@
                 width: rem(1px);
                 height: rem(50px);
                 content: '';
-                background-color: $white;
+                background-color: $light-50;
                 transform: translateY(-50%);
             }
 
@@ -140,7 +140,7 @@
                 transition: $transition;
 
                 &:hover {
-                    color: darken($white, 15%);
+                    color: darken($light-50, 15%);
                 }
 
                 &:focus {
@@ -153,16 +153,13 @@
 
 .dropdown {
     position: absolute;
-    // top: -1000%;
     top: rem(217px);
     right: 0;
     left: 0;
     z-index: -1;
-    // max-height: 66vh;
     max-height: 0;
     overflow: auto;
-    background-color: $white;
-    // opacity: 0;
+    background-color: $light-50;
     transition: all .5s ease-in-out;
 
     &::-webkit-scrollbar {
@@ -208,7 +205,7 @@
             padding: 0 rem(22px);
             cursor: pointer;
             user-select: none;
-            background-color: #fafafa;
+            background-color: $light-100;
         }
     }
 }
@@ -292,7 +289,7 @@
     z-index: 9999;
     height: 100vh;
     padding-bottom: rem(30px);
-    background-color: #fafafa;
+    background-color: $light-100;
     transition: $transition;
 
     &-form {
@@ -366,7 +363,7 @@
             width: 100%;
             height: rem(1px);
             content: '';
-            background-color: #ebebeb;
+            background-color: $light-100;
         }
     }
 
@@ -594,7 +591,6 @@
                     display: block;
                     font-size: rem(10px);
                     line-height: rem(10px);
-                    // white-space: pre-wrap;
                 }
             }
         }
@@ -641,7 +637,7 @@
                 right: 0;
                 width: 100%;
                 height: rem(1px);
-                background-color: #ebebeb;
+                background-color: $light-100;
             }
         }
     }
@@ -664,7 +660,7 @@
                 width: 100%;
                 height: rem(1px);
                 content: '';
-                background-color: #ebebeb;
+                background-color: $light-100;
             }
         }
 
@@ -741,7 +737,7 @@
                     width: 100%;
                     height: rem(1px);
                     content: '';
-                    background-color: #ebebeb;
+                    background-color: $light-100;
                 }
             }
 
@@ -825,7 +821,7 @@
             padding: 0 rem(22px);
             cursor: pointer;
             user-select: none;
-            background-color: #fafafa;
+            background-color: $light-100;
         }
     }
 

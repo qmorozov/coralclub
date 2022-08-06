@@ -7,7 +7,7 @@
     }
 
     &__content {
-        background: url('../images/content/map.webp') top center / contain no-repeat;
+        background: url('../images/default/map.webp') top center / contain no-repeat;
     }
 
     &__items {
@@ -87,7 +87,7 @@
         }
 
         &-inner {
-            background: url('../images/content/map.webp') center center / cover no-repeat;
+            background: url('../images/default/map.webp') center center / cover no-repeat;
         }
 
         &__content {
@@ -116,7 +116,7 @@
         }
 
         &__top-text {
-            max-width: 300px;
+            max-width: rem(300px);
             margin: rem(40px) 0;
             text-align: left;
         }
@@ -130,21 +130,19 @@
     }
 
     .about__top-text {
-        margin-top: 15px;
+        margin-top: rem(15px);
     }
 }
 
 @media (max-width: rem(360px)) {
-    .about {
-        &__item {
-            &-number {
-                font-size: rem(90px);
-                line-height: rem(90px);
-            }
+    .about__item {
+        &-number {
+            font-size: rem(90px);
+            line-height: rem(90px);
+        }
 
-            &-text {
-                margin-top: rem(13px);
-            }
+        &-text {
+            margin-top: rem(13px);
         }
     }
 }

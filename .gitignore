@@ -4,7 +4,6 @@
 .vs
 .idea
 
-package-lock.json
 src.7z
 src.zip
 

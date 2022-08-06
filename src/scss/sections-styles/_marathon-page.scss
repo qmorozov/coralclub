@@ -79,8 +79,8 @@
             font-size: rem(35px);
             font-weight: 700;
             line-height: rem(41px);
-            color: $white;
-            background-color: #00c1b6;
+            color: $light-50;
+            background-color: $light-green;
         }
 
         &-text {
@@ -101,7 +101,7 @@
 // === HOW MUCH DOES PARTICIPATION IN THE MARATHON COST? SECTION ===
 .marathon-price {
     padding: rem(50px) 0 rem(121px) 0;
-    background-color: $white;
+    background-color: $light-50;
 
     .title-wrapper {
         padding: 0;
@@ -165,7 +165,7 @@
     max-width: rem(950px);
     padding: rem(80px) rem(120px);
     margin: 0 auto;
-    background-color: $white;
+    background-color: $light-50;
     border-radius: rem(16px);
 
     .title-wrapper {
@@ -260,129 +260,6 @@
 }
 
 // === / MARATHON FORM SECTION ===
-
-// ==== DETOX MARATHON ===
-.detox-marathon {
-    background-color: #fbfbfb;
-
-    .text {
-        line-height: rem(24px);
-    }
-
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        padding: rem(80px) 0;
-    }
-
-    &__tab-content {
-        margin-top: rem(80px);
-    }
-
-    .title-wrapper {
-        padding: 0;
-        margin-bottom: rem(40px);
-    }
-
-    &__tabs {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .text + .text {
-        margin-top: rem(20px);
-    }
-
-    &__img {
-        width: 100%;
-        max-width: rem(650px);
-        height: rem(380px);
-        margin: rem(80px) auto;
-        object-fit: contain;
-    }
-
-    &__video {
-        display: block;
-        width: 100%;
-        max-width: rem(690px);
-        height: rem(387px);
-        margin: rem(80px) auto;
-        border-radius: 0;
-    }
-
-    &__subtitle {
-        margin: rem(80px) 0;
-        font-size: rem(20px);
-        font-weight: 700;
-        line-height: rem(23px);
-        color: #707070;
-    }
-
-    &__list {
-        margin-bottom: rem(80px);
-        font-size: rem(20px);
-        line-height: rem(23px);
-        color: #707070;
-
-        &-title {
-            font-weight: 700;
-        }
-
-        &-item {
-            margin-top: rem(15px);
-        }
-    }
-}
-
-// === detox marathon tabs ===
-
-.detox-marathon__tab {
-    position: relative;
-    padding: rem(20px) rem(30px);
-    font-size: rem(18px);
-    line-height: rem(21px);
-    color: #707378;
-    text-transform: uppercase;
-    cursor: pointer;
-    user-select: none;
-    background: #f0f0f0;
-    transition: $transition;
-
-    &::after {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: rem(1px);
-        height: rem(20px);
-        content: '';
-        background-color: rgba($dark, 0.2);
-        transition: $transition;
-        transform: translateY(-50%);
-    }
-
-    &:first-child::after,
-    &.active + &::after,
-    &.active::after {
-        opacity: 0;
-    }
-
-    &.active {
-        color: $dark;
-        text-shadow: 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark;
-        background: $white;
-        box-shadow: 0 rem(4px) rem(4px) rgba($dark, 0.08);
-    }
-}
-
-// === marathon review ===
-
-.marathon-reviews {
-    padding: rem(73px) rem(121px);
-    background-color: white;
-}
-
-// ==== / DETOX MARATHON ===
-
 // === / MARATHON PAGE ===
 
 // === MEDIA ===
@@ -426,36 +303,6 @@
             width: 100%;
             margin: rem(80px) 0 0 0;
         }
-    }
-
-    .marathon-reviews {
-        padding: rem(73px) rem(60px) rem(67px);
-
-        .title-wrapper {
-            margin-bottom: rem(56px);
-            text-align: center;
-        }
-
-        .container {
-            max-width: 100%;
-            padding: 0;
-        }
-    }
-
-    .detox-marathon {
-        &__tab-content {
-            margin-top: rem(40px);
-        }
-
-        &__inner {
-            padding-top: rem(40px);
-        }
-    }
-}
-
-@media (max-width: rem(800px)) {
-    .marathon-reviews {
-        padding: rem(73px) rem(15px) rem(67px);
     }
 }
 
@@ -556,12 +403,6 @@
                 line-height: rem(19px);
             }
         }
-    }
-
-    .detox-marathon__tab {
-        padding: rem(10px) rem(17px);
-        font-size: rem(12px);
-        line-height: rem(14px);
     }
 }
 

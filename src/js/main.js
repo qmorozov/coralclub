@@ -413,7 +413,7 @@ window.onload = function () {
         })
     })
 
-    // === MARATHON TABS ===
+    // === CHANGE BORDER RADIUS TABS ===
 
     function debounce(cb, delay = 0) {
         let timeout
@@ -425,8 +425,8 @@ window.onload = function () {
         }
     }
 
-    if (document.querySelectorAll('.detox-marathon__tab').length > 0) {
-        const items = [...document.querySelectorAll(".detox-marathon__tab")]
+    if (document.querySelectorAll('.bg-tab-button').length > 0) {
+        const items = [...document.querySelectorAll(".bg-tab-button")]
         const radius = "1rem"
         const updateDocumentWidth = debounce(() => {
             let itemTopLeft = items[0],
@@ -470,8 +470,6 @@ window.onload = function () {
         const resizeObserver = new ResizeObserver((entries) =>
             updateDocumentWidth()
         );
-        resizeObserver.observe(document.querySelector(".detox-marathon__tabs"));
-    } 
-    
-
+        resizeObserver.observe(document.querySelector(".bg-tab-buttons"));
+    }
 }
