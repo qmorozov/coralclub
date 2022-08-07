@@ -498,6 +498,25 @@ if (document.querySelectorAll('.bg-tab-button').length > 0) {
     //     });
     // });
 
+    // === CALC HEIGHT (articles-sort__buttons) BLOCK ===
+
+    const articlesButtons = document.querySelectorAll('.articles-sort__button');
+    let pathAttribute = [];
+
+    articlesButtons.forEach(articlesButton => {
+        if (articlesButton.hasAttribute('data-path')) {
+            pathAttribute.push(articlesButton.getAttribute('data-path'))
+        }
+    })
+
+    pathAttribute.forEach(item => {
+        console.log(document.querySelector(`.articles-sort__button[data-path=${item}]`).parentNode.clientHeight)
+    })
+
+
+
+
+
     let intervalId;
 
     document.querySelectorAll('.dropdown-button').forEach(e => {
