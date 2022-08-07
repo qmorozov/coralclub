@@ -455,68 +455,6 @@ if (document.querySelectorAll('.bg-tab-button').length > 0) {
 
     // === DROPDOWN ===
 
-    // let intervalId;
-
-    // document.querySelectorAll('.dropdown-button').forEach(e => {
-    //     e.addEventListener('click', e => {
-    //         const menu = e.currentTarget.dataset.path;
-    //         const button = e.currentTarget;
-
-    //         document.querySelectorAll('.dropdown-content').forEach(e => {
-    //             if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-    //                 e.classList.remove('content-active');
-    //                 e.classList.remove('open');
-    //                 button.classList.remove('active')
-    //                 document.querySelector(`[data-target=${menu}]`).classList.add('content-active');
-    //                 intervalId = setTimeout(() => {
-    //                     document.querySelector(`[data-target=${menu}]`).classList.add('open');
-    //                     button.classList.add('active')
-    //                 }, 0);
-    //             }
-
-    //             if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
-    //                 clearTimeout(intervalId);
-    //                 document.querySelector(`[data-target=${menu}]`).classList.remove('content-active');
-    //                 intervalId = setTimeout(() => {
-    //                     document.querySelector(`[data-target=${menu}]`).classList.remove('open');
-    //                     button.classList.remove('active')
-    //                 }, 0);
-    //             }
-
-    //             window.onclick = e => {
-    //                 console.log(menu);
-    //                 console.log(document.querySelector(`[data-path]`));
-    //                 if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]`)) {
-    //                     return;
-    //                 } else {
-    //                     document.querySelector(`[data-target=${menu}]`).classList.remove('content-active');
-    //                     document.querySelector(`[data-target=${menu}]`).classList.remove('open');
-    //                     button.classList.remove('active')
-    //                 }
-    //             }
-    //         });
-    //     });
-    // });
-
-    // === CALC HEIGHT (articles-sort__buttons) BLOCK ===
-
-    const articlesButtons = document.querySelectorAll('.articles-sort__button');
-    let pathAttribute = [];
-
-    articlesButtons.forEach(articlesButton => {
-        if (articlesButton.hasAttribute('data-path')) {
-            pathAttribute.push(articlesButton.getAttribute('data-path'))
-        }
-    })
-
-    pathAttribute.forEach(item => {
-        console.log(document.querySelector(`.articles-sort__button[data-path=${item}]`).parentNode.clientHeight)
-    })
-
-
-
-
-
     let intervalId;
 
     document.querySelectorAll('.dropdown-button').forEach(e => {

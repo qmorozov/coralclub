@@ -20,11 +20,6 @@
         &--dark {
             color: $dark;
         }
-
-        &--youth-with-collagen {
-            padding: rem(15px);
-            background-color: #c11f6b;
-        }
     }
 }
 
@@ -50,10 +45,6 @@
         &__title {
             font-size: rem(25px);
             line-height: rem(20px);
-
-            &--youth-with-collagen {
-                padding: rem(10px);
-            }
         }
     }
 }
@@ -62,9 +53,5 @@
     .entry__title {
         font-size: rem(16px);
         line-height: rem(19px);
-
-        &--youth-with-collagen {
-            padding: rem(10px);
-        }
     }
 }

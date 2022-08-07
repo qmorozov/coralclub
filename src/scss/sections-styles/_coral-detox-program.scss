@@ -67,6 +67,11 @@
             margin-top: rem(15px);
         }
     }
+
+    .btn {
+        display: block;
+        margin: rem(80px) auto rem(30px);
+    }
 }
 
 // === detox marathon anhors ===
@@ -113,49 +118,6 @@
         box-shadow: 0 rem(4px) rem(4px) rgba($dark, 0.08);
     }
 }
-
-// .detox-program__tabs {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
-
-// .detox-program__tab {
-//     position: relative;
-//     padding: rem(20px) rem(30px);
-//     font-size: rem(18px);
-//     line-height: rem(21px);
-//     color: #707378;
-//     text-transform: uppercase;
-//     cursor: pointer;
-//     user-select: none;
-//     background: #f0f0f0;
-//     transition: $transition;
-
-//     &::after {
-//         position: absolute;
-//         top: 50%;
-//         left: 0;
-//         width: rem(1px);
-//         height: rem(20px);
-//         content: '';
-//         background-color: rgba($dark, 0.2);
-//         transition: $transition;
-//         transform: translateY(-50%);
-//     }
-
-//     &:first-child::after,
-//     &.active + &::after,
-//     &.active::after {
-//         opacity: 0;
-//     }
-
-//     &.active {
-//         color: $dark;
-//         text-shadow: 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark;
-//         background: $light-50;
-//         box-shadow: 0 rem(4px) rem(4px) rgba($dark, 0.08);
-//     }
-// }
 
 // === marathon review ===
 
@@ -253,6 +215,11 @@
 
         &__info {
             padding-top: rem(40px);
+        }
+
+        .btn {
+            display: block;
+            margin: rem(40px) auto rem(15px);
         }
     }
 }

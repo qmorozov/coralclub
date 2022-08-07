@@ -309,8 +309,8 @@
 
 .dropdown-content {
     position: absolute;
-    transform: translateY(-100vh);
     transition: transform 0.3s;
+    transform: translateY(-100vh);
 }
 
 .content-active {
