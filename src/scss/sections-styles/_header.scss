@@ -142,10 +142,6 @@
                 &:hover {
                     color: darken($light-50, 15%);
                 }
-
-                &:focus {
-                    outline: 4px solid white;
-                }
             }
         }
     }

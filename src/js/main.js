@@ -163,9 +163,9 @@ let introSlider = new Swiper(".intro__slider", {
     grabCursor: true,
 });
 
-// === ARTICLES - SLIDER ===
+// === ARTICLES - SECTION - SLIDER ===
 
-let articlesSlider = new Swiper(".articles-slider", {
+let articlesSectionSlider = new Swiper(".articles-section-slider", {
     slidesPerView: 1,
     spaceBetween: 25,
     slidesPerColumn: 1,
@@ -452,4 +452,94 @@ if (document.querySelectorAll('.bg-tab-button').length > 0) {
         updateDocumentWidth()
     );
     resizeObserver.observe(document.querySelector(".bg-tab-buttons"))
+
+    // === DROPDOWN ===
+
+    // let intervalId;
+
+    // document.querySelectorAll('.dropdown-button').forEach(e => {
+    //     e.addEventListener('click', e => {
+    //         const menu = e.currentTarget.dataset.path;
+    //         const button = e.currentTarget;
+
+    //         document.querySelectorAll('.dropdown-content').forEach(e => {
+    //             if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+    //                 e.classList.remove('content-active');
+    //                 e.classList.remove('open');
+    //                 button.classList.remove('active')
+    //                 document.querySelector(`[data-target=${menu}]`).classList.add('content-active');
+    //                 intervalId = setTimeout(() => {
+    //                     document.querySelector(`[data-target=${menu}]`).classList.add('open');
+    //                     button.classList.add('active')
+    //                 }, 0);
+    //             }
+
+    //             if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+    //                 clearTimeout(intervalId);
+    //                 document.querySelector(`[data-target=${menu}]`).classList.remove('content-active');
+    //                 intervalId = setTimeout(() => {
+    //                     document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+    //                     button.classList.remove('active')
+    //                 }, 0);
+    //             }
+
+    //             window.onclick = e => {
+    //                 console.log(menu);
+    //                 console.log(document.querySelector(`[data-path]`));
+    //                 if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]`)) {
+    //                     return;
+    //                 } else {
+    //                     document.querySelector(`[data-target=${menu}]`).classList.remove('content-active');
+    //                     document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+    //                     button.classList.remove('active')
+    //                 }
+    //             }
+    //         });
+    //     });
+    // });
+
+    let intervalId;
+
+    document.querySelectorAll('.dropdown-button').forEach(e => {
+        e.addEventListener('click', e => {
+            const menu = e.currentTarget.dataset.path;
+            const button = e.currentTarget;
+            document.querySelectorAll('.dropdown-content').forEach(e => {
+                if (!document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+                    e.classList.remove('content-active');
+                    e.classList.remove('open');
+                    button.classList.add('active')
+                    document.querySelector(`[data-target=${menu}]`).classList.add('content-active');
+                    intervalId = setTimeout(() => {
+                        document.querySelector(`[data-target=${menu}]`).classList.add('open');
+                    }, 0);
+                }
+    
+                if (document.querySelector(`[data-target=${menu}]`).classList.contains('open')) {
+                    clearTimeout(intervalId);
+                    document.querySelector(`[data-target=${menu}]`).classList.remove('content-active');
+                    intervalId = setTimeout(() => {
+                        document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+                    }, 0);
+                }
+    
+                window.onclick = e => {
+
+                    if (!document.querySelector(`[data-target=${menu}]`).classList.contains('content-active')) {
+                        button.classList.remove('active');
+                    }
+
+
+                    if (e.target == document.querySelector(`[data-target=${menu}]`) || e.target == document.querySelector(`[data-path=${menu}]`)) {
+                        return;
+                    } else {
+                        document.querySelector(`[data-target=${menu}]`).classList.remove('content-active');
+                        document.querySelector(`[data-target=${menu}]`).classList.remove('open');
+                    }
+                }
+            });
+        });
+    });
+
+
 }

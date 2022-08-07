@@ -104,10 +104,6 @@
         border: rem(1px) solid $red-light !important;
         box-shadow: 0 0 0 rem(2.5px) rgba($red-light, 1) inset;
     }
-
-    &:focus {
-        outline: rem(3px) solid $red-light;
-    }
 }
 
 // tabs
@@ -135,10 +131,6 @@
         &.active {
             border: rem(1px) solid $red-light !important;
             box-shadow: 0 0 0 rem(2.5px) rgba($red-light, 1) inset;
-        }
-
-        &:focus {
-            outline: rem(3px) solid $red-light;
         }
 
         &:nth-child(2n) {
