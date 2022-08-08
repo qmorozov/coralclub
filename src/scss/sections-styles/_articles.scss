@@ -309,11 +309,15 @@
 
 .dropdown-content {
     position: absolute;
+    opacity: 0;
+    visibility: hidden;
     transition: transform 0.3s;
     transform: translateY(-100vh);
 }
 
 .content-active {
+    opacity: 1;
+    visibility: visible;
     transform: translateY(rem(-40px));
 }
 
