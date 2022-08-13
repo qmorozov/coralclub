@@ -7,6 +7,11 @@
     font-weight: $weight;
 }
 
+@mixin Roboto($weight: 400) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: $weight;
+}
+
 @mixin mobileHeaderArrow {
     position: relative;
 

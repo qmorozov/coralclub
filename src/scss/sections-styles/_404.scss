@@ -1,0 +1,39 @@
+// === 404 ERROR SECTION ===
+.error {
+    padding: 0 0 rem(80px) 0;
+
+    .title-wrapper__main {
+        text-transform: lowercase;
+        @include Roboto;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        max-width: rem(900px);
+        height: 100%;
+        margin: rem(80px) auto 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+// === / 404 ERROR SECTION ===
+// === MEDIA ===
+
+@media (max-width: rem(1000px)) {
+    .error .title-wrapper {
+        text-align: center;
+    }
+}
+
+@media (max-width: rem(550px)) {
+    .error {
+        padding: 0 0 rem(40px) 0;
+    }
+}

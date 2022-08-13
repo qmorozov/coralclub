@@ -85,6 +85,7 @@
     position: relative;
     padding: rem(20px) rem(30px);
     font-size: rem(18px);
+    font-weight: 500;
     line-height: rem(21px);
     color: #707378;
     text-transform: uppercase;
@@ -116,6 +117,10 @@
         text-shadow: 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark;
         background: $light-50;
         box-shadow: 0 rem(4px) rem(4px) rgba($dark, 0.08);
+    }
+
+    &:hover {
+        text-shadow: 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark, 0 0 rem(.01px) $dark;
     }
 }
 
