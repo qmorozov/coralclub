@@ -27,6 +27,7 @@
     width: rem(342px);
     height: rem(372px);
     margin: 0 auto;
+    overflow: hidden;
     background-color: white;
     border-radius: rem(16px);
     transition: $transition;
@@ -35,12 +36,10 @@
         width: 100%;
         height: rem(230px);
         background-color: $gray;
-        border-radius: rem(16px) rem(16px) 0 0;
 
         img {
             width: 100%;
             height: 100%;
-            border-radius: inherit;
         }
     }
 
@@ -324,11 +323,9 @@
 // === MEDIA ===
 
 @media (max-width: rem(1000px)) {
-    .articles {
-        .title-wrapper {
-            margin-bottom: rem(60px);
-            text-align: center;
-        }
+    .articles .title-wrapper {
+        margin-bottom: rem(60px);
+        text-align: center;
     }
 }
 

@@ -111,46 +111,61 @@
 .tag-system .tabs {
     display: flex;
     flex-wrap: wrap;
-    margin-left: rem(-13px);
 
     &-item {
-        padding: rem(12px) rem(16px);
-        margin: 0 0 rem(10px) rem(14px);
+        position: relative;
+        padding: rem(20px) rem(30px);
         font-size: $fs-xxs;
+        font-weight: 700;
         line-height: rem(16px);
         color: $dark;
         text-transform: uppercase;
         cursor: pointer;
-        user-select: none;
-        background-color: white;
-        border: rem(1px) solid $dark;
-        border-radius: rem(5px);
+        background: hsl(0, 0%, 94%);
         transition: $transition;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: rem(1px);
+            height: rem(20px);
+            content: '';
+            background-color: rgba($dark, 0.2);
+            transition: $transition;
+            transform: translateY(-50%);
+        }
+
+        &:first-child::after,
+        &.active + &::after,
+        &.active::after {
+            opacity: 0;
+        }
 
         &:hover,
         &.active {
-            border: rem(1px) solid $red-light !important;
-            box-shadow: 0 0 0 rem(2.5px) rgba($red-light, 1) inset;
-        }
+            background: $light-50;
+            box-shadow: 0 rem(4px) rem(4px) rgba($dark, 0.08);
 
-        &:nth-child(2n) {
-            background-color: #e5ffd1;
-        }
+            &:nth-child(2n) {
+                color: #96c671;
+            }
 
-        &:nth-child(3n) {
-            background-color: #ffc5c1;
-        }
+            &:nth-child(3n) {
+                color: #d86e67;
+            }
 
-        &:nth-child(4n) {
-            background-color: #ddfdff;
-        }
+            &:nth-child(4n) {
+                color: #f4d634;
+            }
 
-        &:nth-child(5n) {
-            background-color: #fef5c5;
-        }
+            &:nth-child(5n) {
+                color: #947dd3;
+            }
 
-        &:nth-child(6n) {
-            background-color: #e7deff;
+            &:nth-child(6n) {
+                color: #96c671;
+            }
         }
     }
 
@@ -170,19 +185,6 @@
 
         &-content {
             padding-top: rem(40px);
-        }
-
-        .tabs {
-            flex-wrap: wrap;
-            white-space: nowrap;
-
-            &-content {
-                margin-left: rem(-10px);
-            }
-
-            &-item {
-                margin: rem(7px);
-            }
         }
 
         .title-wrapper {
@@ -224,5 +226,21 @@
         &__item-tags {
             margin-top: rem(20px);
         }
+    }
+}
+
+@media (max-width: rem(800px)) {
+    .tag-system .tabs-item {
+        padding: rem(20px) rem(18px);
+        font-size: $fs-xs;
+        line-height: rem(19px);
+    }
+}
+
+@media (max-width: rem(500px)) {
+    .tag-system .tabs-item {
+        padding: rem(18px);
+        font-size: rem(12px);
+        line-height: rem(14px);
     }
 }
